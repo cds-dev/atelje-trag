@@ -1,0 +1,35 @@
+.fp_button {
+	z-index: 150;
+	position: absolute;
+	background-color: #FFC600;
+	color: black;
+	border: 2px solid black;
+	text-align: center;
+	cursor: pointer;
+}
+
+.lang {
+	top: 20px;
+	right: 20px;
+	padding: 5px 20px;
+	font-size: 16px;
+
+	&_en {
+	right: 100px;
+	}
+}
+
+.sect {
+	bottom: 150px;
+	padding: 15px;
+	width: calc(100vw / 8);
+	min-width: 100px;
+
+	&_peop {
+		left: calc(100vw / 10);
+	}
+
+	&_mach {
+		right: calc(100vw / 10);
+	}
+}
