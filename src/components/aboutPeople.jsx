@@ -4,7 +4,7 @@ class AboutPeople extends Component {
 	//state = {}
 
 	render() {
-		return ( <div></div> )
+		return ( <div>o ljudima</div> )
 	}
 }
 export default AboutPeople;

@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import People from './people';
+import Machines from './machines';
 
 class Home extends Component {
 	state = {
@@ -26,8 +29,8 @@ class Home extends Component {
 			<div className="main">
 				<div className="fp_button lang lang_en" onClick={this.setEng}>EN</div>
 				<div className="fp_button lang lang_sr" onClick={this.setSer}>SR</div>
-				<div className="fp_button sect sect_peop">{lang[selectedLang][0]}</div>
-				<div className="fp_button sect sect_mach">{lang[selectedLang][1]}</div>
+				<div className="fp_button sect sect_peop"><Link to='/people'>{lang[selectedLang][0]}</Link></div>
+				<div className="fp_button sect sect_mach"><Link to='/machines'>{lang[selectedLang][1]}</Link></div>
 			</div> )
 	}
 }

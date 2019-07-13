@@ -4,7 +4,7 @@ class AboutMachines extends Component {
 	//state = {}
 
 	render() {
-		return ( <div></div> )
+		return ( <div>o mašinama</div> )
 	}
 }
 export default AboutMachines;
