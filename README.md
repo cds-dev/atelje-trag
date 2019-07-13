@@ -6,4 +6,6 @@ All content is placeholder content
 
 ## React components: 
 
-Video, loads all other components
+Video, loads Content overlayed on video
+
+Content, loads all other components
