@@ -9,7 +9,6 @@ class People extends Component {
 	render() {
 		return ( 
 			<main className="onTop" >
-				People go here
 				<AboutPeople />
 				<Clients />
 				<Footer />

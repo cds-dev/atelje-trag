@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
 
 class AboutPeople extends Component {
-	//state = {}
+	state = {
+		title: ["O nama", "About us"],
+		name: ["Nebojsa Arezina", "Marko Peruničić"],
+		img: ["./imgs/nebojsa.jpg", "./imgs/marko.jpg"],
+		text: [
+		["Nebojša: Aliquid cumque quis dolorem, quaerat hic est. Ratione quas, temporibus, laudantium mollitia omnis quasi repellat possimus facere quia distinctio debitis laborum, ad?", 
+		"Marko: Vitae esse earum dolorem rem molestiae, quis veniam illo pariatur laudantium velit exercitationem consectetur numquam eveniet nobis iure ea ipsam accusantium inventore!"], 
+		["Nebojša: Aliquid cumque quis dolorem, quaerat hic est. Ratione quas, temporibus, laudantium mollitia omnis quasi repellat possimus facere quia distinctio debitis laborum, ad?", 
+		"Marko: Vitae esse earum dolorem rem molestiae, quis veniam illo pariatur laudantium velit exercitationem consectetur numquam eveniet nobis iure ea ipsam accusantium inventore!"]]
+	}
 
 	render() {
-		return ( <div>o ljudima</div> )
+		const { title, name, img, text } = this.state;
+		return ( 
+			<div className="about-people">
+				<div className="wide">{title[0]}</div>
+				<div className="left">{name[0]}<img src={img[0]} alt="title[0][0]" />{text[0]}</div>
+				<div className="right">{name[1]}<img src={img[1]} alt="title[0][1]" />{text[1]}</div>
+			</div> )
 	}
 }
 export default AboutPeople;

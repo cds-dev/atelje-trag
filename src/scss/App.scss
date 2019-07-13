@@ -3,6 +3,7 @@
 @import 'frontPage_buttons';
 @import 'footer';
 @import 'content';
+@import 'aboutPeople';
 
 
 * {
@@ -36,9 +37,7 @@
 
 main {
   position: relative;
-  background: rgba(0,0,0,.5);
   margin: 20px;
-  border: 2px solid black;
   min-height: calc(3*95vh);
   min-width: 95vw;
 }
