@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Content extends Component {
+class Home extends Component {
 	state = {
 		lang : [["Ljudi", "Mašine"], ["People", "Machines"]],
 		selectedLang: 0
@@ -31,4 +31,4 @@ class Content extends Component {
 			</div> )
 	}
 }
-export default Content;
+export default Home;
