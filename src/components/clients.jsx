@@ -4,7 +4,7 @@ class Clients extends Component {
 	//state = {}
 
 	render() {
-		return ( <div>klijenti</div> )
+		return ( <div className="clients">klijenti</div> )
 	}
 }
 export default Clients;

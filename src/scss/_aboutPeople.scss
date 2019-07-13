@@ -1,12 +1,13 @@
 .about-people {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	min-height: 100vh;
+	min-height: 95vh;
 	justify-items: center;
 	justify-content: center;
 	grid-gap: 30px;
 	background: rgba(0,0,0,.5);
 	border: 2px solid black;
+	padding: 20px;
 	margin-bottom: 20px;
 
 	.wide {

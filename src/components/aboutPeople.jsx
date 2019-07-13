@@ -17,8 +17,8 @@ class AboutPeople extends Component {
 		return ( 
 			<div className="about-people">
 				<div className="wide">{title[0]}</div>
-				<div className="left">{name[0]}<img src={img[0]} alt="title[0][0]" />{text[0]}</div>
-				<div className="right">{name[1]}<img src={img[1]} alt="title[0][1]" />{text[1]}</div>
+				<div className="left">{name[0]}<img src={img[0]} alt="title[0][0]" />{text[0][0]}</div>
+				<div className="right">{name[1]}<img src={img[1]} alt="title[0][1]" />{text[0][1]}</div>
 			</div> )
 	}
 }
