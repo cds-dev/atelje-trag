@@ -10,7 +10,7 @@ export const clients = [
   _id : "002",
   img : "/imgs/clients/client-placeholder-02.jpg",
   alt : "",
-  cls : "client-narrow",
+  cls : "client-wide",
   txt : ""
  },
  {

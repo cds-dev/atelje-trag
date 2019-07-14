@@ -41,8 +41,8 @@
 main {
   position: relative;
   margin: 20px;
-  min-height: calc(3*95vh);
-  min-width: 95vw;
+  min-height: calc(3*(100vh - 40px));
+  min-width: calc(100vw - 60px);
 }
 
 section, footer {
