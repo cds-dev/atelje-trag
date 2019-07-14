@@ -1,26 +1,21 @@
 import React, { Component } from 'react';
+import { getClients } from '../data/clients.js';
 
 class Clients extends Component {
-	//state = {}
+	state = {
+		clientList : []
+	}
+
+	componentDidMount() {
+		this.setState({
+			clientList: getClients() 
+		});
+	}
 
 	render() {
 		return ( 
 			<section className="clients" id="clients">
-				<img src="/imgs/clients/client-placeholder-01.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-02.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-03.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-04.jpg" alt="client" className="client-wide" />
-				<img src="/imgs/clients/client-placeholder-05.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-01.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-02.jpg" alt="client" className="client-wide" />
-				<img src="/imgs/clients/client-placeholder-03.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-04.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-05.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-01.jpg" alt="client" className="client-wide" />
-				<img src="/imgs/clients/client-placeholder-02.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-03.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-04.jpg" alt="client" className="client-narrow" />
-				<img src="/imgs/clients/client-placeholder-05.jpg" alt="client" className="client-narrow" />
+				{ this.state.clientList.map( cl => <img src={cl.img} alt={cl.alt} className={cl.cls} key={cl._id} />)}
 			</section> )
 	}
 }
