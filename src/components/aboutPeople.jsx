@@ -6,10 +6,10 @@ class AboutPeople extends Component {
 		name: ["Nebojsa Arezina", "Marko Peruničić"],
 		img: ["./imgs/nebojsa.jpg", "./imgs/marko.jpg"],
 		text: [
-		["Nebojša: Aliquid cumque quis dolorem, quaerat hic est. Ratione quas, temporibus, laudantium mollitia omnis quasi repellat possimus facere quia distinctio debitis laborum, ad?", 
-		"Marko: Vitae esse earum dolorem rem molestiae, quis veniam illo pariatur laudantium velit exercitationem consectetur numquam eveniet nobis iure ea ipsam accusantium inventore!"], 
-		["Nebojša: Aliquid cumque quis dolorem, quaerat hic est. Ratione quas, temporibus, laudantium mollitia omnis quasi repellat possimus facere quia distinctio debitis laborum, ad?", 
-		"Marko: Vitae esse earum dolorem rem molestiae, quis veniam illo pariatur laudantium velit exercitationem consectetur numquam eveniet nobis iure ea ipsam accusantium inventore!"]]
+		["NebojšaSR: Aliquid cumque quis dolorem, quaerat hic est. Ratione quas, temporibus, laudantium mollitia omnis quasi repellat possimus facere quia distinctio debitis laborum, ad?", 
+		"MarkoSR: Vitae esse earum dolorem rem molestiae, quis veniam illo pariatur laudantium velit exercitationem consectetur numquam eveniet nobis iure ea ipsam accusantium inventore!"], 
+		["NebojšaEN: Aliquid cumque quis dolorem, quaerat hic est. Ratione quas, temporibus, laudantium mollitia omnis quasi repellat possimus facere quia distinctio debitis laborum, ad?", 
+		"MarkoEN: Vitae esse earum dolorem rem molestiae, quis veniam illo pariatur laudantium velit exercitationem consectetur numquam eveniet nobis iure ea ipsam accusantium inventore!"]]
 	}
 
 	render() {

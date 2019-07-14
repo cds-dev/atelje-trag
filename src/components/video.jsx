@@ -2,8 +2,6 @@ import React, { Component } from 'react'; // irc [tab]
 import Home from './home';
 import People from './people';
 import Machines from './machines';
-// import AboutMachines from './aboutMachines';
-// import Equipment from './equipment';
 import { Route, Switch } from 'react-router-dom';
 
 class Video extends Component { // rcc [tab]
@@ -19,7 +17,7 @@ class Video extends Component { // rcc [tab]
 				id="bcg-video" 
 				autoPlay
 				loop 
-				 // poster="../imgs/Nikolija-background.jpg" 
+				//poster="../imgs/Nikolija-background.jpg" 
 				muted
 				>
 				<source src="//vids/nikolija.mp4" type="video/mp4" />
