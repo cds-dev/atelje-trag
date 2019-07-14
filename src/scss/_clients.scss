@@ -1,3 +1,31 @@
 .clients {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	grid-template-rows: repeat($clientRows, 100px);
+    grid-auto-flow: dense;
+    //grid-gap: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
 
+	img {
+		// object-fit: contain;
+		padding: 0;
+	}
+	.client-narrow {
+		display: grid;
+		grid-column: span 1;
+		grid-row: span 1;
+		 height: 100%;
+		width: 100%;
+	}
+	.client-wide {
+		display: grid;
+		grid-column: span 2;
+		grid-row: span 2;
+		width: 100%;
+		height: 100%;
+		// object-fit: contain;
+		cursor: pointer;
+	}
 }
+	
