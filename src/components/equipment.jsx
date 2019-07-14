@@ -4,7 +4,7 @@ class Equipment extends Component {
 	//state = {}
 
 	render() {
-		return ( <div>oprema</div> )
+		return ( <section className="equipment" id="equipment">oprema</section> )
 	}
 }
 export default Equipment;

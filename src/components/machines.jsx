@@ -9,7 +9,6 @@ class Machines extends Component {
 	render() {
 		return ( 
 			<main className="onTop">
-				Machines go here
 				<AboutMachines />
 				<Equipment />
 				<Footer />

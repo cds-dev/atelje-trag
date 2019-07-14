@@ -4,7 +4,7 @@ class AboutMachines extends Component {
 	//state = {}
 
 	render() {
-		return ( <div>o mašinama</div> )
+		return ( <section className="aboutMachines" id="aboutstudio">O studiu</section> )
 	}
 }
 export default AboutMachines;

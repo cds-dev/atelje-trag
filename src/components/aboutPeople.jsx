@@ -15,11 +15,11 @@ class AboutPeople extends Component {
 	render() {
 		const { title, name, img, text } = this.state;
 		return ( 
-			<div className="about-people">
+			<section className="about-people" id="aboutus">
 				<div className="wide">{title[0]}</div>
 				<div className="left">{name[0]}<img src={img[0]} alt="title[0][0]" />{text[0][0]}</div>
 				<div className="right">{name[1]}<img src={img[1]} alt="title[0][1]" />{text[0][1]}</div>
-			</div> )
+			</section> )
 	}
 }
 export default AboutPeople;

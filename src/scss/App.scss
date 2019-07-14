@@ -5,6 +5,8 @@
 @import 'content';
 @import 'aboutPeople';
 @import 'clients';
+@import 'aboutMachines';
+@import 'equipment';
 
 
 * {
@@ -41,6 +43,17 @@ main {
   margin: 20px;
   min-height: calc(3*95vh);
   min-width: 95vw;
+}
+
+section, footer {
+  min-height: 95vh;
+  background: rgba(0,0,0,.5);
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  position: relative; /* z-index and position are important so that mesh wouldn't go over the content. both are required */
+  z-index: 5;
 }
 
 @keyframes App-logo-spin {
