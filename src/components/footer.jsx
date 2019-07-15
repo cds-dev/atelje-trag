@@ -4,7 +4,7 @@ class Footer extends Component {
 	//state = {}
 
 	render() {
-		let lang = this.props.lang;
+		//let lang = this.props.lang;
 		return ( 
 			<footer id="contact">
 				<p>&copy; Atelje Trag 2019 - powered by <a href="https://hikeislife.github.io/" target="_blank" rel="noopener">ČĎŠ</a></p><br /> 
