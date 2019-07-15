@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import People from './people';
-import Machines from './machines';
+//import People from './people';
+//import Machines from './machines';
 
 class Home extends Component {
 	state = {

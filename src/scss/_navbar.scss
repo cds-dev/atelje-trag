@@ -1,0 +1,45 @@
+nav {
+	display: flex;
+	flex-flow: column;
+	color: black;
+	position: fixed; /* z-index and position are bot required so that mesh wouldn't go over the content */
+  	z-index: 6;
+  	top: 2px;
+  	width: calc(100vw - 20px);
+  	margin-left: -38px;
+  	
+
+  	& * {
+  		display: inline-flex;
+  		justify-content: space-between;
+  	}
+	
+	.mainNav {
+		& * {
+			background: $main;
+			margin: 0 5px;
+			padding: 2px 5px;
+		}
+	}
+
+	.languages {
+		& * {
+			background: $main;
+			margin: 0 5px;
+			padding: 2px 5px;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+
+		li {
+			display: inline;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+}
