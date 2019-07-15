@@ -1,8 +1,5 @@
 import React, { Component } from 'react'; // irc [tab]
-import Home from './home';
-import People from './people';
-import Machines from './machines';
-import { Route, Switch } from 'react-router-dom';
+
 
 class Video extends Component { // rcc [tab]
 	state = {
@@ -24,14 +21,6 @@ class Video extends Component { // rcc [tab]
 				<source src="//vids/nikolija.webm" type="video/webm" />
 				<source src="//vids/nikolija.ogv" type="video/ogg" />
 			</video>
-			<div className="content onTop"> 
-			<Switch>
-				<Route path="/machines" component={Machines} />
-				<Route path="/people" component={People} />
-				<Route path="/" component={Home} />
-			</Switch>
-			</div>
-			
 			</div> 
 			)
 	}
