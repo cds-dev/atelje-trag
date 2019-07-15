@@ -15,7 +15,7 @@ class NavBar extends Component {
 	render() {
 		const {item1, item2, item3, item4, item5, item6} = this.state;
 		//const lang = this.props.selectedLang
-		let lang = 0;
+		let lang = this.props.lang;
 
 		return ( <nav><ul>
 			<div className="mainNav">
@@ -27,8 +27,8 @@ class NavBar extends Component {
 				<Link to='/people#contact'><li>{item6[lang]}</li></Link>
 			</div>
 			<div className="languages">
-				<li>SR</li>
-				<li>EN</li>
+				<li onClick={this.props.setSer}>SR</li>
+				<li onClick={this.props.setEng}>EN</li>
 			</div>
 			</ul></nav> 
 		)

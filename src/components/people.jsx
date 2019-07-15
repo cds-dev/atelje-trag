@@ -8,12 +8,13 @@ class People extends Component {
 	//state = {}
 
 	render() {
+		const selected = this.props.selected;
 		return ( 
 			<main className="onTop" >
-				<NavBar />
-				<AboutPeople />
-				<Clients />
-				<Footer />
+				<NavBar lang={selected} setEng={this.props.setEng} setSer={this.props.setSer} />
+				<AboutPeople lang={selected} />
+				<Clients lang={selected} />
+				<Footer lang={selected} />
 			</main> )
 	}
 }

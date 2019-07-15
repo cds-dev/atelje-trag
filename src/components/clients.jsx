@@ -13,6 +13,7 @@ class Clients extends Component {
 	}
 
 	render() {
+		let lang = this.props.lang;
 		return ( 
 			<section className="clients" id="clients">
 				{ this.state.clientList.map( cl => <img src={cl.img} alt={cl.alt} className={cl.cls} key={cl._id} />)}

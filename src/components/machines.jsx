@@ -8,12 +8,14 @@ class Machines extends Component {
 	//state = {}
 
 	render() {
+		const selected = this.props.selected;
+
 		return ( 
 			<main className="onTop">
-				<NavBar />
-				<AboutMachines />
-				<Equipment />
-				<Footer />
+				<NavBar lang={selected} setEng={this.props.setEng} setSer={this.props.setSer} />
+				<AboutMachines lang={selected} />
+				<Equipment lang={selected} />
+				<Footer lang={selected} />
 			</main> )
 	}
 }
