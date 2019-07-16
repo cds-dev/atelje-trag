@@ -41,12 +41,10 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
     	grid-template-columns: 100px 100px;
     	grid-template-rows: repeat(auto-fit, 100px);
     }
-    .safaritest {
-    	
-    }
     .client-narrow {
 		grid-column: span 1;
 		grid-row: span 1;
+		width: 100px;
 		min-height: 100px;
 		max-height: 100px;
 		width: 100%;
@@ -54,7 +52,8 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 	.client-wide {
 		grid-column: span 2;
 		grid-row: span 2;
-		width: 100%;
+		// width: 100%;
+		width: 200px;
 		min-height: 200px;
 		max-height: 200px;
 		cursor: pointer;
