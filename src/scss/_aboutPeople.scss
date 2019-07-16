@@ -16,3 +16,12 @@
 		position: relative !important;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.about-people {
+
+		.left, .right {
+			grid-column: 1/3;
+		}
+	}
+}

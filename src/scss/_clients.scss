@@ -9,6 +9,7 @@
 
 	img {
 		padding: 0;
+		object-fit: cover;
 	}
 	.client-narrow {
 		grid-column: span 1;
@@ -23,5 +24,12 @@
 		height: 100%;
 		cursor: pointer;
 	}
+}
+
+@media only screen and (max-width: 440px) {
+    .clients {
+    	grid-template-columns: 100px 100px;
+
+    }
 }
 	

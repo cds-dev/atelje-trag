@@ -8,3 +8,4 @@ All content is placeholder content
 
 Video, loads Home, People and Machines overlayed on video
 
+# PWA enabled
