@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f2bc92fd9b9403df433b5a2aaed0fbf9",
+    "revision": "7bf6361f979a4e442c1aaf1de8a1ec0d",
     "url": "/atelje-trag/index.html"
   },
   {
