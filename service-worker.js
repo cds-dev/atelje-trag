@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/atelje-trag/precache-manifest.fe99d1b83027b94e0df6b8655c9484d9.js"
+  "/atelje-trag/precache-manifest.6d350229d7910f0415a97f6cce375e31.js"
 );
 
 self.addEventListener('message', (event) => {
