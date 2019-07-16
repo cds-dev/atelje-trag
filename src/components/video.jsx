@@ -17,9 +17,9 @@ class Video extends Component { // rcc [tab]
 				//poster="../imgs/Nikolija-background.jpg" 
 				muted
 				>
-				<source src="/vids/nikolija.mp4" type="video/mp4" />
-				<source src="/vids/nikolija.webm" type="video/webm" />
-				<source src="/vids/nikolija.ogv" type="video/ogg" />
+				<source src="./vids/nikolija.mp4" type="video/mp4" />
+				<source src="./vids/nikolija.webm" type="video/webm" />
+				<source src="./vids/nikolija.ogv" type="video/ogg" />
 			</video>
 			</div> 
 			)
