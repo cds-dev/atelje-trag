@@ -33,14 +33,14 @@ class App extends Component {
         <div className="content">
 			<Switch>
 				<Route 
-          path="/machines" 
-          render={props => <Machines selected={this.state.selectedLang} 
+          path="/people" 
+          render={props => <People selected={this.state.selectedLang} 
           {...props} 
           setSer={this.setSer} 
           setEng={this.setEng} /> } />
-				<Route 
-          path="/people" 
-          render={props => <People selected={this.state.selectedLang} 
+        <Route 
+          path="/machines" 
+          render={props => <Machines selected={this.state.selectedLang} 
           {...props} 
           setSer={this.setSer} 
           setEng={this.setEng} /> } />

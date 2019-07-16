@@ -1,8 +1,8 @@
 import React, { Component } from 'react'; // irc [tab]
 import AboutPeople from './aboutPeople';
 import Clients from './clients';
-import Footer from './footer';
 import NavBar from './navbar';
+import Footer from './footer';
 
 class People extends Component {
 	//state = {}
@@ -10,7 +10,7 @@ class People extends Component {
 	render() {
 		const selected = this.props.selected;
 		return ( 
-			<main className="onTop" >
+			<main className="onTop">
 				<NavBar lang={selected} setEng={this.props.setEng} setSer={this.props.setSer} />
 				<AboutPeople lang={selected} />
 				<Clients lang={selected} />
