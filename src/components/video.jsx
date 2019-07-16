@@ -14,7 +14,7 @@ class Video extends Component { // rcc [tab]
 				id="bcg-video" 
 				autoPlay
 				loop 
-				//poster="../imgs/Nikolija-background.jpg" 
+				poster="../imgs/Nikolija-background.jpg" 
 				muted
 				>
 				<source src="./vids/nikolija.mp4" type="video/mp4" />
