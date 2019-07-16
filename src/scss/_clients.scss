@@ -35,6 +35,7 @@
 		grid-column: span 1;
 		grid-row: span 1;
 		min-height: 100px;
+		max-height: 100px;
 		width: 100%;
 	}
 	.client-wide {
@@ -42,6 +43,7 @@
 		grid-row: span 2;
 		width: 100%;
 		min-height: 200px;
+		max-height: 200px;
 		cursor: pointer;
 	}
 }
