@@ -32,11 +32,24 @@ class App extends Component {
         <Video/>
         <div className="content">
 			<Switch>
-				<Route path="/machines" render={props => <Machines selected={this.state.selectedLang} {...props} setSer={this.setSer} setEng={this.setEng} /> } />
-				<Route path="/people" render={props => <People selected={this.state.selectedLang} {...props} setSer={this.setSer} setEng={this.setEng} /> } />
+				<Route 
+          path="/machines" 
+          render={props => <Machines selected={this.state.selectedLang} 
+          {...props} 
+          setSer={this.setSer} 
+          setEng={this.setEng} /> } />
+				<Route 
+          path="/people" 
+          render={props => <People selected={this.state.selectedLang} 
+          {...props} 
+          setSer={this.setSer} 
+          setEng={this.setEng} /> } />
         <Route 
           path="/" 
-          render={props => <Home selected={this.state.selectedLang} {...props} setSer={this.setSer} setEng={this.setEng} />} 
+          render={props => <Home selected={this.state.selectedLang} 
+          {...props} 
+          setSer={this.setSer} 
+          setEng={this.setEng} />} 
         />
 			</Switch></div>
     </div>

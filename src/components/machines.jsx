@@ -9,7 +9,6 @@ class Machines extends Component {
 
 	render() {
 		const selected = this.props.selected;
-
 		return ( 
 			<main className="onTop">
 				<NavBar lang={selected} setEng={this.props.setEng} setSer={this.props.setSer} />

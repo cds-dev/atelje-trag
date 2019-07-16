@@ -11,7 +11,6 @@ class NavBar extends Component {
 		item6: ["Kontakt", "Contact"],
 	}
 	
-
 	render() {
 		const {item1, item2, item3, item4, item5, item6} = this.state;
 		//const lang = this.props.selectedLang
