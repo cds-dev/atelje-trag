@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ce1b7365a61b0aca54410622d91022c",
+    "revision": "2d6b50f2e86a5563b01ee720769dbd93",
     "url": "/atelje-trag/index.html"
   },
   {
-    "revision": "f48a751b38f878171866",
+    "revision": "24312b2bcc20ff6a2271",
     "url": "/atelje-trag/static/css/main.96f74d96.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/atelje-trag/static/js/2.d3e4bf28.chunk.js"
   },
   {
-    "revision": "f48a751b38f878171866",
-    "url": "/atelje-trag/static/js/main.d2a94ae0.chunk.js"
+    "revision": "24312b2bcc20ff6a2271",
+    "url": "/atelje-trag/static/js/main.5b5c2f9e.chunk.js"
   },
   {
     "revision": "50f24a827b210209fe02",
