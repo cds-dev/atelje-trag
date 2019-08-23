@@ -1,5 +1,5 @@
 .modal {
-    border: 1px solid yellow;
+    border: 5px solid $main;
     position: fixed;
     width: 60vw;
     height: 60vh;
@@ -8,12 +8,13 @@
     transform: translate(-50%, -50%);
     bottom: 0;
     right: 0;
-    background: black;
+    background: #ebaa0870;
     z-index: 9999;
     display: none;
     color: white;
     align-items: center;
     justify-items: center;
+
 }
 
 .modalX {
