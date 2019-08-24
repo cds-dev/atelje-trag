@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getClients } from '../data/clients.js';
+import Gallery from "react-photo-gallery";
 //import ClientModal from './clientModal';
 
 class Clients extends Component {
@@ -13,18 +14,17 @@ class Clients extends Component {
 		});
 	}
 
-	renderText = (id) => {
-		if (1) return this.state.clientList.map(cl => <p key={cl._id}>{cl.txt}</p>);
-		return null;
-	}
+	openModal = (e) => {
+		if(e.target.className === "client-wide") {
+			this.state.clientList.forEach(client => {
+			if (client.id === e.target.id) {
+				document.getElementById('mod'+client.id).style.backgroundImage = "client.src";
+				document.getElementById('mod'+client.id).style.display = "grid";
 
-	openModal = (id) => {
-
-		this.state.clientList.forEach(client => {
-			if (client._id === id && client.cls === "client-wide") {
-				document.getElementById(client._id).style.display = "grid";
 			}
 		})
+		}
+		
 	}
 
 	closeModal = () => {
@@ -35,33 +35,19 @@ class Clients extends Component {
 
 		//let lang = this.props.lang;
 		return (
-			<section className="clients" id="clients">
-
-				{
-					this.state.clientList.map(cl =>
-						<>
-							<div
-								className={cl.cls}
-								key={`box` + cl._id}
-							>
-								<img
-									src={cl.img}
-									alt={cl.alt}
-									className={cl.cls}
-									key={`img` + cl._id}
-									//id={cl._id} 
-									onClick={() => this.openModal(cl._id)} />
-							</div>
-							<div
-								className="modal"
-								id={cl._id}
-								key={`mod` + cl._id}
-								onClick={this.closeModal}>
-								{cl.txt}
-							</div>
-						</>)
-				}
-			</section>)
+			<>
+				<Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal} />
+				{this.state.clientList.map(cl => <div
+					className="modal"
+					id={'mod'+cl.id}
+					key={cl.id}
+					//style={{background:`url(`+cl.src+`)`}}
+					onClick={this.closeModal}>
+					<img src={cl.src} alt={cl.alt} />
+					<div className="modalDesc">{cl.txt}</div>
+				</div>)}
+			</>
+			)
 	}
 }
 export default Clients;

@@ -25,4 +25,32 @@ class ClientModal extends Component {
     }
 }
 
+{/*<section className="clients" id="clients">
+
+                {
+                    this.state.clientList.map(cl =>
+                        <>
+                            <div
+                                className={cl.cls}
+                                key={`box` + cl._id}
+                            >
+                                <img
+                                    src={cl.img}
+                                    alt={cl.alt}
+                                    className={cl.cls}
+                                    key={`img` + cl._id}
+                                    //id={cl._id} 
+                                    onClick={() => this.openModal(cl._id)} />
+                            </div>
+                            <div
+                                className="modal"
+                                id={cl._id}
+                                key={`mod` + cl._id}
+                                onClick={this.closeModal}>
+                                {cl.txt}
+                            </div>
+                        </>)
+                }
+            </section>*/}
+
 export default ClientModal;

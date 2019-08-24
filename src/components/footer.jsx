@@ -7,7 +7,7 @@ class Footer extends Component {
 		//let lang = this.props.lang;
 		return ( 
 			<footer id="contact">
-				<p>&copy; Atelje Trag 2019 - powered by <a href="https://hikeislife.github.io/" target="_blank" rel="noopener">ČĎŠ</a></p><br /> 
+				<p>&copy; Atelje Trag 2019 - powered by <a href="https://hikeislife.github.io/" target="_blank" rel="noopener noreferrer">ČĎŠ</a></p><br /> 
 				<a 
 					href="https://www.instagram.com/tragofficial/" 
 					aria-label="instagram" 

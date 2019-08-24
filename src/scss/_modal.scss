@@ -1,20 +1,35 @@
 .modal {
     border: 5px solid $main;
     position: fixed;
-    width: 60vw;
-    height: 60vh;
+    max-height: 90vh;
+    min-width: 10px;
+    min-height: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
     right: 0;
-    background: #ebaa0870;
-    z-index: 9999;
+    /*background: #ebaa0870;*/
+    z-index: 200;
     display: none;
-    color: white;
+    //color: white;
     align-items: center;
     justify-items: center;
+    object-fit: cover;
+    
+    img {
+        position: fixed;
+        max-height: 90vh;
+    }
 
+    .modalDesc {
+        color: white;
+        background: #00000077;
+        z-index: 250;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
 .modalX {
