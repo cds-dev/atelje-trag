@@ -1,12 +1,12 @@
 .modal {
-    border: 5px solid $main;
+    //border: 5px solid $main;
     position: fixed;
     max-height: 90vh;
     min-width: 10px;
     min-height: 10px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    //transform: translate(0%, 6%);
     bottom: 0;
     right: 0;
     /*background: #ebaa0870;*/
@@ -15,7 +15,7 @@
     //color: white;
     align-items: center;
     justify-items: center;
-    object-fit: cover;
+    margin: auto;
     
     img {
         position: fixed;
