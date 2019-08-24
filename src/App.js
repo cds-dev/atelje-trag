@@ -27,33 +27,34 @@ class App extends Component {
   }
   render() {
     //const langS = this.state.selectedLang;
-  return (
-    <div className="App">
-        <Video/>
+    return (
+      <div className="App">
+        <Video />
         <div className="content">
-			<Switch>
-				<Route 
-          path="/people" 
-          render={props => <People selected={this.state.selectedLang} 
-          {...props} 
-          setSer={this.setSer} 
-          setEng={this.setEng} /> } />
-        <Route 
-          path="/machines" 
-          render={props => <Machines selected={this.state.selectedLang} 
-          {...props} 
-          setSer={this.setSer} 
-          setEng={this.setEng} /> } />
-        <Route 
-          path="/" 
-          render={props => <Home selected={this.state.selectedLang} 
-          {...props} 
-          setSer={this.setSer} 
-          setEng={this.setEng} />} 
-        />
-			</Switch></div>
-    </div>
-  );
-}}
+          <Switch>
+            <Route
+              path="/people"
+              render={props => <People selected={this.state.selectedLang}
+                {...props}
+                setSer={this.setSer}
+                setEng={this.setEng} />} />
+            <Route
+              path="/machines"
+              render={props => <Machines selected={this.state.selectedLang}
+                {...props}
+                setSer={this.setSer}
+                setEng={this.setEng} />} />
+            <Route
+              path="/"
+              render={props => <Home selected={this.state.selectedLang}
+                {...props}
+                setSer={this.setSer}
+                setEng={this.setEng} />}
+            />
+          </Switch></div>
+      </div>
+    );
+  }
+}
 
 export default App;

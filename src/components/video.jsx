@@ -7,22 +7,22 @@ class Video extends Component { // rcc [tab]
 	}
 
 	render() {
-		return ( 
+		return (
 			<div>
-			<div className="video"></div>
-			<video 
-				id="bcg-video" 
-				autoPlay
-				loop 
-				poster="./imgs/Nikolija-background.jpg" 
-				muted
+				<div className="video"></div>
+				<video
+					id="bcg-video"
+					autoPlay
+					loop
+					poster="./imgs/Nikolija-background.jpg"
+					muted
 				>
-				<source src="./vids/nikolija.mp4" type="video/mp4" />
-				<source src="./vids/nikolija.webm" type="video/webm" />
-				<source src="./vids/nikolija.ogv" type="video/ogg" />
-			</video>
-			</div> 
-			)
+					<source src="./vids/nikolija.mp4" type="video/mp4" />
+					<source src="./vids/nikolija.webm" type="video/webm" />
+					<source src="./vids/nikolija.ogv" type="video/ogg" />
+				</video>
+			</div>
+		)
 	}
 }
 

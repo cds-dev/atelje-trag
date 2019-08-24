@@ -16,7 +16,8 @@ class Clients extends Component {
 		//let lang = this.props.lang;
 		return ( 
 			<section className="clients" id="clients">
-				{ this.state.clientList.map( cl => <div className={cl.cls} key={cl._id}><img src={cl.img} alt={cl.alt} className={cl.cls} key={cl._id} /></div>)}
+				{ this.state.clientList.map( cl => <div className={cl.cls} key={cl._id}>
+					<img src={cl.img} alt={cl.alt} className={cl.cls} key={cl._id} /></div>)}
 			</section> )
 	}
 }
