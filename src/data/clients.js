@@ -1,199 +1,199 @@
 export const clients = [
  {
-  _id : "001",
+  _id : "id001",
   img : "./imgs/clients/client-placeholder-01.jpg",
-  alt : "",
+  alt : "a",
   cls : "client-narrow",
-  txt : ""
+  txt : "bla"
  },
  {
-  _id : "002",
+  _id : "id002",
+  img : "./imgs/clients/client-placeholder-02.jpg",
+  alt : "a",
+  cls : "client-wide",
+  txt : "mačka 002"
+ },
+ {
+  _id : "id003",
+  img : "./imgs/clients/client-placeholder-03.jpg",
+  alt : "a",
+  cls : "client-narrow",
+  txt : "a"
+ },
+ {
+  _id : "id004",
+  img : "./imgs/clients/client-placeholder-04.jpg",
+  alt : "a",
+  cls : "client-wide",
+  txt : "curica 004"
+ },
+ {
+  _id : "id005",
+  img : "./imgs/clients/client-placeholder-05.jpg",
+  alt : "a",
+  cls : "client-narrow",
+  txt : "a"
+ },
+ {
+  _id : "id006",
+  img : "./imgs/clients/client-placeholder-01.jpg",
+  alt : "a",
+  cls : "client-wide",
+  txt : "buda 006"
+ },
+ {
+  _id : "id007",
   img : "./imgs/clients/client-placeholder-02.jpg",
   alt : "",
-  cls : "client-wide",
+  cls : "client-narrow",
   txt : ""
  },
  {
-  _id : "003",
+  _id : "id008",
   img : "./imgs/clients/client-placeholder-03.jpg",
-  alt : "",
+  alt : "a",
   cls : "client-narrow",
-  txt : ""
+  txt : "a"
  },
  {
-  _id : "004",
+  _id : "id009",
   img : "./imgs/clients/client-placeholder-04.jpg",
-  alt : "",
+  alt : "a",
   cls : "client-wide",
-  txt : "hfdjsk dhsjklhf dkfh"
+  txt : "curica 009"
  },
  {
-  _id : "005",
+  _id : "id010",
   img : "./imgs/clients/client-placeholder-05.jpg",
-  alt : "",
+  alt : "a",
   cls : "client-narrow",
-  txt : ""
+  txt : "a"
  },
  {
-  _id : "006",
+  _id : "id011",
   img : "./imgs/clients/client-placeholder-01.jpg",
-  alt : "",
+  alt : "a",
+  cls : "client-narrow",
+  txt : "a"
+ },
+ {
+  _id : "id012",
+  img : "./imgs/clients/client-placeholder-02.jpg",
+  alt : "a",
+  cls : "client-narrow",
+  txt : "a"
+ },
+ {
+  _id : "id013",
+  img : "./imgs/clients/client-placeholder-03.jpg",
+  alt : "a",
+  cls : "client-narrow",
+  txt : "a"
+ },
+ {
+  _id : "id014",
+  img : "./imgs/clients/client-placeholder-04.jpg",
+  alt : "a",
+  cls : "client-narrow",
+  txt : "a"
+ },
+ {
+  _id : "id015",
+  img : "./imgs/clients/client-placeholder-01.jpg",
+  alt : "a",
+  cls : "client-narrow",
+  txt : "a"
+ },
+ {
+  _id : "id016",
+  img : "./imgs/clients/client-placeholder-02.jpg",
+  alt : "a",
+  cls : "client-narrow",
+  txt : "a"
+ },
+ {
+  _id : "id017",
+  img : "./imgs/clients/client-placeholder-03.jpg",
+  alt : "a",
+  cls : "client-narrow",
+  txt : "a"
+ },
+ {
+  _id : "id018",
+  img : "./imgs/clients/client-placeholder-04.jpg",
+  alt : "a",
   cls : "client-wide",
+  txt : "curica 018"
+ },
+ {
+  _id : "id019",
+  img : "./imgs/clients/client-placeholder-05.jpg",
+  alt : "a",
+  cls : "client-wide",
+  txt : "makazić 019"
+ },
+ {
+  _id : "id020",
+  img : "./imgs/clients/client-placeholder-01.jpg",
+  alt : "a",
+  cls : "client-narrow",
   txt : "hfdsjkl hfdksjlhf dkjhfksljld"
  },
  {
-  _id : "007",
+  _id : "id021",
   img : "./imgs/clients/client-placeholder-02.jpg",
-  alt : "",
+  alt : "a",
   cls : "client-narrow",
-  txt : ""
+  txt : "a"
  },
  {
-  _id : "008",
+  _id : "id022",
   img : "./imgs/clients/client-placeholder-03.jpg",
-  alt : "",
+  alt : "a",
   cls : "client-narrow",
-  txt : ""
+  txt : "a"
  },
  {
-  _id : "009",
+  _id : "id023",
   img : "./imgs/clients/client-placeholder-04.jpg",
-  alt : "",
+  alt : "a",
   cls : "client-wide",
-  txt : "hfjkdls jdslhfjdsh sjdbfkl hfdsl"
+  txt : "curica 023"
  },
  {
-  _id : "010",
+  _id : "id024",
   img : "./imgs/clients/client-placeholder-05.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : ""
+  alt : "a",
+  cls : "client-wide",
+  txt : "makazić 024"
  },
  {
-  _id : "011",
+  _id : "id025",
   img : "./imgs/clients/client-placeholder-01.jpg",
-  alt : "",
+  alt : "a",
   cls : "client-narrow",
-  txt : ""
+  txt : "a"
  },
  {
-  _id : "012",
+  _id : "id026",
   img : "./imgs/clients/client-placeholder-02.jpg",
-  alt : "",
+  alt : "a",
   cls : "client-narrow",
-  txt : ""
+  txt : "a"
  },
  {
-  _id : "013",
+  _id : "id027",
   img : "./imgs/clients/client-placeholder-03.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : ""
+  alt : "a",
+  cls : "client-wide",
+  txt : "noj 027"
  },
  {
-  _id : "014",
+  _id : "id028",
   img : "./imgs/clients/client-placeholder-04.jpg",
-  alt : "",
+  alt : "a",
   cls : "client-narrow",
-  txt : ""
- },
- {
-  _id : "015",
-  img : "./imgs/clients/client-placeholder-01.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : ""
- },
- {
-  _id : "016",
-  img : "./imgs/clients/client-placeholder-02.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : ""
- },
- {
-  _id : "017",
-  img : "./imgs/clients/client-placeholder-03.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : ""
- },
- {
-  _id : "018",
-  img : "./imgs/clients/client-placeholder-04.jpg",
-  alt : "",
-  cls : "client-wide",
-  txt : "hfdjsk dhsjklhf dkfh"
- },
- {
-  _id : "019",
-  img : "./imgs/clients/client-placeholder-05.jpg",
-  alt : "",
-  cls : "client-wide",
-  txt : ""
- },
- {
-  _id : "020",
-  img : "./imgs/clients/client-placeholder-01.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : "hfdsjkl hfdksjlhf dkjhfksljld"
- },
- {
-  _id : "021",
-  img : "./imgs/clients/client-placeholder-02.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : ""
- },
- {
-  _id : "022",
-  img : "./imgs/clients/client-placeholder-03.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : ""
- },
- {
-  _id : "023",
-  img : "./imgs/clients/client-placeholder-04.jpg",
-  alt : "",
-  cls : "client-wide",
-  txt : "hfjkdls jdslhfjdsh sjdbfkl hfdsl"
- },
- {
-  _id : "024",
-  img : "./imgs/clients/client-placeholder-05.jpg",
-  alt : "",
-  cls : "client-wide",
-  txt : ""
- },
- {
-  _id : "025",
-  img : "./imgs/clients/client-placeholder-01.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : ""
- },
- {
-  _id : "026",
-  img : "./imgs/clients/client-placeholder-02.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : ""
- },
- {
-  _id : "027",
-  img : "./imgs/clients/client-placeholder-03.jpg",
-  alt : "",
-  cls : "client-wide",
-  txt : ""
- },
- {
-  _id : "028",
-  img : "./imgs/clients/client-placeholder-04.jpg",
-  alt : "",
-  cls : "client-narrow",
-  txt : ""
+  txt : "a"
  },
 ]
 
