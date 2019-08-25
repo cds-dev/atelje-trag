@@ -9,12 +9,14 @@
 @import 'equipment';
 @import 'navbar';
 @import 'modal';
+@import url(https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800&display=swap);
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   overflow-x: hidden; 
+  font-family: 'Barlow', sans-serif;
 }
 
 html {

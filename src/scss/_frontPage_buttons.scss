@@ -10,36 +10,39 @@
 .left-hoverable {
 	position: absolute;
 	height: 100vh;
-	width: 30vw;
+	width: 28vw;
 	left: 0;
 	z-index: 999;
+	margin-left: 55px;
 }
 
 .right-hoverable {
 	position: absolute;
 	height: 100vh;
-	width: 40vw;
+	width: 28vw;
 	right: 0;
 	z-index: 999;
+	margin-right: 55px;
 }
 
 .poligon-left {
 	position: absolute;
-	background: white; 
+	background: black; 
 	left: 55px;
 	bottom: 40px;
 	width: 0;
 	height: calc(100vh - 80px);
 	clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 	opacity: 0;
-	transition: all .6s ease-in;
-	padding-right: 17px;
+	padding-right: 0;
+	transition: all .8s ease-in;
 }
 
 .inner-div-left {
 	width: 100%;
 	height: 100%;
-	background: rgba(40, 44, 52, 1);
+	// background: rgba(40, 44, 52, 1);
+	background: black;
 	clip-path: polygon(0 0, 100% 0%, 62% 100%, 0% 100%);
 }
 
@@ -47,31 +50,32 @@
 	position: absolute;
     right: 55px;
 	bottom: 40px;
-	background: white; 
+	background: black; 
 	width: 0;
 	height: calc(100vh - 80px);
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 35% 100%);
 	opacity: 0;
-	padding-left: 17px;
-	transition: all .6s ease-in;
+	padding-left: 0;
+	transition: all .8s ease-in;
 }
 
 .inner-div-right {
 	width: 100%;
 	height: 100%;
-	background: rgba(40, 44, 52, 1);
+	// background: rgba(40, 44, 52, 1);
+	background: black;
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 36% 100%);
 }
 
 .bigT {
 	position: absolute;
-	font-size: 400px;
+	font-size: 340px;
+    font-weight: 300;
 	// color: rgba(250, 250, 250, .5);
 	color: white;
 	opacity: 0;
-	bottom: -61px;	
-	font-weight: 300;
-	transition: all .6s ease-in;
+	bottom: -27px;
+	transition: all .5s ease-in;
 	left: 50%;
 	transform: translate(-50%);
 }
@@ -89,6 +93,7 @@
 
 	&:hover {
 		background: red;
+		opacity: 1 !important;
 		transition: ease-in .2s;
 	}
 }
@@ -112,21 +117,23 @@
 	background-color: transparent;
 	color: white;
 	border: none;
-	font-size: 57px;
+	font-size: 52px;
 	font-weight: 400;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
+	left: 50%;
+	transform: translate(-50%);
 
 	&:hover {
 		background-color: transparent;
 	}
 
-	&_peop {
-		left: calc(100vw / 10);
-	}
+	// &_peop {
+	// 	left: calc(100vw / 10);
+	// }
 
-	&_mach {
-		right: calc(100vw / 10);
-	}
+	// &_mach {
+	// 	right: calc(100vw / 10);
+	// }
 }
 
 a,
