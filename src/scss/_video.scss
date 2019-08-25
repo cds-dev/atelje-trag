@@ -1,3 +1,8 @@
+.video-wrapper {
+	visibility: hidden;
+	transition: visibility 1s ease-in;
+}
+
 #bcg-video {
 	position: fixed;
 	top: 50%;
@@ -13,13 +18,13 @@
 	background-image: url(grid.png);
 	position: fixed;
 	content: ' ';
-	min-width: 100%;
+	// min-width: 100%;
 	min-height: 100%;
 	z-index: 1;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	right: 0;
+	right: 15px;
 	opacity: .8;
 	overflow: hidden;
 }
