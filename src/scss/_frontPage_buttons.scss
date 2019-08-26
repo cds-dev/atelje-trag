@@ -10,7 +10,7 @@
 .left-hoverable {
 	position: absolute;
 	height: 100vh;
-	width: 28vw;
+	width: 34vw;
 	left: 0;
 	z-index: 999;
 	margin-left: 55px;
@@ -19,7 +19,7 @@
 .right-hoverable {
 	position: absolute;
 	height: 100vh;
-	width: 28vw;
+	width: 34vw;
 	right: 0;
 	z-index: 999;
 	margin-right: 55px;
@@ -27,7 +27,7 @@
 
 .poligon-left {
 	position: absolute;
-	background: black; 
+	background: black;
 	left: 55px;
 	bottom: 40px;
 	width: 0;
@@ -36,6 +36,7 @@
 	opacity: 0;
 	padding-right: 0;
 	transition: all .8s ease-in;
+	border-left: 2px solid red;
 }
 
 .inner-div-left {
@@ -50,13 +51,14 @@
 	position: absolute;
     right: 55px;
 	bottom: 40px;
-	background: black; 
+	background: black;
 	width: 0;
 	height: calc(100vh - 80px);
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 35% 100%);
 	opacity: 0;
 	padding-left: 0;
 	transition: all .8s ease-in;
+	border-right: 2px solid red;
 }
 
 .inner-div-right {
@@ -87,15 +89,15 @@
 	color: black;
 	border: 2px solid black;
 	text-align: center;
-	cursor: pointer;
 	opacity: 0;
 	transition: opacity .2s ease-in;
+	cursor: context-menu;
 
-	&:hover {
-		background: red;
-		opacity: 1 !important;
-		transition: ease-in .2s;
-	}
+	// &:hover {
+	// 	background: red;
+	// 	opacity: 1 !important;
+	// 	transition: ease-in .2s;
+	// }
 }
 
 .lang {
@@ -120,21 +122,77 @@
 	font-size: 52px;
 	font-weight: 400;
 	letter-spacing: 3px;
-	left: 50%;
 	transform: translate(-50%);
-
-	&:hover {
-		background-color: transparent;
-	}
-
-	// &_peop {
-	// 	left: calc(100vw / 10);
-	// }
-
-	// &_mach {
-	// 	right: calc(100vw / 10);
-	// }
 }
+
+.fp_buttonHover:hover {
+	// background-color: transparent;
+	opacity: 1 !important;
+	transition: .2s ease-in;
+}
+
+.peopleLink {
+	left: 45%;
+}
+
+.machineLink {
+	left: 56%;
+}
+
+.leftLinks, .rightLinks {
+	width: 180px;
+	font-size: 33px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .3s ease-in;
+	padding: 5px;
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+}
+
+.rightLinks {
+	transform-origin: right;
+}
+
+.leftLinks:hover, .rightLinks:hover {
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	background: rgba(255, 255, 255, .1);
+}
+
+.aboutusLink{
+	bottom: 400px;
+	left: 58%;
+}
+
+.clientsLink{
+	bottom: 300px;
+	left: 45%;
+}
+
+.contactLink {
+	bottom: 200px;
+	left: 32%;
+}
+
+.aboutstudioLink {
+	bottom: 400px;
+	left: 2%;
+}
+
+.equipmentLink {
+	bottom: 300px;
+	left: 15%;
+}
+
+.contacRighttLink {
+	bottom: 200px;
+	left: 28%;
+}
+
+
+
+
 
 a,
 a:active,
@@ -143,3 +201,152 @@ a:hover {
 	color: $black;
 	text-decoration: none;
 }
+
+////////////////////////////
+
+// .border-animation {
+// 	--border-width: 0.1em;
+// 	--animation-speed: 0.5s;
+// 	--color: #ffffff;
+// 	color: var(--color);
+// 	position: relative;
+// 	display: inline-block;
+// 	font-size: 4em;
+// 	line-height: 1em;
+// 	transform: scale(1, 0.8);
+// 	border: var(--border-width) solid transparent;
+	
+// 	.border-animation__inner {
+// 	  font-weight: 300;
+// 	  padding: 0.2em;
+// 	  background: #333;
+// 	  z-index: 999;
+// 	  border: solid var(--border-width) transparent;
+// 	}
+	
+// 	&:before,
+// 	&:after {
+// 	  content: '';
+// 	  position: absolute;
+// 	  background: var(--color);
+// 	}
+	
+// 	&:focus:before,
+// 	&:hover:before {
+// 	  animation: beforeBorders var(--animation-speed) forwards ease-in-out;
+// 	}
+  
+// 	&:focus:after,
+// 	&:hover:after {
+// 	  animation: afterBorders var(--animation-speed) forwards ease-in-out;
+// 	}
+	
+// 	&:focus,
+// 	&:hover {
+// 	  animation: borderColors var(--animation-speed) steps(1) forwards;
+// 	  outline: none;
+  
+// 	  .border-animation__inner {
+// 		animation: background calc(var(--animation-speed) / 5 * 3) forwards ease-in-out;
+// 		animation-delay: calc(var(--animation-speed) / 5 * 2);
+// 	  }
+// 	}
+//   }
+  
+//   @keyframes beforeBorders {
+// 	0% {
+// 	  top: calc(var(--border-width) * -1);
+// 	  left: 50%;
+// 	  bottom: auto;
+// 	  right: auto;
+// 	  width: 0;
+// 	  height: var(--border-width);
+// 	}
+// 	33% {    
+// 	  top: calc(var(--border-width) * -1);
+// 	  left: calc(var(--border-width) * -1);
+// 	  bottom: auto;
+// 	  right: auto;
+// 	  width: calc(var(--border-width) + 50%);
+// 	  height: var(--border-width);
+// 	}
+// 	66% {
+// 	  top: calc(var(--border-width) * -1);
+// 	  left: calc(var(--border-width) * -1);
+// 	  bottom: auto;
+// 	  right: auto;
+// 	  width: var(--border-width);
+// 	  height: calc((var(--border-width) * 2) + 100%);
+// 	}
+// 	100% {
+// 	  top: auto;
+// 	  left: calc(var(--border-width) * -1);
+// 	  bottom: calc(var(--border-width) * -1);
+// 	  right: auto;
+// 	  width: calc(var(--border-width) + 50%);
+// 	  height: calc((var(--border-width) * 2) + 100%);
+// 	}
+//   }
+  
+//   @keyframes afterBorders {
+// 	0% {
+// 	  top: calc(var(--border-width) * -1);
+// 	  left: auto;
+// 	  bottom: auto;
+// 	  right: 50%;
+// 	  width: 0;
+// 	  height: var(--border-width);
+// 	}
+// 	33% {    
+// 	  top: calc(var(--border-width) * -1);
+// 	  left: auto;
+// 	  bottom: auto;
+// 	  right: calc(var(--border-width) * -1);
+// 	  width: calc(var(--border-width) + 50%);
+// 	  height: var(--border-width);
+// 	}
+// 	66% {
+// 	  top: calc(var(--border-width) * -1);
+// 	  left: auto;
+// 	  bottom: auto;
+// 	  right: calc(var(--border-width) * -1);
+// 	  width: var(--border-width);
+// 	  height: calc((var(--border-width) * 2) + 100%);
+// 	}
+// 	100% {
+// 	  top: auto;
+// 	  left: auto;
+// 	  bottom: calc(var(--border-width) * -1);
+// 	  right: calc(var(--border-width) * -1);
+// 	  width: calc(var(--border-width) + 50%);
+// 	  height: calc((var(--border-width) * 2) + 100%);
+// 	}
+//   }
+  
+//   @keyframes borderColors {
+// 	0% {
+// 	  border-top-color: transparent;
+// 	  border-right-color: transparent;
+// 	  border-bottom-color: transparent;
+// 	  border-left-color: transparent;
+// 	}
+// 	33% {
+// 	  border-top-color: var(--color);
+// 	  border-right-color: transparent;
+// 	  border-bottom-color: transparent;
+// 	  border-left-color: transparent;
+  
+// 	}
+// 	66% {
+// 	  border-top-color: var(--color);
+// 	  border-right-color: var(--color);
+// 	  border-bottom-color: transparent;
+// 	  border-left-color: var(--color);
+// 	}
+// 	100% {
+// 	  border-top-color: var(--color);
+// 	  border-right-color: var(--color);
+// 	  border-bottom-color: var(--color);
+// 	  border-left-color: var(--color);
+// 	}
+//   }

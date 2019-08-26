@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 class Home extends Component {
   state = {
-    lang: [["LJUDI", "MAŠINE"], ["PEOPLE", "MACHINES"]]
+    lang: [["LJUDI", "MAŠINE"], ["PEOPLE", "MACHINES"]],
+    peopleLinks: [["O NAMA", "KLIJENTI", "KONTAKT"], ["ABOUT US", "CLIENTS", "CONTACT"]],
+    machinesLinks: [["STUDIO", "OPREMA", "KONTAKT"], ["STUDIO", "CLIENTS", "CONTACT"]]
     //selectedLang: 0
   };
 
@@ -13,7 +15,32 @@ class Home extends Component {
       bigT = document.querySelector(".bigT"),
       fpButtons = document.querySelectorAll(".fp_button"),
       leftHoverable = document.querySelector(".left-hoverable"),
-      rightHoverable = document.querySelector(".right-hoverable");
+      rightHoverable = document.querySelector(".right-hoverable"),
+      peopleLink = document.querySelector(".peopleLink"),
+      machineLink = document.querySelector(".machineLink"),
+      leftLinks = document.querySelectorAll(".leftLinks"),
+      rightLinks = document.querySelectorAll(".rightLinks");
+
+    function poligonChange(hoverable, poligon, t) {
+      hoverable.addEventListener("mouseover", function () {
+        poligon.style.transition = "all .5s ease-in";
+        poligon.style.width = "46.5%";
+        poligon.style.opacity = ".5";
+        t.style.transition = "all .5s ease-in";
+        t.style.opacity = ".5";
+
+        hoverable.addEventListener("mouseleave", function () {
+          poligon.style.width = "0";
+          poligon.style.opacity = "0";
+          t.style.opacity = "0";
+          // +++++++++++++++++
+          peopleLink.style.opacity = ".6";
+          leftLinks.forEach(it => it.style.transform = "scaleX(0)");
+          machineLink.style.opacity = ".6";
+          rightLinks.forEach(it => it.style.transform = "scaleX(0)");
+        });
+      });
+    }
 
     setTimeout(function () {
       poligonLeft.style.width = "46.5%";
@@ -44,50 +71,62 @@ class Home extends Component {
     }, 5000)
 
     setTimeout(function () {
-      fpButtons.forEach(it => it.style.opacity = ".6");
+      fpButtons.forEach(function (it) {
+        it.classList.add("fp_buttonHover");
+        it.style.opacity = ".6";
+        it.style.cursor = "pointer";
+      });
     }, 5500)
 
     setTimeout(function () {
-      leftHoverable.addEventListener("mouseover", function () {
-        poligonLeft.style.transition = "all .5s ease-in";
-        poligonLeft.style.width = "46.5%";
-        poligonLeft.style.opacity = ".5";
-        bigT.style.transition = "all .5s ease-in";
-        bigT.style.opacity = ".5";
-
-        leftHoverable.addEventListener("mouseleave", function () {
-          poligonLeft.style.width = "0";
-          poligonLeft.style.opacity = "0";
-          bigT.style.opacity = "0";
-        });
-      });
-
-      rightHoverable.addEventListener("mouseover", function () {
-        poligonRight.style.transition = "all .5s ease-in";
-        poligonRight.style.width = "46.5%";
-        poligonRight.style.opacity = ".5";
-        bigT.style.transition = "all .5s ease-in";
-        bigT.style.opacity = ".5";
-
-        rightHoverable.addEventListener("mouseleave", function () {
-          poligonRight.style.width = "0";
-          poligonRight.style.opacity = "0";
-          bigT.style.opacity = "0";
-        });
-      });
+      poligonChange(leftHoverable, poligonLeft, bigT);
+      poligonChange(rightHoverable, poligonRight, bigT);
     }, 5800)
-  };
+
+    function openLinks(targetLink, linksArr) {
+      targetLink.addEventListener("click", function () {
+        targetLink.style.opacity = "1";
+        for (let i = 0; i < linksArr.length; i++) {
+          setTimeout(function () {
+            linksArr[i].style.transform = "scaleX(1)"
+          }, (i + 1) * 100);
+        }
+      });
+    }
+
+    openLinks(peopleLink, leftLinks);
+    openLinks(machineLink, rightLinks);
+
+    // peopleLink.addEventListener("click", function () {
+    //   peopleLink.style.opacity = "1";
+    //   for (let i = 0; i < leftLinks.length; i++) {
+    //     setTimeout(function () {
+    //       leftLinks[i].style.transform = "scaleX(1)"
+    //     }, (i + 1) * 100);
+    //   }
+    // });
+  }
 
   render() {
-    const { lang } = this.state;
+    const { lang, peopleLinks, machinesLinks } = this.state;
+    // const { peopleLinks } = this.state;
     const language = this.props.selected;
 
     return (
       <div className="home-main">
         <p className="bigT">T</p>
         <div className="left-hoverable">
-          <Link to="./people">
-            <div className="fp_button sect sect_peop">{lang[language][0]}</div>
+          <Link to="./people#aboutus">
+            <div className="fp_button sect sect_peop aboutusLink leftLinks">{peopleLinks[language][0]}</div>
+          </Link>
+          <Link to="./people#clients">
+            <div className="fp_button sect sect_peop clientsLink leftLinks">{peopleLinks[language][1]}</div>
+          </Link>
+          <Link to="./people#contact">
+            <div className="fp_button sect sect_peop contactLink leftLinks">{peopleLinks[language][2]}</div>
+          </Link>
+          <Link to="">{/*./people*/}
+            <div className="fp_button sect sect_peop peopleLink">{lang[language][0]}</div>
           </Link>
         </div>
         <div className="right-hoverable">
@@ -97,8 +136,17 @@ class Home extends Component {
           <div className="fp_button lang lang_sr" onClick={this.props.setSer}>
             SR
         </div>
-          <Link to="./machines">
-            <div className="fp_button sect sect_mach">{lang[language][1]}</div>
+          <Link to="./machines#aboutstudio">
+            <div className="fp_button sect sect_peop aboutstudioLink rightLinks">{machinesLinks[language][0]}</div>
+          </Link>
+          <Link to="./machines#equipment">
+            <div className="fp_button sect sect_peop equipmentLink rightLinks">{machinesLinks[language][1]}</div>
+          </Link>
+          <Link to="./people#contact">
+            <div className="fp_button sect sect_peop contacRighttLink rightLinks">{machinesLinks[language][2]}</div>
+          </Link>
+          <Link to="">{/*./machines*/}
+            <div className="fp_button sect sect_mach machineLink">{lang[language][1]}</div>
           </Link>
         </div>
         <div className="poligonL poligon-left">
