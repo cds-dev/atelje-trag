@@ -10,13 +10,13 @@ class NavBar extends Component {
 		item5: ["Oprema", "Equipment"],
 		item6: ["Kontakt", "Contact"],
 	}
-	
+
 	render() {
-		const {item1, item2, item3, item4, item5, item6} = this.state;
+		const { item1, item2, item3, item4, item5, item6 } = this.state;
 		//const lang = this.props.selectedLang
 		let lang = this.props.lang;
 
-		return ( <nav><ul>
+		return (<nav><ul>
 			<div className="mainNav">
 				<Link to='./'><li>{item1[lang]}</li></Link>
 				<Link to='./people#aboutus'><li>{item2[lang]}</li></Link>
@@ -29,7 +29,7 @@ class NavBar extends Component {
 				<li onClick={this.props.setSer}>SR</li>
 				<li onClick={this.props.setEng}>EN</li>
 			</div>
-			</ul></nav> 
+		</ul></nav>
 		)
 	}
 }

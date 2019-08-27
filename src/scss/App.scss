@@ -9,16 +9,24 @@
 @import 'equipment';
 @import 'navbar';
 @import 'modal';
-
+@import url(https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800&display=swap);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap);
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
 html {
   background-color: #282c34;
+  background-color: black;
   color: ivory;
+  overflow-x: hidden; 
 }
 
 .App {

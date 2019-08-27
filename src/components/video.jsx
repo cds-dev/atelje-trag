@@ -6,21 +6,32 @@ class Video extends Component { // rcc [tab]
 		//selectedLang: 0
 	}
 
+	componentDidMount() {
+		setTimeout(function () {
+			document.querySelector(".video-wrapper").style.visibility = "visible";
+			document.querySelector(".video-delay").play();
+		}, 2000)
+	}
+
+
 	render() {
 		return (
 			<div>
 				<div className="video"></div>
-				<video
-					id="bcg-video"
-					autoPlay
-					loop
-					poster="./imgs/Nikolija-background.jpg"
-					muted
-				>
-					<source src="./vids/nikolija.mp4" type="video/mp4" />
-					<source src="./vids/nikolija.webm" type="video/webm" />
-					<source src="./vids/nikolija.ogv" type="video/ogg" />
-				</video>
+				<div className="video-wrapper">
+					<video
+						className="video-delay"
+						id="bcg-video"
+						// autoPlay
+						loop
+						poster="./imgs/Nikolija-background.jpg"
+						muted
+					>
+						<source src="./vids/nikolija.mp4" type="video/mp4" />
+						<source src="./vids/nikolija.webm" type="video/webm" />
+						<source src="./vids/nikolija.ogv" type="video/ogg" />
+					</video>
+				</div>
 			</div>
 		)
 	}
