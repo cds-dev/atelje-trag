@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Home extends Component {
   state = {
@@ -131,13 +132,13 @@ class Home extends Component {
         </div>
 
         <div className="left-hoverable">
-          <Link to="./people#aboutus">
+          <Link to='./people#aboutus'>
             <div className="fp_button sect sect_peop aboutusLink leftLinks">{peopleLinks[language][0]}</div>
           </Link>
-          <Link to="./people#clients">
+          <Link to='./people#clients'>
             <div className="fp_button sect sect_peop clientsLink leftLinks">{peopleLinks[language][1]}</div>
           </Link>
-          <Link to="./people#contact">
+          <Link to='./people#contact'>
             <div className="fp_button sect sect_peop contactLink leftLinks">{peopleLinks[language][2]}</div>
           </Link>
           <Link to="">{/*./people*/}
@@ -151,13 +152,13 @@ class Home extends Component {
           <div className="fp_button lang lang_sr" onClick={this.props.setSer}>
             SR
         </div>
-          <Link to="./machines#aboutstudio">
+          <Link to='./machines#aboutstudio'>
             <div className="fp_button sect sect_peop aboutstudioLink rightLinks">{machinesLinks[language][0]}</div>
           </Link>
-          <Link to="./machines#equipment">
+          <Link to='./machines#equipment'>
             <div className="fp_button sect sect_peop equipmentLink rightLinks">{machinesLinks[language][1]}</div>
           </Link>
-          <Link to="./people#contact">
+          <Link to='./people#contact'>
             <div className="fp_button sect sect_peop contacRighttLink rightLinks">{machinesLinks[language][2]}</div>
           </Link>
           <Link to="">{/*./machines*/}
