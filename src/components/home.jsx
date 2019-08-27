@@ -138,7 +138,7 @@ class Home extends Component {
           <Link to='./people#clients'>
             <div className="fp_button sect sect_peop clientsLink leftLinks">{peopleLinks[language][1]}</div>
           </Link>
-          <Link to='./people#contact'>
+          <Link to='./machines#contact'>
             <div className="fp_button sect sect_peop contactLink leftLinks">{peopleLinks[language][2]}</div>
           </Link>
           <Link to="">{/*./people*/}
@@ -158,7 +158,7 @@ class Home extends Component {
           <Link to='./machines#equipment'>
             <div className="fp_button sect sect_peop equipmentLink rightLinks">{machinesLinks[language][1]}</div>
           </Link>
-          <Link to='./people#contact'>
+          <Link to='./machines#contact'>
             <div className="fp_button sect sect_peop contacRighttLink rightLinks">{machinesLinks[language][2]}</div>
           </Link>
           <Link to="">{/*./machines*/}
