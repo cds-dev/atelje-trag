@@ -35,6 +35,11 @@
 
 }
 
+section .clients {
+      height: 1px;
+      /*display: none;*/
+ }
+
 _::-webkit-full-page-media, _:future, :root .safari_only {
 	display: flex;
 }
@@ -47,8 +52,9 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 
 @media only screen and (max-width: 440px) {
     .clients {
-    	grid-template-columns: 100px 100px;
-    	grid-template-rows: repeat(auto-fit, 100px);
+    	// grid-template-columns: 100px 100px;
+    	// grid-template-rows: repeat(auto-fit, 100px);
+        height: .1px;
     }
     .client-narrow {
 		grid-column: span 1;

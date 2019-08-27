@@ -36,6 +36,7 @@ class Clients extends Component {
 		//let lang = this.props.lang;
 		return (
 			<>
+				<span  id="clients" style={{height: '1px'}}></span>
 				<Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal} />
 				{this.state.clientList.map(cl => <div
 					className="modal"
