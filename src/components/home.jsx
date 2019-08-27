@@ -132,6 +132,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div className="home-main">
           <div className="left-hoverable">
             <Link to='./people#aboutus'>
@@ -150,6 +151,42 @@ class Home extends Component {
           <div className="right-hoverable">
             <div className="fp_button lang lang_en" onClick={this.props.setEng}>
               EN
+=======
+
+        <div className="left-hoverable">
+          <Link to='./people#aboutus'>
+            <div className="fp_button sect sect_peop aboutusLink leftLinks">{peopleLinks[language][0]}</div>
+          </Link>
+          <Link to='./people#clients'>
+            <div className="fp_button sect sect_peop clientsLink leftLinks">{peopleLinks[language][1]}</div>
+          </Link>
+          <Link to='./machines#contact'>
+            <div className="fp_button sect sect_peop contactLink leftLinks">{peopleLinks[language][2]}</div>
+          </Link>
+          <Link to="">{/*./people*/}
+            <div className="fp_button sect sect_peop peopleLink">{lang[language][0]}</div>
+          </Link>
+        </div>
+        <div className="right-hoverable">
+          <div className="fp_button lang lang_en" onClick={this.props.setEng}>
+            EN
+        </div>
+          <div className="fp_button lang lang_sr" onClick={this.props.setSer}>
+            SR
+        </div>
+          <Link to='./machines#aboutstudio'>
+            <div className="fp_button sect sect_peop aboutstudioLink rightLinks">{machinesLinks[language][0]}</div>
+          </Link>
+          <Link to='./machines#equipment'>
+            <div className="fp_button sect sect_peop equipmentLink rightLinks">{machinesLinks[language][1]}</div>
+          </Link>
+          <Link to='./machines#contact'>
+            <div className="fp_button sect sect_peop contacRighttLink rightLinks">{machinesLinks[language][2]}</div>
+          </Link>
+          <Link to="">{/*./machines*/}
+            <div className="fp_button sect sect_mach machineLink">{lang[language][1]}</div>
+          </Link>
+>>>>>>> a0c48349034c1f0905b832762fcb49c705896e5b
         </div>
             <div className="fp_button lang lang_sr" onClick={this.props.setSer}>
               SR
