@@ -34,9 +34,9 @@ class Clients extends Component {
 
 		//let lang = this.props.lang;
 		return (
-			<>
-				<span  id="clients" style={{height: '1px'}}></span>
-				<Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal} />
+			//<>
+				<section id="clients" style={{height: '1px', zIndex: 150}}><span>
+				<Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal} /></span>
 				{this.state.clientList.map(cl => <div
 					className="modal"
 					id={'mod'+cl.id}
@@ -45,8 +45,8 @@ class Clients extends Component {
 					onClick={this.closeModal}>
 					<img src={cl.src} alt={cl.alt} />
 					<div className="modalDesc">{cl.txt}</div>
-				</div>)}
-			</>
+				</div>)}</section>
+			//</>
 			)
 	}
 }

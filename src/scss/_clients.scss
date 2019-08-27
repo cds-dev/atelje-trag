@@ -1,12 +1,16 @@
 .clients {
-    z-index:5;
+    //z-index:5;
 	
 	.client-wide {
 		cursor: pointer;
 	}
 }
+
+.react-photo-gallery--gallery {
+    display: relative;
+}
 .react-photo-gallery--gallery div img {
-    z-index:10;
+    //z-index:10;
     padding: 4px;
 }
 
@@ -14,10 +18,10 @@
     cursor: default !important;
 }
 
-section .clients {
-      height: 1px;
-      /*display: none;*/
- }
+// section .clients {
+//       //height: 1px;
+//       /*display: none;*/
+//  }
 
 _::-webkit-full-page-media, _:future, :root .safari_only {
 	display: flex;
@@ -33,7 +37,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
     .clients {
     	// grid-template-columns: 100px 100px;
     	// grid-template-rows: repeat(auto-fit, 100px);
-        height: .1px;
+        //height: .1px;
     }
     img .client-narrow {
 		grid-column: span 1;
