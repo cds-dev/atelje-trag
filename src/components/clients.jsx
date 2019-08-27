@@ -19,8 +19,7 @@ class Clients extends Component {
 			this.state.clientList.forEach(client => {
 			if (client.id === e.target.id) {
 				document.getElementById('mod'+client.id).style.backgroundImage = "client.src";
-				document.getElementById('mod'+client.id).style.display = "grid";
-
+				document.getElementById('mod'+client.id).style.display = "inline-block";
 			}
 		})
 		}

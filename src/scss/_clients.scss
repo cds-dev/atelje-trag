@@ -1,38 +1,17 @@
 .clients {
     z-index:5;
-	/*display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-	grid-template-rows: repeat(auto-fill, 100px);
-    grid-auto-flow: dense;
-    grid-gap: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
-
-	img {
-		padding: 0;
-		object-fit: cover;
-	}
-	.client-narrow {
-		grid-column: span 1;
-		grid-row: span 1;
-		height: 100%;
-		width: 100%;
-	}
+	
 	.client-wide {
-		grid-column: span 2;
-		grid-row: span 2;
-		width: 100%;
-		height: 100%;
 		cursor: pointer;
-	}*/
+	}
 }
 .react-photo-gallery--gallery div img {
     z-index:10;
     padding: 4px;
 }
 
-.react-photo-gallery--gallery div {
-
+.react-photo-gallery--gallery div .client-narrow {
+    cursor: default !important;
 }
 
 section .clients {
@@ -56,13 +35,14 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
     	// grid-template-rows: repeat(auto-fit, 100px);
         height: .1px;
     }
-    .client-narrow {
+    img .client-narrow {
 		grid-column: span 1;
 		grid-row: span 1;
 		width: 100px;
 		min-height: 100px;
 		max-height: 100px;
 		width: 100%;
+
 	}
 	.client-wide {
 		grid-column: span 2;
@@ -74,4 +54,5 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		cursor: pointer;
 	}
 }
+
 	

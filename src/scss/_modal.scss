@@ -1,26 +1,22 @@
 .modal {
-    //border: 5px solid $main;
+    border: 5px solid $main;
+    margin-bottom: -3px;
     position: fixed;
-    max-height: 90vh;
+    // max-height: 90vh;
     min-width: 10px;
     min-height: 10px;
-    top: 0;
-    left: 0;
-    //transform: translate(0%, 6%);
-    bottom: 0;
-    right: 0;
-    /*background: #ebaa0870;*/
+    top: 50%;
+    left: 50%;
     z-index: 200;
     display: none;
-    //color: white;
-    align-items: center;
-    justify-items: center;
-    margin: auto;
-    clear: both;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
     
     img {
-        position: fixed;
+        // position: fixed;
         max-height: 90vh;
+        max-width: 90vw;
+        margin-bottom: -3px;
     }
 
     .modalDesc {
@@ -30,6 +26,10 @@
         position: absolute;
         bottom: 0;
         width: 100%;
+        text-align: center;
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+        padding: 10px;
     }
 }
 
