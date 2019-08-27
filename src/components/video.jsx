@@ -10,7 +10,7 @@ class Video extends Component { // rcc [tab]
 		setTimeout(function () {
 			document.querySelector(".video-wrapper").style.visibility = "visible";
 			document.querySelector(".video-delay").play();
-		}, 100)
+		}, 2000)
 	}
 
 

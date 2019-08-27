@@ -4,14 +4,15 @@ import { Link } from "react-router-dom";
 class Home extends Component {
   state = {
     lang: [["LJUDI", "MAŠINE"], ["PEOPLE", "MACHINES"]],
-    peopleLinks: [["O NAMA", "KLIJENTI", "KONTAKT"], ["ABOUT US", "CLIENTS", "CONTACT"]],
-    machinesLinks: [["STUDIO", "OPREMA", "KONTAKT"], ["STUDIO", "CLIENTS", "CONTACT"]]
+    peopleLinks: [["O nama", "Klijenti", "Kontakt"], ["About", "Clients", "Contact"]],
+    machinesLinks: [["Studio", "Oprema", "Kontakt"], ["Studio", "Equipment", "Contact"]]
     //selectedLang: 0
   };
 
   componentDidMount = () => {
     let poligonLeft = document.querySelector(".poligon-left"),
       poligonRight = document.querySelector(".poligon-right"),
+      miniLogoHolder = document.querySelector(".mini-logo-holder"),
       bigT = document.querySelector(".bigT"),
       fpButtons = document.querySelectorAll(".fp_button"),
       leftHoverable = document.querySelector(".left-hoverable"),
@@ -28,11 +29,15 @@ class Home extends Component {
         poligon.style.opacity = ".5";
         t.style.transition = "all .5s ease-in";
         t.style.opacity = ".5";
+        miniLogoHolder.style.transition = ".2s ease-in";
+        miniLogoHolder.style.opacity = "0";
 
         hoverable.addEventListener("mouseleave", function () {
           poligon.style.width = "0";
           poligon.style.opacity = "0";
           t.style.opacity = "0";
+          miniLogoHolder.style.transition = "1.3s ease-in";
+          miniLogoHolder.style.opacity = "1";
           // +++++++++++++++++
           peopleLink.style.opacity = ".6";
           leftLinks.forEach(it => it.style.transform = "scaleX(0)");
@@ -45,22 +50,22 @@ class Home extends Component {
     setTimeout(function () {
       poligonLeft.style.width = "46.5%";
       poligonLeft.style.opacity = ".5";
-      poligonLeft.style.clipPath = "polygon(0 0, 100% 0%, 63% 100%, 0% 100%)";
+      poligonLeft.style.clipPath = "polygon(0 0, 99% 0%, 63% 100%, 0% 100%)";
       poligonRight.style.width = "46.5%";
       poligonRight.style.opacity = ".5";
       poligonRight.style.clipPath = "polygon(0 0, 100% 0%, 100% 100%, 35% 100%)";
-    }, 2000)
+    }, 3000)
 
     setTimeout(function () {
       poligonLeft.style.background = "white";
       poligonRight.style.background = "white";
-      poligonLeft.style.paddingRight = "19px";
-      poligonRight.style.paddingLeft = "19px";
-    }, 2700)
+      poligonLeft.style.paddingRight = "25px";
+      poligonRight.style.paddingLeft = "20px";
+    }, 3700)
 
     setTimeout(function () {
       bigT.style.opacity = ".5";
-    }, 3000)
+    }, 4000)
 
     setTimeout(function () {
       poligonLeft.style.width = "0";
@@ -68,7 +73,8 @@ class Home extends Component {
       poligonRight.style.width = "0";
       poligonRight.style.opacity = "0";
       bigT.style.opacity = "0";
-    }, 5000)
+      miniLogoHolder.style.opacity = "1";
+    }, 6000)
 
     setTimeout(function () {
       fpButtons.forEach(function (it) {
@@ -76,12 +82,12 @@ class Home extends Component {
         it.style.opacity = ".6";
         it.style.cursor = "pointer";
       });
-    }, 5500)
+    }, 6500)
 
     setTimeout(function () {
       poligonChange(leftHoverable, poligonLeft, bigT);
       poligonChange(rightHoverable, poligonRight, bigT);
-    }, 5800)
+    }, 6800)
 
     function openLinks(targetLink, linksArr) {
       targetLink.addEventListener("click", function () {
@@ -96,15 +102,6 @@ class Home extends Component {
 
     openLinks(peopleLink, leftLinks);
     openLinks(machineLink, rightLinks);
-
-    // peopleLink.addEventListener("click", function () {
-    //   peopleLink.style.opacity = "1";
-    //   for (let i = 0; i < leftLinks.length; i++) {
-    //     setTimeout(function () {
-    //       leftLinks[i].style.transform = "scaleX(1)"
-    //     }, (i + 1) * 100);
-    //   }
-    // });
   }
 
   render() {
@@ -114,7 +111,25 @@ class Home extends Component {
 
     return (
       <div className="home-main">
-        <p className="bigT">T</p>
+        <div className="home-signes-wrapper">
+          <p className="bigT">T</p>
+          <div className="mini-logo-holder">
+            <span className="aHolder">A</span>
+            <span className="tHolder">T</span>
+          </div>
+          <div className="groundingHolder">
+            <div>
+              <hr />
+            </div>
+            <div>
+              <hr className="hrMid" />
+            </div>
+            <div>
+              <hr />
+            </div>
+          </div>
+        </div>
+
         <div className="left-hoverable">
           <Link to="./people#aboutus">
             <div className="fp_button sect sect_peop aboutusLink leftLinks">{peopleLinks[language][0]}</div>
