@@ -70,15 +70,17 @@
 }
 
 .home-signes-wrapper {
-	position: block;
-	width: 300px;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
 	// left: 50%;
 	// transform: translateX(-50%);
 	margin: 0 auto;
-	z-index: 999;
+	z-index: 8;
 }
 
 .bigT {
+	display: inline-block;
 	position: absolute;
 	font-size: 340px;
     font-weight: 300;
@@ -87,20 +89,37 @@
 	opacity: 0;
 	top: 302px;
 	transition: all .7s ease-in;
-	left: 50%;
-	transform: translate(-50%);
+	left: 50.1%;
+	transform: translate(-50.1%);
 }
 
 .mini-logo-holder {
 	width: 100px;
+	max-height: 50px;
 	position: absolute;
 	color: red;
 	font-family: 'Source Sans Pro', sans-serif !important;
 	font-weight: 300;
-	left: 50.67%;
-	bottom: 24px;
+	left: 50%;
+	bottom: 140px;
+	opacity: 1;
+	transform: translate(-50%);
+	transition: all 1.3s ease-in;
+}
+
+@-moz-document url-prefix() {
+	.mini-logo-holder {
+		// left: 50.65%;
+		// bottom: 66px;
+		opacity: 0;
+	}
+}
+
+.logoLetters {
+	text-align: center;
+	margin: 0 auto;
+	max-height: 79px;
 	opacity: 0;
-	transform: translate(-50.5%);
 	transition: all 1.3s ease-in;
 }
 
@@ -111,22 +130,24 @@
 .tHolder {
 	font-size: 37px;	
 	position: relative;
-	left: -31px;
-	bottom: -4px;
+	// left: -31px;
+	bottom: 55px;
 }
 
 .groundingHolder {
 	width: 50px;
-	position: absolute;
-	left: 49.9%;
-	top: 640px;
-	transform: translate(-49.9%);
+	margin: 0 auto;
+	// position: absolute;
+	// left: 50%;
+	// top: 640px;
+	// transform: translate(-50%);
 }
 
 .groundingHolder hr {
 	background: red;
 	border: 1px solid red;
 	margin: 5px 0;
+	opacity: 1;
 }
 
 .groundingHolder div:nth-child(2) {

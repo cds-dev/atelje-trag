@@ -13,7 +13,7 @@ class Home extends Component {
   componentDidMount = () => {
     let poligonLeft = document.querySelector(".poligon-left"),
       poligonRight = document.querySelector(".poligon-right"),
-      miniLogoHolder = document.querySelector(".mini-logo-holder"),
+      miniLogoHolder = document.querySelector(".logoLetters"),
       bigT = document.querySelector(".bigT"),
       fpButtons = document.querySelectorAll(".fp_button"),
       leftHoverable = document.querySelector(".left-hoverable"),
@@ -31,7 +31,7 @@ class Home extends Component {
         t.style.transition = "all .5s ease-in";
         t.style.opacity = ".5";
         miniLogoHolder.style.transition = ".2s ease-in";
-        miniLogoHolder.style.opacity = "0";
+        // miniLogoHolder.style.opacity = "0";
 
         hoverable.addEventListener("mouseleave", function () {
           poligon.style.width = "0";
@@ -111,65 +111,68 @@ class Home extends Component {
     const language = this.props.selected;
 
     return (
-      <div className="home-main">
+      <div>
         <div className="home-signes-wrapper">
           <p className="bigT">T</p>
           <div className="mini-logo-holder">
-            <span className="aHolder">A</span>
-            <span className="tHolder">T</span>
+            <div className="logoLetters">
+              <span className="aHolder">A</span><br />
+              <span className="tHolder">T</span>
+            </div>
+            <div className="groundingHolder">
+              <div>
+                <hr />
+              </div>
+              <div>
+                <hr className="hrMid" />
+              </div>
+              <div>
+                <hr />
+              </div>
+            </div>
           </div>
-          <div className="groundingHolder">
-            <div>
-              <hr />
-            </div>
-            <div>
-              <hr className="hrMid" />
-            </div>
-            <div>
-              <hr />
-            </div>
+        </div>
+        <div className="home-main">
+          <div className="left-hoverable">
+            <Link to='./people#aboutus'>
+              <div className="fp_button sect sect_peop aboutusLink leftLinks">{peopleLinks[language][0]}</div>
+            </Link>
+            <Link to='./people#clients'>
+              <div className="fp_button sect sect_peop clientsLink leftLinks">{peopleLinks[language][1]}</div>
+            </Link>
+            <Link to='./people#contact'>
+              <div className="fp_button sect sect_peop contactLink leftLinks">{peopleLinks[language][2]}</div>
+            </Link>
+            <Link to="">{/*./people*/}
+              <div className="fp_button sect sect_peop peopleLink">{lang[language][0]}</div>
+            </Link>
           </div>
+          <div className="right-hoverable">
+            <div className="fp_button lang lang_en" onClick={this.props.setEng}>
+              EN
         </div>
-
-        <div className="left-hoverable">
-          <Link to='./people#aboutus'>
-            <div className="fp_button sect sect_peop aboutusLink leftLinks">{peopleLinks[language][0]}</div>
-          </Link>
-          <Link to='./people#clients'>
-            <div className="fp_button sect sect_peop clientsLink leftLinks">{peopleLinks[language][1]}</div>
-          </Link>
-          <Link to='./people#contact'>
-            <div className="fp_button sect sect_peop contactLink leftLinks">{peopleLinks[language][2]}</div>
-          </Link>
-          <Link to="">{/*./people*/}
-            <div className="fp_button sect sect_peop peopleLink">{lang[language][0]}</div>
-          </Link>
+            <div className="fp_button lang lang_sr" onClick={this.props.setSer}>
+              SR
         </div>
-        <div className="right-hoverable">
-          <div className="fp_button lang lang_en" onClick={this.props.setEng}>
-            EN
-        </div>
-          <div className="fp_button lang lang_sr" onClick={this.props.setSer}>
-            SR
-        </div>
-          <Link to='./machines#aboutstudio'>
-            <div className="fp_button sect sect_peop aboutstudioLink rightLinks">{machinesLinks[language][0]}</div>
-          </Link>
-          <Link to='./machines#equipment'>
-            <div className="fp_button sect sect_peop equipmentLink rightLinks">{machinesLinks[language][1]}</div>
-          </Link>
-          <Link to='./people#contact'>
-            <div className="fp_button sect sect_peop contacRighttLink rightLinks">{machinesLinks[language][2]}</div>
-          </Link>
-          <Link to="">{/*./machines*/}
-            <div className="fp_button sect sect_mach machineLink">{lang[language][1]}</div>
-          </Link>
-        </div>
-        <div className="poligonL poligon-left">
-          <div className="inner-div-left"></div>
-        </div>
-        <div className="poligonR poligon-right">
-          <div className="inner-div-right"></div>
+            <Link to='./machines#aboutstudio'>
+              <div className="fp_button sect sect_peop aboutstudioLink rightLinks">{machinesLinks[language][0]}</div>
+            </Link>
+            <Link to='./machines#equipment'>
+              <div className="fp_button sect sect_peop equipmentLink rightLinks">{machinesLinks[language][1]}</div>
+            </Link>
+            <Link to='./people#contact'>
+              <div className="fp_button sect sect_peop contacRighttLink rightLinks">{machinesLinks[language][2]}</div>
+            </Link>
+            <Link to="">{/*./machines*/}
+              <div className="fp_button sect sect_mach machineLink">{lang[language][1]}</div>
+            </Link>
+          </div>
+          <div className="poligonL poligon-left">
+            <div className="inner-div-left"></div>
+          </div>
+          <div className="poligonR poligon-right">
+            <div className="inner-div-right"></div>
+          </div>
         </div>
       </div>
     );
