@@ -15,7 +15,7 @@ export const clients = [
   height: 1810,
   alt : "a",
   className : "client-wide",
-  txt : "mačka 002"
+  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
  },
  {
   id : "id003",
@@ -33,7 +33,7 @@ export const clients = [
   height: 1000,
   alt : "a",
   className : "client-wide",
-  txt : "curica 004"
+  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
  },
  {
   id : "id005",
@@ -51,7 +51,7 @@ export const clients = [
   height: 1011,
   alt : "a",
   className : "client-wide",
-  txt : "buda 006"
+  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
  },
  {
   id : "id007",
@@ -69,7 +69,7 @@ export const clients = [
   height: 1,
   alt : "a",
   className : "client-wide",
-  txt : "a"
+  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
  },
  {
   id : "id009",
@@ -78,7 +78,7 @@ export const clients = [
   height: 1365,
   alt : "a",
   className : "client-wide",
-  txt : "curica 009"
+  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
  },
  {
   id : "id010",
@@ -96,7 +96,7 @@ export const clients = [
   height: 1280,
   alt : "a",
   className : "client-wide",
-  txt : "a"
+  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
  },
  {
   id : "id012",
@@ -114,7 +114,7 @@ export const clients = [
   height: 788,
   alt : "a",
   className : "client-wide",
-  txt : "a"
+  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
  },
 ]
 
