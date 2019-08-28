@@ -8,10 +8,12 @@ class Clients extends Component {
 		clientList: []
 	}
 
-	componentDidMount() {
+	componentDidMount = () => {
 		this.setState({
 			clientList: getClients()
 		});
+		
+
 	}
 
 	openModal = (e) => {
@@ -30,6 +32,31 @@ class Clients extends Component {
 		document.querySelectorAll(".modal").forEach(modal => modal.style.display = "none");
 	}
 
+	componentDidUpdate = () => {
+		//const kliks = document.querySelector('.clent-wide');
+		const clickables = document.querySelectorAll('img');
+		//while(kliks.length === 0) console.log("nothere yet")
+		console.log(clickables)
+		// const all = [...clickables]
+		// const just = all[0].parentElement.firstElementChild.ownerDocument.images
+		// console.log([...all[0].parentElement.firstElementChild.ownerDocument.images])
+		// for(let i = 0; i < all.length; i++) {
+		// 	console.log([...clickables][3].parentElement.firstElementChild.ownerDocument.images[i].classList[0]);
+		// 	if([...clickables][3].parentElement.firstElementChild.ownerDocument.images[i].className === 'client-wide') {
+		// 		console.log(i)
+		// 	}
+			
+		// }
+		// [...clickables].forEach(x => {
+
+		// })
+		// console.log([...clickables][3].parentElement.firstElementChild.ownerDocument.images[3]);
+		// //clickables.forEach(x => console.log('test'));
+		// //console.log([clickables])
+		// console.log("dsc")
+		
+	}
+
 	render() {
 
 		//let lang = this.props.lang;
@@ -44,7 +71,7 @@ class Clients extends Component {
 					//style={{background:`url(`+cl.src+`)`}}
 					onClick={this.closeModal}>
 					<img src={cl.src} alt={cl.alt} />
-					<div className="modalDesc">{cl.txt}</div>
+					<div className="modalDesc" dangerouslySetInnerHTML={{__html: cl.txt}} />
 				</div>)}</section>
 			//</>
 			)

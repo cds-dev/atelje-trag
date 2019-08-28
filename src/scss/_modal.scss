@@ -51,6 +51,24 @@
     }
 }
 
-.modalX {
-    
+.modalNaslov {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 15px;
+
+    &:before {
+        content: '[';
+        color: #f007;
+    }
+
+    &:after {
+        content: ']';
+        color: #f007;
+    }
+}
+
+.modalDiv {
+    padding: 15px;
+    text-align:justify;
+    font-size: 20px;
 }

@@ -15,7 +15,7 @@ export const clients = [
   height: 1810,
   alt : "a",
   className : "client-wide",
-  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
+  txt : "<h2 class='modalNaslov'>saksofonista</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
  },
  {
   id : "id003",
@@ -33,7 +33,7 @@ export const clients = [
   height: 1000,
   alt : "a",
   className : "client-wide",
-  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
+  txt : "<h2 class='modalNaslov'>crno bela</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
  },
  {
   id : "id005",
@@ -51,7 +51,7 @@ export const clients = [
   height: 1011,
   alt : "a",
   className : "client-wide",
-  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
+  txt : "<h2 class='modalNaslov'>tori amos</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
  },
  {
   id : "id007",
@@ -65,11 +65,11 @@ export const clients = [
  {
   id : "id008",
   src : "./imgs/clients/client-placeholder-08.jpg",
-  width : 1,
-  height: 1,
+  width : 1600,
+  height: 900,
   alt : "a",
   className : "client-wide",
-  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
+  txt : "<h2 class='modalNaslov'>blondi</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
  },
  {
   id : "id009",
@@ -78,7 +78,7 @@ export const clients = [
   height: 1365,
   alt : "a",
   className : "client-wide",
-  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
+  txt : "<h2 class='modalNaslov'>čarli menson</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
  },
  {
   id : "id010",
@@ -96,7 +96,7 @@ export const clients = [
   height: 1280,
   alt : "a",
   className : "client-wide",
-  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
+  txt : "<h2 class='modalNaslov'>štrafta</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
  },
  {
   id : "id012",
@@ -110,11 +110,11 @@ export const clients = [
  {
   id : "id013",
   src : "./imgs/clients/client-placeholder-13.jpg",
-  width : 1200,
-  height: 788,
+  width : 1600,
+  height: 1066,
   alt : "a",
   className : "client-wide",
-  txt : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est dicta, ullam iste minima debitis ad possimus quis veritatis harum quos itaque quidem optio nostrum reiciendis. Dolorem dolorum maiores commodi."
+  txt : "<h2 class='modalNaslov'>mislilac</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
  },
 ]
 
