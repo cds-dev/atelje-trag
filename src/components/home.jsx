@@ -13,7 +13,7 @@ class Home extends Component {
   componentDidMount = () => {
     let poligonLeft = document.querySelector(".poligon-left"),
       poligonRight = document.querySelector(".poligon-right"),
-      miniLogoHolder = document.querySelector(".logoLetters"),
+      logoLetters = document.querySelector(".logoLetters"),
       bigT = document.querySelector(".bigT"),
       fpButtons = document.querySelectorAll(".fp_button"),
       leftHoverable = document.querySelector(".left-hoverable"),
@@ -30,15 +30,15 @@ class Home extends Component {
         poligon.style.opacity = ".5";
         t.style.transition = "all .5s ease-in";
         t.style.opacity = ".5";
-        miniLogoHolder.style.transition = ".2s ease-in";
-        // miniLogoHolder.style.opacity = "0";
+        logoLetters.style.transition = ".2s ease-in";
+        logoLetters.style.opacity = "0";
 
         hoverable.addEventListener("mouseleave", function () {
           poligon.style.width = "0";
           poligon.style.opacity = "0";
           t.style.opacity = "0";
-          miniLogoHolder.style.transition = "1.3s ease-in";
-          miniLogoHolder.style.opacity = "1";
+          logoLetters.style.transition = "1.3s ease-in";
+          logoLetters.style.opacity = "1";
           // +++++++++++++++++
           peopleLink.style.opacity = ".6";
           leftLinks.forEach(it => it.style.transform = "scaleX(0)");
@@ -74,7 +74,7 @@ class Home extends Component {
       poligonRight.style.width = "0";
       poligonRight.style.opacity = "0";
       bigT.style.opacity = "0";
-      miniLogoHolder.style.opacity = "1";
+      logoLetters.style.opacity = "1";
     }, 6000)
 
     setTimeout(function () {
@@ -132,8 +132,6 @@ class Home extends Component {
             </div>
           </div>
         </div>
-
-
         <div className="left-hoverable">
           <Link to='./people#aboutus'>
             <div className="fp_button sect sect_peop aboutusLink leftLinks">{peopleLinks[language][0]}</div>
@@ -167,15 +165,15 @@ class Home extends Component {
           <Link to="">{/*./machines*/}
             <div className="fp_button sect sect_mach machineLink">{lang[language][1]}</div>
           </Link>
-          </div>
-          <div className="poligonL poligon-left">
-            <div className="inner-div-left"></div>
-          </div>
-          <div className="poligonR poligon-right">
-            <div className="inner-div-right"></div>
-          </div>
         </div>
-      
+        <div className="poligonL poligon-left">
+          <div className="inner-div-left"></div>
+        </div>
+        <div className="poligonR poligon-right">
+          <div className="inner-div-right"></div>
+        </div>
+      </div>
+
     );
   }
 }
