@@ -9,13 +9,14 @@ class People extends Component {
 
 	render() {
 		const selected = this.props.selected;
-		return ( 
+		return (
 			<main className="onTop">
-				<NavBar lang={selected} setEng={this.props.setEng} setSer={this.props.setSer} />
+				{/* <NavBar lang={selected} setEng={this.props.setEng} setSer={this.props.setSer} /> */}
 				<AboutPeople lang={selected} />
 				<Clients lang={selected} />
 				<Footer lang={selected} />
-			</main> )
+			</main>
+		)
 	}
 }
 export default People;
