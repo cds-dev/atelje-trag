@@ -23,19 +23,54 @@ class Clients extends Component {
 			}
 		})
 		}
-		
 	}
 
 	closeModal = () => {
 		document.querySelectorAll(".modal").forEach(modal => modal.style.display = "none");
 	}
 
-	componentDidUpdate = () => {
-		const clickables = document.querySelector(".react-photo-gallery--gallery");
-		console.log(clickables)
-	}
+	// componentDidUpdate = () => {
+
+	// 	const imgs = document.querySelectorAll('.client-wide');
+
+	// 	const gallery = [...imgs]
+	// 	gallery.shift()
+	// 	gallery.shift()
+		
+	// 	for(let i = 0; i < gallery.length; i++) {
+	// 		if(this.state.clientList[i].className === 'client-wide') {
+	// 			gallery[i].className = 'client-wide'
+	// 		}
+	// 		else if (this.state.clientList[i].className === 'client-narrow') {
+	// 			gallery[i].className = 'client-narrow'
+
+	// 		}
+	//  	}
+    // }
 
 	render() {
+		setTimeout(() => {
+			//span koji drzi glavni galerijski div.react-photo-gallery--gallery
+			const spanWrapper = document.querySelector('#clients span')
+			//div.react-photo-gallery--gallery
+			let gall  = spanWrapper.childNodes[0]
+			//div u kome su img-i
+			let gallWrapper  = gall.childNodes[0]
+			//klikabilni img-i
+			const clickable = document.querySelectorAll('.client-wide')
+			
+            clickable.forEach(it => {
+				let spanImgWrapper = document.createElement("span")
+				//klasa za span
+				spanImgWrapper.setAttribute("className", "imgSpan")
+				//dodajem sliku u span
+				spanImgWrapper.appendChild(it)
+				//dodajem span u div koji drzi slike
+				gallWrapper.appendChild(spanImgWrapper)
+
+				console.log(gallWrapper )
+			})
+		}, 1000)
 		
 		//let lang = this.props.lang;
 		return (
