@@ -30,36 +30,40 @@ class Clients extends Component {
 		document.querySelectorAll(".modal").forEach(modal => modal.style.display = "none");
 	}
 
-	componentDidUpdate = () => {
-		const imgs = document.querySelectorAll('img');
 
-		const gallery = [...imgs]
-		gallery.shift()
-		gallery.shift()
-
-		for(let i = 0; i < gallery.length; i++) {
-			if(this.state.clientList[i].className === 'client-wide') {
-				gallery[i].className = 'client-wide'
-			}
-			else if (this.state.clientList[i].className === 'client-narrow') {
-				gallery[i].className = 'client-narrow'
-			}
-	 	}
-	 	const clickables = document.querySelectorAll('.client-wide')
-
-		console.log(clickables)
-
-
-		
-	}
 
 	render() {
 
 		//let lang = this.props.lang;
+		setTimeout(() => {
+			//span koji drzi glavni galerijski div.react-photo-gallery--gallery
+			const spanWrapper = document.querySelector('#clients span')
+			//div.react-photo-gallery--gallery
+			let gall = spanWrapper.childNodes[0]
+			//div u kome su img-i
+			let gallWrapper = gall.childNodes[0]
+			//klikabilni img-i
+			const clickable = document.querySelectorAll('.client-wide')
+			
+            clickable.forEach(it => {
+				let spanImgWrapper = document.createElement("span");
+				//klasa za span
+				spanImgWrapper.setAttribute("className", "imgSpan")
+				//dodajem sliku u span
+				spanImgWrapper.appendChild(it)
+				//dodajem span u div koji drzi slike
+				gallWrapper.appendChild(spanImgWrapper)
+
+				console.log(gallWrapper)
+			})
+		}, 1000)
+
+		console.log("test")
 		return (
 			//<>
 				<section id="clients" ><span>
 				<Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal} /></span>
+				
 				{this.state.clientList.map(cl => <div
 					className="modal"
 					id={'mod'+cl.id}
@@ -71,6 +75,8 @@ class Clients extends Component {
 				</div>)}</section>
 			//</>
 			)
+		
 	}
+
 }
 export default Clients;

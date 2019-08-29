@@ -4,7 +4,7 @@ export const clients = [
   src : "./imgs/clients/client-placeholder-01.jpg",
   width : 1024,
   height: 717,
-  alt : "a",
+  alt : "tank girl",
   className : "client-narrow",
   txt : "bla"
  },
@@ -13,7 +13,8 @@ export const clients = [
   src : "./imgs/clients/client-placeholder-02.jpg",
   width : 1200,
   height: 1810,
-  alt : "a",
+  alt : "sax",
+  caption : "ssax",
   className : "client-wide",
   txt : "<h2 class='modalNaslov'>saksofonista</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
  },

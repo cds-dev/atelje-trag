@@ -1,9 +1,16 @@
-.clients {
+//.clients {
 	
 	.client-wide {
 		cursor: pointer;
+        border: 1px solid #f00;
+
+        &:after {
+             content: '>';
+             border: 1px solid #f007;
+             position: absolute;
+        }
 	}
-}
+//}
 
 .react-photo-gallery--gallery {
     display: relative;
