@@ -31,26 +31,52 @@ class Clients extends Component {
 
 	render() {
 		setTimeout(() => {
-			//span koji drzi glavni galerijski div.react-photo-gallery--gallery
 			const spanWrapper = document.querySelector('#clients span')
-			//div.react-photo-gallery--gallery
 			let gall  = spanWrapper.childNodes[0]
-			//div u kome su img-i
 			let gallWrapper  = gall.childNodes[0]
-			//klikabilni img-i
 			const clickable = document.querySelectorAll('.client-wide')
 			
             clickable.forEach(it => {
-				let spanImgWrapper = document.createElement("span")
+				let spanImgWrapper = document.createElement("div")
 				//klasa za span
 				spanImgWrapper.setAttribute("className", "imgSpan")
 				//dodajem sliku u span
 				spanImgWrapper.appendChild(it)
 				//dodajem span u div koji drzi slike
 				gallWrapper.appendChild(spanImgWrapper)
+				
+				console.log(it )
+				spanImgWrapper.style.content = "'test'";
+				spanImgWrapper.style.width = `${it.clientWidth+1}px`;
+				spanImgWrapper.style.height = `${it.clientHeight+1}px`;
+				spanImgWrapper.style.left = `${it.x}px`;
+				spanImgWrapper.style.top = `${it.y}px`;
+				spanImgWrapper.style.display = "inline-block";
+				spanImgWrapper.style.position = "absolute";
+				//spanImgWrapper.style.border = "2px solid yellow"
 
-				console.log(gallWrapper )
+				const blackBox = document.createElement('div')
+				blackBox.setAttribute("className", "black-box");
+
+				console.log(it.id.substring(3,5) - 1)
+
+				blackBox.innerHTML = this.state.clientList[it.id.substring(3,5) - 1].alt;
+				spanImgWrapper.appendChild(blackBox);
+
+
+				blackBox.style.background = "#0007";
+				blackBox.style.position = "absolute";
+				blackBox.style.bottom = "0";
+				blackBox.style.zIndex = "300"
+				blackBox.style.padding = "10px"
+				blackBox.style.width = "calc(100% - 9px)"
+				blackBox.style.textAlign = "left"
+				blackBox.style.textTransform = "uppercase"
+				blackBox.style.left = "4px";
+				blackBox.style.bottom = "5px";
+
 			})
+
 		}, 1000)
 		
 		//let lang = this.props.lang;

@@ -1,16 +1,22 @@
-//.clients {
-	
-	.client-wide {
-		cursor: pointer;
-        border: 1px solid #f00;
+.client-wide {
+	cursor: pointer;
+    //border: 1px solid #f00;
 
-        &:after {
-             content: '>';
-             border: 1px solid #f007;
-             position: absolute;
-        }
-	}
-//}
+    &:after {
+        content: '>';
+        border: 1px solid #f007;
+        position: absolute;
+    }
+}
+
+.imgSpan {
+    border: 2px solid yellow;
+    width: 33%;
+    display: inline-block;
+    //height: 25px;
+    position: static;
+
+}
 
 .react-photo-gallery--gallery {
     display: relative;
