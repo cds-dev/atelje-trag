@@ -47,14 +47,28 @@ class Clients extends Component {
 				
 				console.log(it )
 				spanImgWrapper.style.content = "'test'";
-				spanImgWrapper.style.width = `${it.clientWidth+1}px`;
-				spanImgWrapper.style.height = `${it.clientHeight+1}px`;
-				spanImgWrapper.style.left = `${it.x}px`;
-				spanImgWrapper.style.top = `${it.y}px`;
+
+				function pocetniBlacBox() {
+					spanImgWrapper.style.width = `${it.clientWidth+1}px`;
+				    spanImgWrapper.style.height = `${it.clientHeight+1}px`;
+				    spanImgWrapper.style.left = `${it.x}px`;
+				    spanImgWrapper.style.top = `${it.y}px`;
+				} 
+
+				pocetniBlacBox()
+				
+				window.addEventListener("resize", function() {
+					pocetniBlacBox()
+				});
+				
 				spanImgWrapper.style.display = "inline-block";
 				spanImgWrapper.style.position = "absolute";
+<<<<<<< HEAD
 
 				//spanImgWrapper.style.border = "2px solid yellow"
+=======
+				// spanImgWrapper.style.border = "2px solid yellow"
+>>>>>>> 67157c9c548c00f1466ce4488e4d61c6629c14bc
 
 				const blackBox = document.createElement('div')
 				blackBox.setAttribute("className", "black-box");
@@ -67,20 +81,20 @@ class Clients extends Component {
 
 				blackBox.style.background = "#0007";
 				blackBox.style.position = "absolute";
-				blackBox.style.bottom = "0";
+				// blackBox.style.bottom = "0";
 				blackBox.style.zIndex = "300"
 				blackBox.style.padding = "10px"
-				blackBox.style.width = "calc(100% - 9px)"
+				blackBox.style.width = "86%"
 				blackBox.style.textAlign = "left"
 				blackBox.style.textTransform = "uppercase"
-				blackBox.style.left = "4px";
-				blackBox.style.bottom = "5px";
+				blackBox.style.left = "7%";
+				// blackBox.style.tarnsform = "translate(-50%)";
+				blackBox.style.bottom = "18px";
 
 			})
 
 		}, 1000)
 		
-		//let lang = this.props.lang;
 		setTimeout(() => {
 			//span koji drzi glavni galerijski div.react-photo-gallery--gallery
 			const spanWrapper = document.querySelector('#clients span')
@@ -99,6 +113,14 @@ class Clients extends Component {
 				spanImgWrapper.appendChild(it)
 				//dodajem span u div koji drzi slike
 				gallWrapper.appendChild(spanImgWrapper)
+
+				// spanImgWrapper.style.content = "'test'";
+				// spanImgWrapper.style.width = `${it.clientWidth+1}px`;
+				// spanImgWrapper.style.height = `${it.clientHeight+1}px`;
+				// spanImgWrapper.style.left = `${it.x}px`;
+				// spanImgWrapper.style.top = `${it.y}px`;
+				// spanImgWrapper.style.display = "inline-block";
+				// spanImgWrapper.style.position = "absolute";
 
 				console.log(gallWrapper)
 			})
