@@ -51,12 +51,12 @@ class Clients extends Component {
 				function pocetniBlacBox() {
 					spanImgWrapper.style.width = `${it.clientWidth+1}px`;
 				    spanImgWrapper.style.height = `${it.clientHeight+1}px`;
-				    spanImgWrapper.style.left = `${it.x}px`;
-				    spanImgWrapper.style.top = `${it.y}px`;
+				    spanImgWrapper.style.left = `${it.offsetLeft}px`;
+				    spanImgWrapper.style.top = `${it.offsetTop}px`;
 				} 
 
 				pocetniBlacBox()
-				
+
 				window.addEventListener("resize", function() {
 					pocetniBlacBox()
 				});
@@ -108,14 +108,6 @@ class Clients extends Component {
 				spanImgWrapper.appendChild(it)
 				//dodajem span u div koji drzi slike
 				gallWrapper.appendChild(spanImgWrapper)
-
-				// spanImgWrapper.style.content = "'test'";
-				// spanImgWrapper.style.width = `${it.clientWidth+1}px`;
-				// spanImgWrapper.style.height = `${it.clientHeight+1}px`;
-				// spanImgWrapper.style.left = `${it.x}px`;
-				// spanImgWrapper.style.top = `${it.y}px`;
-				// spanImgWrapper.style.display = "inline-block";
-				// spanImgWrapper.style.position = "absolute";
 
 				console.log(gallWrapper)
 			})
