@@ -12,8 +12,6 @@ class Clients extends Component {
 		this.setState({
 			clientList: getClients()
 		});
-		
-
 	}
 
 	openModal = (e) => {
@@ -33,27 +31,25 @@ class Clients extends Component {
 	}
 
 	componentDidUpdate = () => {
-		//const kliks = document.querySelector('.clent-wide');
-		const clickables = document.querySelectorAll('img');
-		//while(kliks.length === 0) console.log("nothere yet")
-		console.log(clickables)
-		// const all = [...clickables]
-		// const just = all[0].parentElement.firstElementChild.ownerDocument.images
-		// console.log([...all[0].parentElement.firstElementChild.ownerDocument.images])
-		// for(let i = 0; i < all.length; i++) {
-		// 	console.log([...clickables][3].parentElement.firstElementChild.ownerDocument.images[i].classList[0]);
-		// 	if([...clickables][3].parentElement.firstElementChild.ownerDocument.images[i].className === 'client-wide') {
-		// 		console.log(i)
-		// 	}
-			
-		// }
-		// [...clickables].forEach(x => {
+		const imgs = document.querySelectorAll('img');
 
-		// })
-		// console.log([...clickables][3].parentElement.firstElementChild.ownerDocument.images[3]);
-		// //clickables.forEach(x => console.log('test'));
-		// //console.log([clickables])
-		// console.log("dsc")
+		const gallery = [...imgs]
+		gallery.shift()
+		gallery.shift()
+
+		for(let i = 0; i < gallery.length; i++) {
+			if(this.state.clientList[i].className === 'client-wide') {
+				gallery[i].className = 'client-wide'
+			}
+			else if (this.state.clientList[i].className === 'client-narrow') {
+				gallery[i].className = 'client-narrow'
+			}
+	 	}
+	 	const clickables = document.querySelectorAll('.client-wide')
+
+		console.log(clickables)
+
+
 		
 	}
 
