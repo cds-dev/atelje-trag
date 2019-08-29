@@ -101,10 +101,10 @@ class AboutPeople extends Component {
 					</div>
 				</div>
 				<div className="shapesHolder">
-					<div className="leftImg"><img src={img[0]} alt="title[0][0]" /><div className="lefInner"></div></div>
-					<div className="rightImg"><img src={img[1]} alt="title[1][0]" /><div className="rightInner"></div></div>
+					<div className="leftImg"><img src={img[0]} alt="title[0][0]" className="proba" /><div className="lefInner"></div></div>
+					<div className="rightImg"><img src={img[1]} alt="title[1][0]" className="proba"/><div className="rightInner"></div></div>
 					<div className="txtAboutUsHolder">
-						<div className="wide titleAboutUs"><h2>{title[lang]}</h2></div>
+						<div className="titleAboutUs"><h2>{title[lang]}</h2></div>
 						<p className="">{text[lang][0]}</p>
 					</div>
 				</div>

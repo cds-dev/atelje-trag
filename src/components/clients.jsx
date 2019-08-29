@@ -5,7 +5,7 @@ import Gallery from "react-photo-gallery";
 
 class Clients extends Component {
 	state = {
-		clientList: []
+		clientList: [],
 	}
 
 	componentDidMount = () => {
@@ -23,17 +23,36 @@ class Clients extends Component {
 			}
 		})
 		}
-		
 	}
 
 	closeModal = () => {
 		document.querySelectorAll(".modal").forEach(modal => modal.style.display = "none");
 	}
 
-
-
 	render() {
+		setTimeout(() => {
+			//span koji drzi glavni galerijski div.react-photo-gallery--gallery
+			const spanWrapper = document.querySelector('#clients span')
+			//div.react-photo-gallery--gallery
+			let gall  = spanWrapper.childNodes[0]
+			//div u kome su img-i
+			let gallWrapper  = gall.childNodes[0]
+			//klikabilni img-i
+			const clickable = document.querySelectorAll('.client-wide')
+			
+            clickable.forEach(it => {
+				let spanImgWrapper = document.createElement("span")
+				//klasa za span
+				spanImgWrapper.setAttribute("className", "imgSpan")
+				//dodajem sliku u span
+				spanImgWrapper.appendChild(it)
+				//dodajem span u div koji drzi slike
+				gallWrapper.appendChild(spanImgWrapper)
 
+				console.log(gallWrapper )
+			})
+		}, 1000)
+		
 		//let lang = this.props.lang;
 		setTimeout(() => {
 			//span koji drzi glavni galerijski div.react-photo-gallery--gallery
@@ -60,20 +79,20 @@ class Clients extends Component {
 
 		console.log("test")
 		return (
-			//<>
-				<section id="clients" ><span>
-				<Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal} /></span>
-				
+
+				<section id="clients" >
+				<span><Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal} /></span>
 				{this.state.clientList.map(cl => <div
 					className="modal"
 					id={'mod'+cl.id}
 					key={cl.id}
 					//style={{background:`url(`+cl.src+`)`}}
 					onClick={this.closeModal}>
-					<img src={cl.src} alt={cl.alt} />
+					<img src={cl.src} alt={cl.alt} className="modalSam"/>
 					<div className="modalDesc" dangerouslySetInnerHTML={{__html: cl.txt}} />
-				</div>)}</section>
-			//</>
+				</div>)}
+				</section>
+
 			)
 		
 	}
