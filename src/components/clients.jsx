@@ -63,7 +63,12 @@ class Clients extends Component {
 				
 				spanImgWrapper.style.display = "inline-block";
 				spanImgWrapper.style.position = "absolute";
+<<<<<<< HEAD
+
+				//spanImgWrapper.style.border = "2px solid yellow"
+=======
 				// spanImgWrapper.style.border = "2px solid yellow"
+>>>>>>> 67157c9c548c00f1466ce4488e4d61c6629c14bc
 
 				const blackBox = document.createElement('div')
 				blackBox.setAttribute("className", "black-box");
@@ -117,7 +122,7 @@ class Clients extends Component {
 		return (
 
 				<section id="clients" >
-				<span><Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal} /></span>
+				<span><Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal}  /></span>
 				{this.state.clientList.map(cl => <div
 					className="modal"
 					id={'mod'+cl.id}
