@@ -48,27 +48,21 @@ class Clients extends Component {
 				console.log(it )
 				spanImgWrapper.style.content = "'test'";
 
-				function pocetniBlacBox() {
+				function initialBlackBox() {
 					spanImgWrapper.style.width = `${it.clientWidth+1}px`;
 				    spanImgWrapper.style.height = `${it.clientHeight+1}px`;
 				    spanImgWrapper.style.left = `${it.x}px`;
 				    spanImgWrapper.style.top = `${it.y}px`;
 				} 
 
-				pocetniBlacBox()
+				initialBlackBox()
 				
 				window.addEventListener("resize", function() {
-					pocetniBlacBox()
+					initialBlackBox()
 				});
 				
 				spanImgWrapper.style.display = "inline-block";
 				spanImgWrapper.style.position = "absolute";
-<<<<<<< HEAD
-
-				//spanImgWrapper.style.border = "2px solid yellow"
-=======
-				// spanImgWrapper.style.border = "2px solid yellow"
->>>>>>> 67157c9c548c00f1466ce4488e4d61c6629c14bc
 
 				const blackBox = document.createElement('div')
 				blackBox.setAttribute("className", "black-box");
