@@ -18,7 +18,7 @@
 	.shapesHolder {
 		overflow: hidden;
 		width: 100%;
-		margin: auto;
+		margin: 275px auto 0;
 	}
 
 	.leftImg, .rightImg {
@@ -111,20 +111,20 @@
 	// transition: all 1.3s ease-in;
 }
 
-@-moz-document url-prefix() {
-	.mini-logo-holder-aboutP {
-		// left: 50.65%;
-		// bottom: 66px;
-		opacity: 0;
-	}
-}
-
 .logoLettersAboutP {
 	// text-align: center;
 	// margin: 0 auto;
 	// max-height: 79px;
 	opacity: 1;
 	// transition: all 1.3s ease-in;
+}
+
+@-moz-document url-prefix() {
+	.mini-logo-holder-aboutP {
+		// left: 50.65%;
+		// bottom: 66px;
+		opacity: 0;
+	}
 }
 
 // .aHolder {

@@ -93,72 +93,72 @@
 	transform: translate(-50.1%);
 }
 
-.mini-logo-holder {
-	width: 100px;
-	max-height: 50px;
-	position: absolute;
-	color: red;
-	font-family: 'Source Sans Pro', sans-serif !important;
-	font-weight: 300;
-	left: 50%;
-	bottom: 140px;
-	opacity: 1;
-	transform: translate(-50%);
-	transition: all 1.3s ease-in;
-}
+// .mini-logo-holder {
+// 	width: 100px;
+// 	max-height: 50px;
+// 	position: absolute;
+// 	color: red;
+// 	font-family: 'Source Sans Pro', sans-serif !important;
+// 	font-weight: 300;
+// 	left: 50%;
+// 	bottom: 140px;
+// 	opacity: 1;
+// 	transform: translate(-50%);
+// 	transition: all 1.3s ease-in;
+// }
 
-@-moz-document url-prefix() {
-	.mini-logo-holder {
-		// left: 50.65%;
-		// bottom: 66px;
-		opacity: 0;
-	}
-}
+// @-moz-document url-prefix() {
+// 	.mini-logo-holder {
+// 		// left: 50.65%;
+// 		// bottom: 66px;
+// 		opacity: 0;
+// 	}
+// }
 
-.logoLetters {
-	text-align: center;
-	margin: 0 auto;
-	max-height: 79px;
-	opacity: 0;
-	transition: all 1.3s ease-in;
-}
+// .logoLetters {
+// 	text-align: center;
+// 	margin: 0 auto;
+// 	max-height: 79px;
+// 	opacity: 0;
+// 	transition: all 1.3s ease-in;
+// }
 
-.aHolder {
-	font-size: 80px;	
-}
+// .aHolder {
+// 	font-size: 80px;	
+// }
 
-.tHolder {
-	font-size: 37px;	
-	position: relative;
-	// left: -31px;
-	bottom: 55px;
-}
+// .tHolder {
+// 	font-size: 37px;	
+// 	position: relative;
+// 	// left: -31px;
+// 	bottom: 55px;
+// }
 
-.groundingHolder {
-	width: 50px;
-	margin: 0 auto;
-	// position: absolute;
-	// left: 50%;
-	// top: 640px;
-	// transform: translate(-50%);
-}
+// .groundingHolder {
+// 	width: 50px;
+// 	margin: 0 auto;
+// 	// position: absolute;
+// 	// left: 50%;
+// 	// top: 640px;
+// 	// transform: translate(-50%);
+// }
 
-.groundingHolder hr {
-	background: red;
-	border: 1px solid red;
-	margin: 5px 0;
-	opacity: 1;
-}
+// .groundingHolder hr {
+// 	background: red;
+// 	border: 1px solid red;
+// 	margin: 5px 0;
+// 	opacity: 1;
+// }
 
-.groundingHolder div:nth-child(2) {
-	width: 65%;
-	margin: 0 auto;
-}
+// .groundingHolder div:nth-child(2) {
+// 	width: 65%;
+// 	margin: 0 auto;
+// }
 
-.groundingHolder div:nth-child(3) {
-	width: 35%;
-	margin: 0 auto;
-}
+// .groundingHolder div:nth-child(3) {
+// 	width: 35%;
+// 	margin: 0 auto;
+// }
 
 .fp_button {
 	z-index: 999;

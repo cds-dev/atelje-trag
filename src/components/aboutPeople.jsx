@@ -71,9 +71,20 @@ class AboutPeople extends Component {
 			txtAboutUsHolder.style.opacity = "1";
 		}, 800);
 
-		// setTimeout(function () {
-		// 	logoAbout.style.height = "100px";
-		// }, 1500);
+		function navBcg() {
+			let mainNav = document.querySelector(".mainNav");
+	
+			if(window.pageYOffset > 200) {
+				mainNav.style.background = "rgba(10, 10, 10, .6)";						
+			}
+			else {
+				mainNav.style.background = "none";	
+			}
+		}
+		
+		window.addEventListener("scroll", function() {
+			navBcg()
+		})
 	}
 
 	render() {
@@ -81,7 +92,7 @@ class AboutPeople extends Component {
 		let lang = this.props.lang;
 		return (
 			<section className="about-people" id="aboutus">
-				<div className="logoAbout">
+				{/* <div className="logoAbout">
 					<div className="mini-logo-holder mini-logo-holder-aboutP">
 						<div className="logoLetters logoLettersAboutP">
 							<span className="aHolder">A</span><br />
@@ -99,7 +110,7 @@ class AboutPeople extends Component {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 				<div className="shapesHolder">
 					<div className="leftImg"><img src={img[0]} alt="title[0][0]" className="proba" /><div className="lefInner"></div></div>
 					<div className="rightImg"><img src={img[1]} alt="title[1][0]" className="proba"/><div className="rightInner"></div></div>
@@ -108,15 +119,6 @@ class AboutPeople extends Component {
 						<p className="">{text[lang][0]}</p>
 					</div>
 				</div>
-				{/* <div className="about-left-right">
-					<div className="left">
-						<div className="markoHolder">{name[0]}<img src={img[0]} alt="title[0][0]" />{text[lang][1]}</div>
-					</div>
-					<div className="right">
-						<div className="neboHolder">{name[1]}<img src={img[1]} alt="title[0][1]" />{text[lang][2]}</div>
-					</div>
-				</div> */}
-
 			</section>)
 	}
 }
