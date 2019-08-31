@@ -1,12 +1,6 @@
 .client-wide {
 	cursor: pointer;
     //border: 1px solid #f00;
-
-    &:after {
-        content: '>';
-        border: 1px solid #f007;
-        position: absolute;
-    }
 }
 
 .client-wide {
@@ -24,6 +18,14 @@
 
 .black-box {
     border: 1px solid red;
+    display: inline-flex;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.moveRight {
+    display: inline-flex;
+    align-self: end;
 }
 
 .react-photo-gallery--gallery {
