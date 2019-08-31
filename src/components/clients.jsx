@@ -16,7 +16,9 @@ class Clients extends Component {
 
 	openModal = (e) => {
 		this.closeModal()
-		if(e.target.className === "client-wide") {
+
+		if(e.target.className === "" || e.target.className === "client-wide") {
+			
 			this.state.clientList.forEach(client => {
 			if (client.id === e.target.id) {
 				document.getElementById('mod'+client.id).style.backgroundImage = "client.src";
@@ -70,6 +72,7 @@ class Clients extends Component {
 				blackBox.setAttribute("className", "black-box");
 
 				blackBox.innerHTML = this.state.clientList[it.id.substring(3,5) - 1].alt;
+				blackBox.id = this.state.clientList[it.id.substring(3,5) - 1].id;
 				spanImgWrapper.appendChild(blackBox);
 
 
@@ -82,8 +85,10 @@ class Clients extends Component {
 				blackBox.style.textAlign = "left"
 				blackBox.style.textTransform = "uppercase"
 				blackBox.style.left = "7%";
-				// blackBox.style.tarnsform = "translate(-50%)";
+				blackBox.style.cursor = "pointer";
 				blackBox.style.bottom = "18px";
+
+				blackBox.addEventListener('click', this.openModal)
 
 			})
 
