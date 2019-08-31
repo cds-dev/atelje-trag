@@ -71,7 +71,7 @@ class Clients extends Component {
 				const blackBox = document.createElement('div')
 				blackBox.setAttribute("className", "black-box");
 
-				blackBox.innerHTML = this.state.clientList[it.id.substring(3,5) - 1].alt;
+				blackBox.innerHTML = '<span>' + this.state.clientList[it.id.substring(3,5) - 1].alt + '</span><span class="moveRight">...</span>';
 				blackBox.id = this.state.clientList[it.id.substring(3,5) - 1].id;
 				spanImgWrapper.appendChild(blackBox);
 
@@ -87,6 +87,9 @@ class Clients extends Component {
 				blackBox.style.left = "7%";
 				blackBox.style.cursor = "pointer";
 				blackBox.style.bottom = "18px";
+				blackBox.style.display = "inline-flex"
+				blackBox.style.alignContent = "space-between"
+				blackBox.style.justifyContent = "space-between"
 
 				blackBox.addEventListener('click', this.openModal)
 
