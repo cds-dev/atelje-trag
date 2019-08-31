@@ -15,6 +15,7 @@ class Clients extends Component {
 	}
 
 	openModal = (e) => {
+		this.closeModal()
 		if(e.target.className === "client-wide") {
 			this.state.clientList.forEach(client => {
 			if (client.id === e.target.id) {
@@ -45,7 +46,6 @@ class Clients extends Component {
 				//dodajem span u div koji drzi slike
 				gallWrapper.appendChild(spanImgWrapper)
 				
-				console.log(it )
 				spanImgWrapper.style.content = "'test'";
 
 				function BlackBox() {
@@ -68,8 +68,6 @@ class Clients extends Component {
 
 				const blackBox = document.createElement('div')
 				blackBox.setAttribute("className", "black-box");
-
-				console.log(it.id.substring(3,5) - 1)
 
 				blackBox.innerHTML = this.state.clientList[it.id.substring(3,5) - 1].alt;
 				spanImgWrapper.appendChild(blackBox);
@@ -110,11 +108,9 @@ class Clients extends Component {
 				//dodajem span u div koji drzi slike
 				gallWrapper.appendChild(spanImgWrapper)
 
-				console.log(gallWrapper)
 			})
 		}, 1000)
 
-		console.log("test")
 		return (
 
 				<section id="clients" >
