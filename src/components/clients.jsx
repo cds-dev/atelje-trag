@@ -48,7 +48,7 @@ class Clients extends Component {
 				console.log(it )
 				spanImgWrapper.style.content = "'test'";
 
-				function initialBlackBox() {
+				function BlackBox() {
 					spanImgWrapper.style.width = `${it.clientWidth+1}px`;
 				    spanImgWrapper.style.height = `${it.clientHeight+1}px`;
 				    spanImgWrapper.style.left = `${it.offsetLeft}px`;
@@ -56,11 +56,11 @@ class Clients extends Component {
 				} 
 
 
-				initialBlackBox()
+				BlackBox()
 				
 
 				window.addEventListener("resize", function() {
-					initialBlackBox()
+					BlackBox()
 				});
 				
 				spanImgWrapper.style.display = "inline-block";
@@ -77,7 +77,7 @@ class Clients extends Component {
 
 				blackBox.style.background = "#0007";
 				blackBox.style.position = "absolute";
-				// blackBox.style.bottom = "0";
+				blackBox.style.border = "1px solid red";
 				blackBox.style.zIndex = "300"
 				blackBox.style.padding = "10px"
 				blackBox.style.width = "86%"
