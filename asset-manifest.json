@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/atelje-trag/static/css/main.96f74d96.chunk.css",
-    "main.js": "/atelje-trag/static/js/main.d0653193.chunk.js",
-    "main.js.map": "/atelje-trag/static/js/main.d0653193.chunk.js.map",
+    "main.css": "/atelje-trag/static/css/main.f777117f.chunk.css",
+    "main.js": "/atelje-trag/static/js/main.be7694bb.chunk.js",
+    "main.js.map": "/atelje-trag/static/js/main.be7694bb.chunk.js.map",
     "runtime~main.js": "/atelje-trag/static/js/runtime~main.45976598.js",
     "runtime~main.js.map": "/atelje-trag/static/js/runtime~main.45976598.js.map",
-    "static/js/2.d3e4bf28.chunk.js": "/atelje-trag/static/js/2.d3e4bf28.chunk.js",
-    "static/js/2.d3e4bf28.chunk.js.map": "/atelje-trag/static/js/2.d3e4bf28.chunk.js.map",
+    "static/js/2.2dcdfbac.chunk.js": "/atelje-trag/static/js/2.2dcdfbac.chunk.js",
+    "static/js/2.2dcdfbac.chunk.js.map": "/atelje-trag/static/js/2.2dcdfbac.chunk.js.map",
     "index.html": "/atelje-trag/index.html",
-    "precache-manifest.66734518e03302deb7dea0b76ad0fc8b.js": "/atelje-trag/precache-manifest.66734518e03302deb7dea0b76ad0fc8b.js",
+    "precache-manifest.033154a2a32b024a5f6b52f1ffbdd9f6.js": "/atelje-trag/precache-manifest.033154a2a32b024a5f6b52f1ffbdd9f6.js",
     "service-worker.js": "/atelje-trag/service-worker.js",
-    "static/css/main.96f74d96.chunk.css.map": "/atelje-trag/static/css/main.96f74d96.chunk.css.map"
+    "static/css/main.f777117f.chunk.css.map": "/atelje-trag/static/css/main.f777117f.chunk.css.map"
   }
 }
