@@ -3,7 +3,7 @@
 	position: fixed;
 	left: 50%;
 	transform: translate(-50%);
-	z-index: 999;
+	z-index: 900;
 }
 
 .mainNav {
@@ -17,6 +17,7 @@
 	width: 98%;
 	right: -4px;
 	transition: all .5s ease-in;
+	z-index: 555;
 }
 
 nav {
