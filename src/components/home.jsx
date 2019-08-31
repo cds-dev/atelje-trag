@@ -23,8 +23,8 @@ class Home extends Component {
       leftLinks = document.querySelectorAll(".leftLinks"),
       rightLinks = document.querySelectorAll(".rightLinks");
 
-    function poligonChange(hoverable, poligon, t) {
-      hoverable.addEventListener("mouseover", function () {
+    function poligonChange(hoverableLink, hoverablHiddenDiv, poligon, t) {
+      hoverableLink.addEventListener("mouseover", function () {
         poligon.style.transition = "all .5s ease-in";
         poligon.style.width = "46.5%";
         poligon.style.opacity = ".5";
@@ -33,7 +33,7 @@ class Home extends Component {
         logoLetters.style.transition = ".2s ease-in";
         logoLetters.style.opacity = "0";
 
-        hoverable.addEventListener("mouseleave", function () {
+        hoverablHiddenDiv.addEventListener("mouseleave", function () {
           poligon.style.width = "0";
           poligon.style.opacity = "0";
           t.style.opacity = "0";
@@ -85,24 +85,26 @@ class Home extends Component {
       });
     }, 6500)
 
-    setTimeout(function () {
-      poligonChange(leftHoverable, poligonLeft, bigT);
-      poligonChange(rightHoverable, poligonRight, bigT);
-    }, 6800)
-
     function openLinks(targetLink, linksArr) {
-      targetLink.addEventListener("click", function () {
+      targetLink.addEventListener("mouseover", function () {
         targetLink.style.opacity = "1";
-        for (let i = 0; i < linksArr.length; i++) {
-          setTimeout(function () {
-            linksArr[i].style.transform = "scaleX(1)"
-          }, (i + 1) * 100);
-        }
+        setTimeout(function() {
+          targetLink.style.opacity = "1";
+            for (let i = 0; i < linksArr.length; i++) {
+              setTimeout(function () {
+                linksArr[i].style.transform = "scaleX(1)"
+              }, (i + 1) * 100);
+            }
+        }, 300)
       });
     }
 
-    openLinks(peopleLink, leftLinks);
-    openLinks(machineLink, rightLinks);
+    setTimeout(function () {
+      poligonChange(peopleLink, leftHoverable, poligonLeft, bigT);
+      poligonChange(machineLink, rightHoverable, poligonRight, bigT);
+      openLinks(peopleLink, leftLinks);
+      openLinks(machineLink, rightLinks);
+    }, 6800)
   }
 
   render() {
@@ -113,8 +115,8 @@ class Home extends Component {
     return (
       <div>
         <div className="home-signes-wrapper">
-          <p className="bigT">T</p>
           <div className="mini-logo-holder">
+          <p className="bigT">T</p>
             <div className="logoLetters">
               <span className="aHolder">A</span><br />
               <span className="tHolder">T</span>

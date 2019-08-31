@@ -87,7 +87,7 @@
 	// color: rgba(250, 250, 250, .5);
 	color: white;
 	opacity: 0;
-	top: 302px;
+	bottom: -37px;
 	transition: all .7s ease-in;
 	left: 50.1%;
 	transform: translate(-50.1%);
@@ -220,10 +220,10 @@
 	font-size: 33px;
 	transform: scaleX(0);
 	transform-origin: left;
-	transition: transform .3s ease-in;
 	padding: 5px 10px;
 	border-left: 1px solid red;
 	border-right: 1px solid red;
+	transition: transform .4s ease-in;
 }
 
 .rightLinks {
