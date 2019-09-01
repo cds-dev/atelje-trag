@@ -16,7 +16,7 @@ export const clients = [
   alt : "sax",
   caption : "sax",
   className : "client-wide",
-  txt : "<h2 class='modalNaslov'>saksofonista</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
+  txt : "<h2 class='modalNaslov'>saksofonista</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
   id : "id003",
@@ -34,7 +34,7 @@ export const clients = [
   height: 1000,
   alt : "crno-bela",
   className : "client-wide",
-  txt : "<h2 class='modalNaslov'>crno bela</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
+  txt : "<h2 class='modalNaslov'>crno bela</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
   id : "id005",
@@ -52,7 +52,7 @@ export const clients = [
   height: 1011,
   alt : "tori amos",
   className : "client-wide",
-  txt : "<h2 class='modalNaslov'>tori amos</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
+  txt : "<h2 class='modalNaslov'>tori amos</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
   id : "id007",
@@ -70,7 +70,7 @@ export const clients = [
   height: 900,
   alt : "blondi",
   className : "client-wide",
-  txt : "<h2 class='modalNaslov'>blondi</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
+  txt : "<h2 class='modalNaslov'>blondi</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
   id : "id009",
@@ -79,7 +79,7 @@ export const clients = [
   height: 1365,
   alt : "čarli",
   className : "client-wide",
-  txt : "<h2 class='modalNaslov'>čarli menson</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
+  txt : "<h2 class='modalNaslov'>čarli menson</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
   id : "id010",
@@ -97,7 +97,7 @@ export const clients = [
   height: 1280,
   alt : "štrafta",
   className : "client-wide",
-  txt : "<h2 class='modalNaslov'>štrafta</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
+  txt : "<h2 class='modalNaslov'>štrafta</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
   id : "id012",
@@ -115,7 +115,7 @@ export const clients = [
   height: 1066,
   alt : "mislilac",
   className : "client-wide",
-  txt : "<h2 class='modalNaslov'>mislilac</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam. Nemo atque dolor est cupiditate voluptatibus reiciendis ut nulla, vitae, ipsum laudantium ipsam!</div><div class='modalDiv'>Enim velit, repudiandae eum mollitia asperiores, suscipit praesentium quaerat sed iste quos ea accusantium rem voluptatem molestias possimus temporibus quasi earum quae inventore! Doloremque odio, voluptate dolorem, maiores quis officia!</div>"
+  txt : "<h2 class='modalNaslov'>mislilac</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
 ]
 

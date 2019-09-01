@@ -98,24 +98,24 @@ nav {
 
 			&::before {
 				position: absolute;
-				bottom: -11px;
-				left: -1px;
+				bottom: -12px;
+				left: 0px;
 				content: '/';
 				color: rgba(255, 0, 0, .6);
 				font-size: 58px; 
 				font-weight: 100;
-				transform: rotate(-1deg);
+				transform: rotate(2deg);
 			}
 	
 			&::after {
 				position: absolute;
-				bottom: -11px;
-				right: -3px;
+				bottom: -12px;
+				right: -1px;
 				content: '\\';
 				color: rgba(255, 0, 0, .6);
 				font-size: 58px; 
 				font-weight: 100;
-				transform: rotate(0deg);
+				transform: rotate(-2deg);
 			}
 		}
 
@@ -129,70 +129,72 @@ nav {
 			&::before {
 				position: absolute;
 				bottom: -11px;
-				left: -2px;
+				left: 0px;
 				content: '/';
 				color: rgba(255, 0, 0, .6);
 				font-size: 58px; 
 				font-weight: 100;
-				transform: rotate(0deg)
+				transform: rotate(2deg)
 			}
 	
 			&::after {
 				position: absolute;
 				bottom: -11px;
-				right: -2px;
+				right: -1px;
 				content: '\\';
 				color: rgba(255, 0, 0, .6);
 				font-size: 58px; 
 				font-weight: 100;
-				transform: rotate(1deg)
+				transform: rotate(-1deg)
 			}
 		}
 
 		.leftNav a::before {
 			position: absolute;
-			bottom: -11px;
+			bottom: -13px;
 			left: -1px;
 			content: '/';
-			color: rgba(255, 0, 0, .6);
-			font-size: 58px; 
+			color:
+			rgba(255, 0, 0, 0.6);
+			font-size: 58px;
 			font-weight: 100;
-			transform: rotate(-1deg);
+			transform: rotate(2deg);
 			transition: all .15s;
 		}
 
-		.leftNav a::after {
-			position: absolute;
-			bottom: -11px;
-			right: -7px;
-			content: '/';
-			color: rgba(255, 0, 0, .6);
-			font-size: 58px; 
-			font-weight: 100;
-			transform: rotate(-1deg);
-			transition: all .15s;			
-		}
+		// .leftNav a::after {
+		// 	position: absolute;
+		// 	bottom: -13px;
+		// 	right: -7px;
+		// 	content: '/';
+		// 	color:
+		// 	rgba(255, 0, 0, 0.6);
+		// 	font-size: 58px;
+		// 	font-weight: 100;
+		// 	transform: rotate(2deg);
+		// 	transition: all .15s;			
+		// }
 
-		.rightNav a::before {
-			position: absolute;
-			bottom: -11px;
-			left: -5px;
-			content: '\\';
-			color: rgba(255, 0, 0, .6);
-			font-size: 58px; 
-			font-weight: 100;
-			transform: rotate(0deg)
-		}
+		// .rightNav a::before {
+		// 	position: absolute;
+		// 	bottom: -12px;
+		// 	left: -6px;
+		// 	content: '\\';
+		// 	color: rgba(255, 0, 0, .6);
+		// 	font-size: 58px; 
+		// 	font-weight: 100;
+		// 	transform: rotate(-2deg)
+		// }
 
 		.rightNav a::after {
 			position: absolute;
 			bottom: -11px;
-			right: -2px;
+			right: -1px;
 			content: '\\';
 			color: rgba(255, 0, 0, .6);
 			font-size: 58px; 
 			font-weight: 100;
-			transform: rotate(1deg)
+			transform: rotate(-2deg)
 		}
 
 		li {
@@ -207,37 +209,6 @@ nav {
 			max-height: 41px !important;
 		}
 	}
-
-	// .logoLI {
-	// 	position: relative;
-
-	// 	.logoAbout {
-	// 		height: 100px;
-	// 		transition: all 1s ease-out;
-	// 	}
-		
-	// 	.mini-logo-holder-aboutP {
-	// 		// width: 100px;
-	// 		// max-height: 50px;
-	// 		// position: absolute;
-	// 		// color: red;
-	// 		// font-family: 'Source Sans Pro', sans-serif !important;
-	// 		// font-weight: 300;
-	// 		// left: 50%;
-	// 		top: 0px;
-	// 		// opacity: 1;
-	// 		// transform: translate(-50%);
-	// 		// transition: all 1.3s ease-in;
-	// 	}
-		
-	// 	.logoLettersAboutP {
-	// 		// text-align: center;
-	// 		// margin: 0 auto;
-	// 		// max-height: 79px;
-	// 		opacity: 1;
-	// 		// transition: all 1.3s ease-in;
-	// 	}
-	// }
 	
 	.languages {
 		& * {
