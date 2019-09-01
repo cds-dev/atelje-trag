@@ -3,7 +3,11 @@
 	position: fixed;
 	left: 50%;
 	transform: translate(-50%);
-	z-index: 900;
+	z-index: 999;
+}
+
+.mini-logo-holder-aboutP {
+	top: 5px;
 }
 
 .mainNav {
@@ -67,9 +71,9 @@ nav {
 
 		a {
 			position: relative;
-			padding: 6px 9px;
+			padding: 4px 7px;
 			margin: 0 10px;
-			font-size: 24px;
+			font-size: 21px;
 			width: 140px;
 		}
 
@@ -120,10 +124,6 @@ nav {
 
 			li {
 				background: rgba(255, 255, 255, 0);
-				// border-left: 1px solid rgba(255, 0, 0, .6);
-				// border-bottom: 1px solid rgba(255, 0, 0, .6);
-	
-				
 			}
 
 			&::before {

@@ -55,18 +55,18 @@ class Home extends Component {
       poligonRight.style.width = "46.5%";
       poligonRight.style.opacity = ".5";
       poligonRight.style.clipPath = "polygon(0 0, 100% 0%, 100% 100%, 35% 100%)";
-    }, 3000)
+    }, 1500)
 
     setTimeout(function () {
       poligonLeft.style.background = "white";
       poligonRight.style.background = "white";
       poligonLeft.style.paddingRight = "25px";
       poligonRight.style.paddingLeft = "20px";
-    }, 3700)
+    }, 1900)
 
     setTimeout(function () {
       bigT.style.opacity = ".5";
-    }, 4000)
+    }, 2000)
 
     setTimeout(function () {
       poligonLeft.style.width = "0";
@@ -75,7 +75,7 @@ class Home extends Component {
       poligonRight.style.opacity = "0";
       bigT.style.opacity = "0";
       logoLetters.style.opacity = "1";
-    }, 6000)
+    }, 3800)
 
     setTimeout(function () {
       fpButtons.forEach(function (it) {
@@ -83,7 +83,7 @@ class Home extends Component {
         it.style.opacity = ".6";
         it.style.cursor = "pointer";
       });
-    }, 6500)
+    }, 4100)
 
     function openLinks(targetLink, linksArr) {
       targetLink.addEventListener("mouseover", function () {
@@ -104,7 +104,7 @@ class Home extends Component {
       poligonChange(machineLink, rightHoverable, poligonRight, bigT);
       openLinks(peopleLink, leftLinks);
       openLinks(machineLink, rightLinks);
-    }, 6800)
+    }, 3400)
   }
 
   render() {
