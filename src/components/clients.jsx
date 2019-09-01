@@ -78,7 +78,7 @@ class Clients extends Component {
 
 				blackBox.style.background = "#0007";
 				blackBox.style.position = "absolute";
-				blackBox.style.border = "1px solid red";
+				// blackBox.style.border = "1px solid rgba(255, 5, 5, .5)";
 				blackBox.style.zIndex = "300"
 				blackBox.style.padding = "10px"
 				blackBox.style.width = "86%"

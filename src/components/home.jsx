@@ -26,7 +26,8 @@ class Home extends Component {
     function poligonChange(hoverableLink, hoverablHiddenDiv, poligon, t) {
       hoverableLink.addEventListener("mouseover", function () {
         poligon.style.transition = "all .5s ease-in";
-        poligon.style.width = "46.5%";
+        poligonLeft.style.width = "48.5%";
+        poligonRight.style.width = "46.5%";
         poligon.style.opacity = ".5";
         t.style.transition = "all .5s ease-in";
         t.style.opacity = ".5";
@@ -44,15 +45,17 @@ class Home extends Component {
           leftLinks.forEach(it => it.style.transform = "scaleX(0)");
           machineLink.style.opacity = ".6";
           rightLinks.forEach(it => it.style.transform = "scaleX(0)");
+          closeLinks(leftLinks)
+          closeLinks(rightLinks)
         });
       });
     }
 
     setTimeout(function () {
-      poligonLeft.style.width = "46.5%";
+      poligonLeft.style.width = "48.5%";
       poligonLeft.style.opacity = ".5";
-      poligonLeft.style.clipPath = "polygon(0 0, 99% 0%, 63% 100%, 0% 100%)";
-      poligonRight.style.width = "46.5%";
+      poligonLeft.style.clipPath = "polygon(0 0, 100% 0%, 63% 100%, 0% 100%)";
+      poligonRight.style.width = "46.8%";
       poligonRight.style.opacity = ".5";
       poligonRight.style.clipPath = "polygon(0 0, 100% 0%, 100% 100%, 35% 100%)";
     }, 1500)
@@ -60,8 +63,8 @@ class Home extends Component {
     setTimeout(function () {
       poligonLeft.style.background = "white";
       poligonRight.style.background = "white";
-      poligonLeft.style.paddingRight = "25px";
-      poligonRight.style.paddingLeft = "20px";
+      poligonLeft.style.paddingRight = "23px";
+      poligonRight.style.paddingLeft = "23px";
     }, 1900)
 
     setTimeout(function () {
@@ -99,12 +102,20 @@ class Home extends Component {
       });
     }
 
+    function closeLinks(linksArr) {
+      for (let i = 0; i < linksArr.length; i++) {
+        setTimeout(function () {
+          linksArr[i].style.transform = "scaleX(0)"
+        }, (i + 1) * 100);
+      }
+    }
+
     setTimeout(function () {
       poligonChange(peopleLink, leftHoverable, poligonLeft, bigT);
       poligonChange(machineLink, rightHoverable, poligonRight, bigT);
       openLinks(peopleLink, leftLinks);
       openLinks(machineLink, rightLinks);
-    }, 3400)
+    }, 500)
   }
 
   render() {

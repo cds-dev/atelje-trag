@@ -1,6 +1,5 @@
 .client-wide {
 	cursor: pointer;
-    //border: 1px solid #f00;
 }
 
 .client-wide {
@@ -8,16 +7,14 @@
 }
 
 .imgSpan {
-    // border: 2px solid yellow;
     width: 33%;
     display: inline-block;
-    //height: 25px;
     position: static;
 
 }
 
 .black-box {
-    border: 1px solid red;
+    border: 1px solid rgba(255, 5, 5, .3) !important;
     display: inline-flex;
     align-content: space-between;
     justify-content: space-between;

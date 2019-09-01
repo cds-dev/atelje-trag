@@ -25,12 +25,12 @@ class NavBar extends Component {
 						<div className="leftNav">
 						<Link className="linkLeft" to='./'><li>{item1[lang]}</li></Link>
 						<Link className="linkLeft" to='./people#aboutus'><li>{item2[lang]}</li></Link>
-						<Link className="linkLeft" to='./machines#aboutstudio'><li>{item3[lang]}</li></Link>
+						<Link className="linkLeft" to='./people#clients'><li>{item4[lang]}</li></Link>
 						</div>
 						<div className="rightNav">
-						<Link className="link" to='./people#clients'><li>{item4[lang]}</li></Link>
-						<Link className="link" to='./machines#equipment'><li>{item5[lang]}</li></Link>
-						<Link className="link" to='./people#contact'><li>{item6[lang]}</li></Link>
+						<Link className="linkRight" to='./machines#aboutstudio'><li>{item3[lang]}</li></Link>
+						<Link className="linkRight" to='./machines#equipment'><li>{item5[lang]}</li></Link>
+						<Link className="linkRight" to='./people#contact'><li>{item6[lang]}</li></Link>
 						</div>
 					</div>
 				</ul>

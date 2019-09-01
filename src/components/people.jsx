@@ -5,6 +5,7 @@ import NavBar from './navbar';
 import Footer from './footer';
 import Logo from './logo';
 
+
 class People extends Component {
 	//state = {}
 

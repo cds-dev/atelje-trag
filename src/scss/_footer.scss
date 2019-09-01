@@ -1,14 +1,149 @@
 footer {
-	color: ivory;
+
+	color: brown;
 	z-index: 1 !important;
 	a,
 	a:visited,
 	a:active,
 	a:link {
-		color: ivory;
+		color: brown;
 	}
 
 	.fab {
-		color: ivory;
+		color: brown;
+		font-size: 23px;
+	}
+
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	color: brown;
+	font-family: 'Raleway', sans-serif;
+
+	.footArea1, .footArea3 {
+		display: grid;
+		align-items: center;
+		font-size: 18px;
+
+		div {
+			display: inline-block;
+			padding: 5px;
+			max-width: 350px;
+			margin: 0 auto;
+			background: rgba(0, 0, 0, .35);
+		}
+
+		ul {
+			list-style: none;
+			text-align: left;
+			margin: 0 auto;
+			font-weight: 300;
+			padding: 28px;
+			border-left: 2px solid rgba(255, 5, 5, .3);
+			border-right: 2px solid rgba(255, 5, 5, .3);
+
+			li {
+				padding-left: 25px;
+				margin: 5px 0;
+			}
+		}
+	}
+
+	.footArea1 li:nth-child(1) {
+		font-size: 29px;
+		margin-bottom: 10px;
+		font-weight: 100;
+	}
+
+	.footArea2 {
+		div.footLogoWrapperOuter {
+			padding: 5px;
+			width: 620px;
+			height: 215px;
+			max-height: 215px;
+			max-width: 620px;
+			margin: 0 auto;
+			background: rgba(0, 0, 0, .35);
+		}
+		div.footLogoWrapperInner {
+			position: relative;
+			height: 100%;
+			border-left: 2px solid rgba(255, 5, 5, .3);
+			border-right: 2px solid rgba(255, 5, 5, .3);
+		}
+	}
+
+	.footArea3 {
+		// display: grid;
+		// align-items: center;
+		// font-size: 18px;
+
+		ul {
+			max-width: 350px;
+			list-style: none;
+			text-align: left;
+			margin: 0 auto;
+			font-weight: 100;
+			background: rgba(0, 0, 0, .35);
+			padding: 28px;
+			// border: 1px solid rgba(255, 5, 5, .3);
+
+			li {
+				padding-left: 0;
+				margin: 5px 0;
+			}
+		}
+
+		img {
+			width: 60px;
+		}
+	}
+
+	.logoWrapper {
+		position: absolute;
+		top: 21%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.mini-logo-holder {
+		width: 100px;
+		max-height: 50px;
+		position: absolute;
+		bottom: 140px;
+		opacity: .7;
+	}
+	
+	.logoLetters {
+		max-height: 110px;
+	}
+	
+	.aHolder {
+		font-size: 110px;
+		opacity: .7;	
+	}
+	
+	.tHolder {
+		font-size: 50px;
+		bottom: 74px;
+		opacity: .7;
+	}
+	
+	.groundingHolder {
+		width: 65px;
+		opacity: .7;
+	}
+	
+	.groundingHolder hr {
+		border: 2px solid red;
+		margin: 5px 0;
+	}
+
+	.copyRights {
+		position: absolute;
+		bottom: 3px;
+		left: 50%;
+		transform: translate(-50%);
+		color: rgba(255, 5, 5, .65);
 	}
 }
+

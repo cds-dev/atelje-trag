@@ -65,11 +65,11 @@ class AboutPeople extends Component {
 			rightImg.style.right = "-70px";
 			leftImg.style.opacity = "1";
 			rightImg.style.opacity = "1";
-		}, 500);
+		}, 1750);
 
 		setTimeout(function () {
 			txtAboutUsHolder.style.opacity = "1";
-		}, 800);
+		}, 2000);
 
 		function navBcg() {
 			let mainNav = document.querySelector(".mainNav"),
@@ -114,8 +114,6 @@ class AboutPeople extends Component {
 				
 		}
 
-		
-		
 		window.addEventListener("scroll", function() {
 			navBcg()
 		})
