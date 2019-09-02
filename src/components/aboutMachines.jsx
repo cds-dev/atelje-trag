@@ -30,6 +30,36 @@ class AboutMachines extends Component {
 				illo harum explicabo consequatur facilis, itaque quo, rem.`]
 			]
 	}
+
+	componentDidMount() {
+		let leftImgHolder1 = document.querySelector(".leftImgHolder1"),
+		leftImgHolder2 = document.querySelector(".leftImgHolder2"),
+		txtAboutStudioHolder = document.querySelector(".txtAboutStudioHolder");
+		
+		setTimeout(function () {
+			leftImgHolder1.style.left = "0";
+		}, 750);
+
+		window.addEventListener("load", function() {
+			if(window.pageYOffset > 100) {
+				leftImgHolder2.style.bottom = "-36em";
+			}
+		})
+
+		window.scrollTo(0,0);
+		window.addEventListener("scroll", function() {
+			console.log(window.pageYOffset)
+			if(window.pageYOffset > 100) {
+				setTimeout(function () {
+					leftImgHolder2.style.bottom = "0";
+				}, 850);
+			}
+		})
+
+		setTimeout(function () {
+			txtAboutStudioHolder.style.opacity = "1";
+		}, 1200);
+	}
 	
 	render() {
 		const { title, img, text } = this.state;

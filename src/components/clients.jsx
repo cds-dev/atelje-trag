@@ -5,6 +5,7 @@ import Gallery from "react-photo-gallery";
 
 class Clients extends Component {
 	state = {
+		title: ["Klijenti", "Clients"],
 		clientList: [],
 	}
 
@@ -33,6 +34,10 @@ class Clients extends Component {
 	}
 
 	render() {
+
+		const { title } = this.state.title;
+		let lang = this.props.lang;
+
 		setTimeout(() => {
 			const spanWrapper = document.querySelector('#clients span')
 			let gall  = spanWrapper.childNodes[0]
@@ -122,6 +127,7 @@ class Clients extends Component {
 		return (
 
 				<section id="clients" >
+					<div className="titleAboutUs"><h2>{this.state.title[lang]}</h2></div>
 				<span><Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal}  /></span>
 				{this.state.clientList.map(cl => <div
 					className="modal"
