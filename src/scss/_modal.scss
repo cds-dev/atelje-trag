@@ -38,16 +38,16 @@
         width: 32px;
         height: 30px;
         border: 7px solid #f007;
-    //border-radius: 50%;
         position: absolute;
         top:20px;
         right: 20px;
-    z-index: 9999;
+        z-index: 9999;
         display: inline-block;
         color: #f007;
         font-size: larger;
         font-weight: 900;
         padding-top: 2px;
+        text-align: center;
     }
 }
 

@@ -16,7 +16,6 @@
 
 .leftImgHolder1 {
     position: relative;
-    display: inline-block;
     // height: 100%;
     width: 94%;
     // width: 80%;
@@ -82,4 +81,8 @@
 
 .App {
     text-align: left !important;
+}
+
+main {
+    min-height: 40px !important;
 }
