@@ -11,6 +11,57 @@ class NavBar extends Component {
 		item6: ["Kontakt", "Contact"],
 	}
 
+	componentDidMount() {
+		function navChanges() {
+			let mainNav = document.querySelector(".mainNav"),
+				logoHolder = document.querySelector(".mini-logo-holder-aboutP"),
+				logoLetters = document.querySelector(".logoLetters"),
+				aHolder = document.querySelector(".aHolder"),
+				tHolder = document.querySelector(".tHolder"),
+				groundingHolder = document.querySelector(".groundingHolder"),
+				groundingHolderHr = document.querySelector(".groundingHolder hr");
+			if(mainNav) {
+				if(window.pageYOffset > 200) {
+					logoHolder.style.transition = "all .6s ease-in";
+					logoLetters.style.transition = "all .3s ease-in";
+					mainNav.style.background = "rgba(10, 10, 10, .8)";
+					mainNav.style.margin = "-15px auto 0 auto";	
+					mainNav.style.padding = "11px 0";	
+					logoLetters.style.maxHeight = "51px";
+					logoHolder.style.top = "-22px";	
+					aHolder.style.fontSize = "57px";
+					tHolder.style.fontSize = "25px";
+					tHolder.style.bottom = "38px";
+					groundingHolder.style.width = "25px";	
+					groundingHolderHr.style.margin = "0";
+					groundingHolder.style.opacity = "0";		
+				}		
+				else {
+					logoHolder.style.transition = "all .8s ease-in";
+					logoLetters.style.transition = "all .01s ease-in";
+					mainNav.style.background = "none";	
+					mainNav.style.margin = "0 auto 0 auto";
+					mainNav.style.padding = "40px 0";
+					logoLetters.style.maxHeight = "79px";
+					logoHolder.style.top = "5px";
+					aHolder.style.fontSize = "80px";
+					tHolder.style.fontSize = "37px";
+					tHolder.style.bottom = "55px";
+					groundingHolder.style.width = "51px";	
+					groundingHolderHr.style.margin = "5px";
+					groundingHolder.style.opacity = "1";	
+				}
+			}
+				
+		}
+	
+		window.addEventListener("scroll", function() {
+			navChanges()
+		})
+	}
+
+	
+
 	render() {
 		const { item1, item2, item3, item4, item5, item6 } = this.state;
 		//const lang = this.props.selectedLang

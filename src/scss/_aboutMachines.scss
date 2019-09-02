@@ -1,3 +1,85 @@
 .aboutMachines {
+    overflow: hidden;
+}
 
+.shapesHolderM {
+    overflow: hidden;
+    width: 61%;
+    margin: 195px 0 0 0;
+    float: left;
+    shape-outside: polygon(0 0, 100% 0, 63.7% 100%, 0% 100%);
+    shape-margin: 40px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 63.7% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 63.7% 100%, 0% 100%);
+    // background: white;
+}
+
+.leftImgHolder1 {
+    position: relative;
+    display: inline-block;
+    // height: 100%;
+    width: 94%;
+    // width: 80%;
+    float: left;
+    background: rgba(150, 8, 8, .75);
+    shape-outside: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+    // shape-margin: 30px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+    opacity: 1;
+    // text-align: left;
+    padding-top: 1px;
+    padding-right: 2px;
+    transition: all .7s ease-out;
+    
+    img {
+        position: relative;
+        width: 100%;
+        bottom: -1px;
+        shape-outside: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+    }
+}
+
+.leftImgHolder2 {
+    margin-top: 7px;
+    width: 77%;
+    display: inline-block;
+    position: relative;
+    background: rgba(150, 8, 8, .75);
+    shape-outside: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+    opacity: 1;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    transition: all .7s ease-out;
+    
+    img {
+        position: relative;
+        width: 100%;
+        bottom: -2px;
+        shape-outside: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+    }
+}
+
+.txtAboutStudioHolder {
+    margin-top: 440px;
+    padding-right: 30px;
+    text-align: left;
+}
+
+.titleAboutStudio {
+    font-size: 44px;
+    text-align: center;
+}
+
+.txtAboutStudioHolder p {
+    margin: 20px auto 40px auto;
+    min-width: 300px;
+    font-size: 19px;
+}
+
+.App {
+    text-align: left !important;
 }
