@@ -14,10 +14,18 @@ class Clients extends Component {
         });
     }
 
+    componentDidUpdate = () => {
+        setTimeout(() => {
+            const allImgs = document.querySelectorAll('#clients img')
+            this.wrapImages(allImgs)
+        }, 1000)
+    }
+
     wrapImages = (images) => {
-        //console.log(images)
         const gallery = document.querySelector('.react-photo-gallery--gallery').childNodes[0]
-        console.log(images)
+        console.log(gallery)
+        //const imags = gallery.childNodes
+        //console.log(images)
 
         images.forEach(pic => {
             const imgWrap = document.createElement('div')
@@ -56,10 +64,7 @@ class Clients extends Component {
     }
 
     render() {
-        setTimeout(() => {
-            const allImgs = document.querySelectorAll('#clients img')
-            this.wrapImages(allImgs)
-        }, 0)
+        
         
         return ( 
             <section id="clients">
