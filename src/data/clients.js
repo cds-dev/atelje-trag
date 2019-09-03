@@ -23,9 +23,9 @@ export const clients = [
   src : "./imgs/clients/client-placeholder-03.jpg",
   width : 1139,
   height: 1600,
-  alt : "",
+  alt : "beyonce",
   className : "client-narrow",
-  txt : "a"
+  txt : "beyonce"
  },
  {
   id : "id004",
@@ -41,7 +41,7 @@ export const clients = [
   src : "./imgs/clients/client-placeholder-05.jpg",
   width : 1181,
   height: 1639,
-  alt : "",
+  alt : "elvis",
   className : "client-narrow",
   txt : "a"
  },
@@ -59,7 +59,7 @@ export const clients = [
   src : "./imgs/clients/client-placeholder-07.jpg",
   width : 1280,
   height: 1000,
-  alt : "",
+  alt : "šminka",
   className : "client-narrow",
   txt : ""
  },
@@ -86,7 +86,7 @@ export const clients = [
   src : "./imgs/clients/client-placeholder-10.jpg",
   width : 1065,
   height: 1600,
-  alt : "",
+  alt : "veseli brka",
   className : "client-narrow",
   txt : "a"
  },
@@ -104,7 +104,7 @@ export const clients = [
   src : "./imgs/clients/client-placeholder-12.jpg",
   width : 800,
   height: 1200,
-  alt : "",
+  alt : "vampir",
   className : "client-narrow",
   txt : "a"
  },
