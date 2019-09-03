@@ -9,7 +9,7 @@
     background: #0007;
     display: inline-flex;
     position: relative;
-    z-index: 300;
+    z-index: 200;
     align-content: space-between;
     justify-content: space-between;
     cursor: pointer;
@@ -24,10 +24,14 @@
     padding: 10px;
     display: inline-block;
     position: relative;
-    z-index: 300;
+    z-index: 200;
 }
 
 .moveRight {
     display: inline-flex;
     align-self: end;
+}
+
+.modal, .modal img  {
+    display: none;
 }
