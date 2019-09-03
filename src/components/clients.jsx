@@ -48,6 +48,9 @@ class Clients extends Component {
                 }
 
                 const imgWrapper = pic.parentElement
+                if(imgWrapper.innerHTML === "") {
+                    imgWrapper.remove()
+                }
 
                 function BlackBox() {
                     imgWrapper.style.position = "absolute";
@@ -106,9 +109,9 @@ class Clients extends Component {
             const clickable = document.querySelectorAll('.client-wide')
             
             clickable.forEach(it => {
-                let spanImgWrapper = document.createElement("span");
+                let spanImgWrapper = document.createElement("div");
                 //klasa za span
-                spanImgWrapper.setAttribute("className", "imgSpan")
+                spanImgWrapper.setAttribute("className", "img-wrap")
                 //dodajem sliku u span
                 spanImgWrapper.appendChild(it)
                 //dodajem span u div koji drzi slike
