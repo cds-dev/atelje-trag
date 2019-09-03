@@ -1,3 +1,104 @@
 .equipment {
+    
+}
 
+.equipmentContentWrapper {
+    // display: flex;
+    // flex-direction: row;
+    overflow: hidden;
+}
+
+.equipmentTxtWrapper {
+    display: inline-block;
+    width: 40%;
+    // position: relative;
+
+    h2 {
+        font-size: 64px;
+        margin: 50px 0 37px 0;
+    }
+
+    p {
+        font-size: 19px;
+    }
+}
+
+.equipmentImgsWrapper {
+    overflow: hidden;
+    clip-path: polygon(24.7% 0%, 100% 0%, 100% 100%, 0% 100%);
+    shape-outside: polygon(24.7% 0%, 100% 0%, 100% 100%, 0% 100%);
+    shape-margin: 20px;
+    float: right;
+    height: 810px;
+    width: 60%;
+    position: relative;
+}
+
+.equipTopImgs, .equipBottomImgs {
+    display: flex;
+    flex-direction: row;
+}
+
+.equipImg2, .equipImg3, .equipImg4 {
+    height: 400px;
+    background-repeat: no-repeat !important;
+    background-position: 100% 20% !important;
+    background-size: cover !important;
+}
+
+.equipImg1, .equipImg2, .equipImg3, .equipImg4 {
+    position: absolute;
+}
+
+
+.equipImg1 {
+    height: 400px;
+    clip-path: polygon(0 0%, 94% 0%, 75% 100%, 0% 100%);
+    background: url("../../src/opr1.jpg");
+    background-position: 30px 5% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    top: 0;
+    left: 0;
+    width: 64%;
+    margin-bottom: 14px;                                       
+}
+
+@media only screen and (min-width: 1400px) {
+    .equipImg1 {
+        background-position: 100px 5% !important;  
+        background-size: 80% !important;                                    
+    }
+}
+
+.equipImg2 {
+    clip-path: polygon(23.7% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background: url("../../src/opr2.jpg");
+    top: 0;
+    right: 0;
+    width: 50.8%;
+    margin-bottom: 14px;
+}
+
+.equipImg3 {
+    clip-path: polygon(0 0%, 100% 0%, 75% 100%, 0% 100%);
+    background: url("../../src/opr3.jpg");
+    bottom: 0;
+    left: 0;
+    width: 47.8%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .equipImg3 {
+        background-position: 80% 100% !important;  
+        background-size: cover !important;                                    
+    }
+}
+
+.equipImg4 {
+    clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 6% 100%);
+    background: url("../../src/opr4.jpg");
+    bottom: 0;
+    right: 0;
+    width: 67.3%;
 }
