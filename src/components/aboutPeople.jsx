@@ -10,11 +10,7 @@ class AboutPeople extends Component {
 			ut fuga nisi voluptate veritatis nihil quas ipsam vel sunt alias tempora laboriosam quia, ipsum 
 			ab assumenda aut laborum id animi iure. Reprehenderit quaerat architecto adipisci sunt autem impedit 
 			fugiat veritatis recusandae error, iste nisi, dignissimos distinctio consequatur vitae rem quos beatae 
-			illum eveniet? Aut dicta deleniti excepturi, blanditiis voluptatum, tempore? Voluptatibus provident, 
-			officia fugiat, est incidunt ad labore sequi necessitatibus perspiciatis, quis delectus. Reprehenderit quaerat 
-			architecto adipisci sunt autem impedit fugiat veritatis recusandae error, iste nisi, dignissimos distinctio 
-			consequatur vitae rem quos beatae illum eveniet? Aut dicta deleniti excepturi, blanditiis voluptatum, tempore? 
-			Voluptatibus provident, officia fugiat, est incidunt ad labore sequi necessitatibus perspiciatis, quis delectus.`,
+			illum eveniet? Aut dicta deleniti excepturi.`,
 
 				`NebojšaSR: Aliquid cumque quis dolorem, quaerat hic est. Ratione quas, temporibus, laudantium mollitia 
 			omnis quasi repellat possimus facere quia distinctio debitis laborum, ad?`,
@@ -26,13 +22,7 @@ class AboutPeople extends Component {
 			Balkan artists during last 20 years. He is involved in music since his age of 11, initially as the 
 			founder, arranger and vocalist of Belgrade's youngest hip hop group ever, "Belgrade Posse". 
 			Together with Darko Asik, he managed Index Radio show "Do the right thing" and organized and DJ-ed 
-			a number of hip hop events in Belgrade from 1994-1997. As the 16-year-old boy he collaborated with 
-			artists like 187 and Gru as arranger and vocalist. On his 19th birthday, with Nebojsa Arezina, 
-			Marko co-founded "Atelje Trag". Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-			Placeat assumenda delectus unde eveniet praesentium ratione saepe, repellat accusamus deserunt. 
-			Ad eaque quis ratione, maiores placeat repellat quod delectus omnis iure reprehenderit minus non nihil, 
-			mollitia unde voluptatem aliquam iusto quisquam ipsum ab asperiores. Molestiae cumque deleniti, dignissimos voluptatum 
-			illo harum explicabo consequatur facilis, itaque quo, rem.`,
+			a number of hip hop events in Belgrade from 1994-1997.`,
 
 				`NebojšaEN: Successful Serbian composer/arranger/producer who has collaborated with over 100 best selling 
 				Balkan artists during last 20 years. He is involved in music since his age of 11, initially as the 
@@ -87,6 +77,7 @@ class AboutPeople extends Component {
 						<div className="rightInner"></div></div>
 					<div className="txtAboutUsHolder">
 						<div className="titleAboutUs"><h2>{title[lang]}</h2></div>
+						<p className="">{text[lang][0]}</p>
 						<p className="">{text[lang][0]}</p>
 					</div>
 				</div>

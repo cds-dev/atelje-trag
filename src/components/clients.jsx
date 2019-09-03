@@ -4,6 +4,7 @@ import Gallery from "react-photo-gallery";
 //import ClientModal from './clientModal';
 
 class Clients extends Component {
+
     state = {
         clientList: [],
     }
@@ -138,6 +139,5 @@ class Clients extends Component {
             )
         
     }
-
 }
 export default Clients;

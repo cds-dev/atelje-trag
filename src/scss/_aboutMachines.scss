@@ -4,29 +4,26 @@
 
 .shapesHolderM {
     overflow: hidden;
-    width: 61%;
+    width: 56%;
     margin: 195px 0 0 0;
     float: left;
-    shape-outside: polygon(0 0, 100% 0, 63.7% 100%, 0% 100%);
-    shape-margin: 40px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 63.7% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 63.7% 100%, 0% 100%);
+    shape-outside: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    shape-margin: 20px;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
     // background: white;
+    transition: all .4s ease-out;
 }
 
 .leftImgHolder1 {
     position: relative;
-    // height: 100%;
-    width: 94%;
-    // width: 80%;
+    left: -100%;
+    width: 93%;
     float: left;
     background: rgba(150, 8, 8, .75);
     shape-outside: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
-    // shape-margin: 30px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+    
     clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
     opacity: 1;
-    // text-align: left;
     padding-top: 1px;
     padding-right: 2px;
     transition: all .7s ease-out;
@@ -41,17 +38,18 @@
 }
 
 .leftImgHolder2 {
-    margin-top: 7px;
-    width: 77%;
-    display: inline-block;
     position: relative;
+    bottom: -36em;
+    margin: 7px 0 15px 0;
+    width: 76.1%;
+    display: inline-block;
     background: rgba(150, 8, 8, .75);
     shape-outside: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
     opacity: 1;
     padding-bottom: 2px;
     padding-right: 3px;
-    transition: all .7s ease-out;
+    transition: all .4s ease-out;
     
     img {
         position: relative;
@@ -63,9 +61,11 @@
 }
 
 .txtAboutStudioHolder {
-    margin-top: 440px;
-    padding-right: 30px;
+    margin-top: 220px;
+    padding-right: 5px;
     text-align: left;
+    opacity: 0;
+    transition: all .7s ease-in;
 }
 
 .titleAboutStudio {
