@@ -55,7 +55,7 @@ class Clients extends Component {
 
             box.style.zIndex = "300";
                 
-            box.style.top = pic.offsetTop + "px";
+            box.style.top = `${pic.offsetTop + pic.offsetHeight - 20}px`;
             box.style.left = pic.offsetLeft + "px";
             box.style.width = `${pic.clientWidth}px`;
 
