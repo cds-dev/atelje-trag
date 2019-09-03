@@ -31,7 +31,6 @@ class Clients extends Component {
                 const modal = document.getElementById('mod'+client.id)
                 modal.style.backgroundImage = "client.src";
                 modal.style.display = "inline-block";
-                console.log(modal.childNodes)
                 modal.childNodes[0].style.display = "inline-block";
             }
         })
@@ -63,12 +62,14 @@ class Clients extends Component {
                 box.id = pic.id;
                 box.innerHTML = '<span>' + this.state.clientList[pic.id.substring(3,5) - 1].alt + '</span><span class="moveRight">...</span>';
                 box.addEventListener('click', this.openModal)
+                box.childNodes[0].id = pic.id;
                 box.childNodes[0].addEventListener('click', this.openModal)
                 box.childNodes[1].addEventListener('click', this.openModal)
             }
             else if(pic.className === "client-narrow") {
                 box.setAttribute('class', 'transp-box')
                 box.innerHTML = '<span>' + this.state.clientList[pic.id.substring(3,5) - 1].alt + '</span>';
+                pic.style.cursor = "default"
             }
                 
             box.style.top = `${pic.offsetTop + pic.offsetHeight - 60}px`;

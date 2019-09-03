@@ -25,6 +25,11 @@
     display: inline-block;
     position: relative;
     z-index: 200;
+    cursor: default;
+}
+
+.react-photo-gallery--gallery div .img-wrap .client-narrow {
+    cursor: context-menu;
 }
 
 .moveRight {
