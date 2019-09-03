@@ -31,14 +31,16 @@ class Clients extends Component {
             const imgWrap = document.createElement('div')
             imgWrap.setAttribute("className", "img-wrap")
             imgWrap.appendChild(pic)
+            imgWrap.style.position = "absolute"
             gallery.appendChild(imgWrap)
             //imgWrap.style.position = "relative"
+            //console.log(pic)
             
             const box = document.createElement('div')
             box.style.display = "inline-block"
             box.style.position = "relative";
-            box.style.top = "0px";
-            box.style.left = "0px";
+            //box.style.top = "0px";
+            //box.style.left = "0px";
             
             if(pic.className === "client-wide") {
                 box.setAttribute('className', 'black-box')
@@ -53,10 +55,9 @@ class Clients extends Component {
 
             box.style.zIndex = "300";
                 
-                
-                box.style.top = pic.offsetTop +"px";
-                box.style.left = pic.offsetLeft +"px";
-                box.style.width = `${pic.clientWidth}px`;
+            box.style.top = pic.offsetTop + "px";
+            box.style.left = pic.offsetLeft + "px";
+            box.style.width = `${pic.clientWidth}px`;
 
             imgWrap.appendChild(box)
         })
