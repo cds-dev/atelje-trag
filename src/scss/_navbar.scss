@@ -53,12 +53,9 @@ nav {
 		}
 
 		*:hover {
-			color: white !important;
-			// letter-spacing: 2px;
+			color: rgba(250, 250, 250, .9) !important;
 			border: none;
-	        background: rgba(255, 255, 255, .1);
-			// margin: 0 5px;
-			// padding: 4px 7px;
+			background: rgba(255, 255, 255, .1);
 		}
 
 		.leftNav, .rightNav {
@@ -72,80 +69,37 @@ nav {
 		a {
 			position: relative;
 			padding: 4px 7px;
-			margin: 0 10px;
+			margin: 0 0;
 			font-size: 21px;
 			width: 140px;
+			text-align: center !important;
 		}
 
 		.leftNav a {
 			clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
 		}
 
-		.rightNav a {
-			clip-path: polygon(0 0, 92% 0, 100% 100%, 8% 100%);
-		}
+		.leftNav .activeLeft {
 
-		.leftNav a:hover {
-			clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
-
-			li {
-				background: rgba(255, 255, 255, 0);
-				// border-left: 1px solid red;
-				// border-bottom: 1px solid red;
-	
-				
+			li{
+				text-shadow: -1px -1px 0.5px #000, 1px -1px 0.5px #000, -1px 1px 0.5px #000, 1px 1px 0.5px #000;
+				z-index: 999;
+				color: white !important;
+				width: 100%;
+				height: 100%;
 			}
-
+			
 			&::before {
 				position: absolute;
-				bottom: -12px;
-				left: 0px;
-				content: '/';
-				color: rgba(255, 0, 0, .6);
-				font-size: 58px; 
-				font-weight: 100;
-				transform: rotate(2deg);
+				color: red;
+				z-index: 999;
 			}
-	
+
 			&::after {
-				position: absolute;
-				bottom: -12px;
-				right: -1px;
-				content: '\\';
-				color: rgba(255, 0, 0, .6);
-				font-size: 58px; 
-				font-weight: 100;
-				transform: rotate(-2deg);
-			}
-		}
-
-		.rightNav a:hover {
-			clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
-
-			li {
-				background: rgba(255, 255, 255, 0);
-			}
-
-			&::before {
-				position: absolute;
-				bottom: -11px;
-				left: 0px;
-				content: '/';
-				color: rgba(255, 0, 0, .6);
-				font-size: 58px; 
-				font-weight: 100;
-				transform: rotate(2deg)
-			}
-	
-			&::after {
-				position: absolute;
-				bottom: -11px;
-				right: -1px;
-				content: '\\';
-				color: rgba(255, 0, 0, .6);
-				font-size: 58px; 
-				font-weight: 100;
-				transform: rotate(-1deg)
+				height: 100%;
+				content: '';
+				width: 100%;
+				background: rgba(200, 200, 200, .5);
 			}
 		}
 
@@ -159,36 +113,86 @@ nav {
 			font-size: 58px;
 			font-weight: 100;
 			transform: rotate(2deg);
-			transition: all .15s;
+			transition: all .5s ease-in;
 		}
 
-		// .leftNav a::after {
-		// 	position: absolute;
-		// 	bottom: -13px;
-		// 	right: -7px;
-		// 	content: '/';
-		// 	color:
-		// 	rgba(255, 0, 0, 0.6);
-		// 	font-size: 58px;
-		// 	font-weight: 100;
-		// 	transform: rotate(2deg);
-		// 	transition: all .15s;			
-		// }
+		.leftNav a::after {
+			clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			content: '';
+			width: 0;
+			color:	rgba(255, 0, 0, 0.6);
+			transition: all .35s ease-in;		
+		}
 
-		// .rightNav a::before {
-		// 	position: absolute;
-		// 	bottom: -12px;
-		// 	left: -6px;
-		// 	content: '\\';
-		// 	color: rgba(255, 0, 0, .6);
-		// 	font-size: 58px; 
-		// 	font-weight: 100;
-		// 	transform: rotate(-2deg)
-		// }
+		.leftNav a:hover {
+			text-shadow: -1px -1px 0.5px #000, 1px -1px 0.5px #000, -1px 1px 0.5px #000, 1px 1px 0.5px #000;
+			
+			li {
+				background: rgba(255, 255, 255, 0);
+				z-index: 999;
+				color: red;
+				
+			}
+
+			&::before {
+				position: absolute;
+				color: red;
+				z-index: 999;
+			}
+	
+			&::after {
+				height: 100%;
+				content: '';
+				width: 100%;
+				background: rgba(200, 200, 200, .5);
+			}
+		}
+
+		.rightNav a {
+			clip-path: polygon(0 0, 92% 0, 100% 100%, 8% 100%);
+		}
+
+		.rightNav .activeRight {
+
+			li{
+				text-shadow: -1px -1px 0.5px #000, 1px -1px 0.5px #000, -1px 1px 0.5px #000, 1px 1px 0.5px #000;
+				z-index: 999;
+				color: white !important;
+			}
+
+			&::before {
+				height: 100%;
+				content: '';
+				width: 100%;
+				background: rgba(200, 200, 200, .5);
+			}
+			
+			// &::after {
+			// 	position: absolute;
+			// 	color: red;
+			// 	z-index: 999;
+			// }
+		}
+
+		.rightNav a::before {
+			clip-path: polygon(0 0, 92% 0, 100% 100%, 8% 100%);
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			height: 100%;
+			content: '';
+			width: 0;
+			color:	rgba(255, 0, 0, 0.6);
+			transition: all .35s ease-in;	
+		}
 
 		.rightNav a::after {
 			position: absolute;
-			bottom: -11px;
+			bottom: -12px;
 			right: -1px;
 			content: '\\';
 			color: rgba(255, 0, 0, .6);
@@ -197,12 +201,33 @@ nav {
 			transform: rotate(-2deg)
 		}
 
+		.rightNav a:hover {
+			text-shadow: -1px -1px 0.5px #000, 1px -1px 0.5px #000, -1px 1px 0.5px #000, 1px 1px 0.5px #000;
+
+			li {
+				background: rgba(255, 255, 255, 0);
+				z-index: 999;
+				color: red;
+			}
+
+			&::before {
+				height: 100%;
+				content: '';
+				width: 100%;
+				background: rgba(200, 200, 200, .5);
+			}
+
+			&::after {
+				position: absolute;
+				color: red;
+				z-index: 999;
+			}
+		}
+
 		li {
 			background: rgba(255, 255, 255, 0);
 			margin: auto;
-			border: none; 
-			// border-top: 1px solid red;
-			// border-bottom: 1px solid red;
+			border: none;
 		}
 
 		.link {

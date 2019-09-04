@@ -6,7 +6,9 @@ import Footer from './footer';
 import Logo from './logo';
 
 class Machines extends Component {
-	//state = {}
+	// state = {
+		
+	// }
 
 	render() {
 		const selected = this.props.selected;

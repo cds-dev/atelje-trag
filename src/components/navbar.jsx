@@ -58,6 +58,32 @@ class NavBar extends Component {
 		window.addEventListener("scroll", function() {
 			navChanges()
 		})
+
+		function activeLinks() {
+			const navLinks = document.querySelectorAll(".navLink");
+
+			navLinks.forEach(function(it) {
+				it.addEventListener("click", function(e) {
+					navLinks.forEach(function(it) {
+						// console.log(e.currentTarget)
+						if (e.currentTarget.classList.contains("linkLeft") && !e.currentTarget.classList.contains("activeLeft")) {
+							e.currentTarget.classList.add("activeLeft");
+						}
+						else if (e.currentTarget.classList.contains("linkRight") && !e.currentTarget.classList.contains("activeRight")) {
+							e.currentTarget.classList.add("activeRight");
+						}
+						else if (it !== e.currentTarget && it.classList.contains("activeLeft")) {
+							it.classList.remove("activeLeft");
+						}
+						else if (it !== e.currentTarget && it.classList.contains("activeRight")) {
+							it.classList.remove("activeRight");
+						}
+					})
+				})
+			})
+		}
+
+		activeLinks();
 	}
 
 	
@@ -74,14 +100,14 @@ class NavBar extends Component {
 				<ul>
 					<div className="mainNav">
 						<div className="leftNav">
-						<Link className="linkLeft" to='./'><li>{item1[lang]}</li></Link>
-						<Link className="linkLeft" to='./people#aboutus'><li>{item2[lang]}</li></Link>
-						<Link className="linkLeft" to='./people#clients'><li>{item4[lang]}</li></Link>
+						<Link className="navLink linkLeft" to='./'><li>{item1[lang]}</li></Link>
+						<Link className="navLink linkLeft" to='./people#aboutus'><li>{item2[lang]}</li></Link>
+						<Link className="navLink linkLeft" to='./people#clients'><li>{item4[lang]}</li></Link>
 						</div>
 						<div className="rightNav">
-						<Link className="linkRight" to='./machines#aboutstudio'><li>{item3[lang]}</li></Link>
-						<Link className="linkRight" to='./machines#equipment'><li>{item5[lang]}</li></Link>
-						<Link className="linkRight" to='./people#contact'><li>{item6[lang]}</li></Link>
+						<Link className="navLink linkRight" to='./machines#aboutstudio'><li>{item3[lang]}</li></Link>
+						<Link className="navLink linkRight" to='./machines#equipment'><li>{item5[lang]}</li></Link>
+						<Link className="navLink linkRight" to='./people#contact'><li>{item6[lang]}</li></Link>
 						</div>
 					</div>
 				</ul>

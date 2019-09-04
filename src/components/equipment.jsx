@@ -47,7 +47,7 @@ class Equipment extends Component {
 					equipImg2.style.opacity = "1";
 					equipImg3.style.left = "0";
 					equipImg4.style.right = "0";
-				}, 600);
+				}, 300);
 				setTimeout(function () {
 					equipImg3.style.opacity = "1";
 					equipImg4.style.opacity = "1";
