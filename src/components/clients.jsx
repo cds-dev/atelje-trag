@@ -61,7 +61,7 @@ class Clients extends Component {
                 box.setAttribute('class', 'black-box')
                 box.id = pic.id;
                 box.innerHTML = '<span>' + this.state.clientList[pic.id.substring(3,5) - 1].alt + '</span><span class="moveRight">...</span>';
-                box.addEventListener('click', this.openModal)
+                
                 box.childNodes[0].id = pic.id;
                 box.childNodes[0].addEventListener('click', this.openModal)
                 box.childNodes[1].addEventListener('click', this.openModal)
@@ -72,12 +72,12 @@ class Clients extends Component {
                 pic.style.cursor = "default"
             }
                 
-            box.style.top = `${pic.offsetTop + pic.offsetHeight - 60}px`;
+            box.style.top = `${pic.offsetTop + pic.offsetHeight - 65}px`;
             box.style.left = pic.offsetLeft + "px";
             box.style.width = `${pic.clientWidth - 20}px`;
 
             imgWrap.appendChild(box)
-
+box.addEventListener('click', this.openModal)
 
         })
 
