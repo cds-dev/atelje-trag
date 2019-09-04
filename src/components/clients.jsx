@@ -41,6 +41,15 @@ class Clients extends Component {
         document.querySelectorAll(".modal").forEach(modal => modal.style.display = "none");
     }
 
+    mouseOverHandler = (e) => {
+        //console.log(e.originalTarget.nextElementSibling)
+        e.originalTarget.nextElementSibling.lastElementChild.style.display = "block"
+    }
+
+    mouseOutHandler = (e) => {
+        e.originalTarget.nextElementSibling.lastElementChild.style.display = "none"
+    }
+
     wrapImages = (images) => {
         const gallery = document.querySelector('.react-photo-gallery--gallery').childNodes[0]
 
@@ -60,11 +69,19 @@ class Clients extends Component {
             if(pic.className === "client-wide") {
                 box.setAttribute('class', 'black-box')
                 box.id = pic.id;
-                box.innerHTML = '<span>' + this.state.clientList[pic.id.substring(3,5) - 1].alt + '</span><span class="moveRight">...</span>';
+                box.innerHTML = '<span>' + this.state.clientList[pic.id.substring(3,5) - 1].alt + `</span><span class="moveRight">...</span><div class="black-over" style="display: none;">${pic.alt}</div>`;
                 
                 box.childNodes[0].id = pic.id;
                 box.childNodes[0].addEventListener('click', this.openModal)
                 box.childNodes[1].addEventListener('click', this.openModal)
+
+                pic.addEventListener('mouseover', this.mouseOverHandler)
+                pic.addEventListener('mouseout', this.mouseOutHandler)
+                // pic.addEventListener('mouseout', () => {
+                //     box.innerHTML = '<span>' + this.state.clientList[pic.id.substring(3,5) - 1].alt + '</span><span class="moveRight">...</span>';
+                // })
+
+                //box.addEventListener('mouseover', this.mouseOverHandler)
             }
             else if(pic.className === "client-narrow") {
                 box.setAttribute('class', 'transp-box')
@@ -72,12 +89,12 @@ class Clients extends Component {
                 pic.style.cursor = "default"
             }
                 
-            box.style.top = `${pic.offsetTop + pic.offsetHeight - 65}px`;
+            box.style.top = `${pic.offsetTop + pic.offsetHeight - 70}px`;
             box.style.left = pic.offsetLeft + "px";
             box.style.width = `${pic.clientWidth - 20}px`;
 
             imgWrap.appendChild(box)
-box.addEventListener('click', this.openModal)
+            box.addEventListener('click', this.openModal)
 
         })
 

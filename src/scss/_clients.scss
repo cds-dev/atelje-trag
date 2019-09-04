@@ -6,7 +6,7 @@
     margin: 10px;
     margin-bottom: 30px;
     padding: 10px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     background: #000b;
     display: inline-flex;
     position: relative;
@@ -14,7 +14,7 @@
     align-content: space-between;
     justify-content: space-between;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
     //border: 2px solid black;
 }
 
@@ -30,7 +30,7 @@
     z-index: 200;
     cursor: default;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 24px;
     text-shadow: -1px -1px .5px #000, 1px -1px .5px #000, -1px 1px .5px #000, 1px 1px .5px #000, ;
 }
 
@@ -47,4 +47,7 @@
     display: relative;
     width: 85%;
     margin: 0 auto;
+}
+.black-over {
+    display: block;
 }
