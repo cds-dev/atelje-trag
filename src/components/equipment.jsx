@@ -37,7 +37,7 @@ class Equipment extends Component {
 		window.scrollTo(0,0);
 		window.addEventListener("scroll", function() {
 		// console.log(window.pageYOffset)
-			if(window.pageYOffset > 900) {
+			if(window.pageYOffset > 1300) {
 				// setTimeout(function () {
 					equipImg1.style.left = "0";
 					equipImg2.style.right = "0";
@@ -45,16 +45,46 @@ class Equipment extends Component {
 				setTimeout(function () {
 					equipImg1.style.opacity = "1";
 					equipImg2.style.opacity = "1";
+					// equipImg3.style.left = "0";
+					// equipImg4.style.right = "0";
+				}, 300);
+				// setTimeout(function () {
+				// 	// equipImg1.style.opacity = "1";
+				// 	// equipImg2.style.opacity = "1";
+				// 	equipImg3.style.left = "0";
+				// 	equipImg4.style.right = "0";
+				// }, 950);
+				// setTimeout(function () {
+				// 	equipImg3.style.opacity = "1";
+				// 	equipImg4.style.opacity = "1";
+				// 	equipmentTxtWrapper.style.opacity = "1";
+				// }, 1200);
+			}
+			if(window.pageYOffset > 1430) {
+				// // setTimeout(function () {
+				// 	equipImg1.style.left = "0";
+				// 	equipImg2.style.right = "0";
+				// // }, 850);
+				// setTimeout(function () {
+				// 	equipImg1.style.opacity = "1";
+				// 	equipImg2.style.opacity = "1";
+				// 	// equipImg3.style.left = "0";
+				// 	// equipImg4.style.right = "0";
+				// }, 300);
+				setTimeout(function () {
+					// equipImg1.style.opacity = "1";
+					// equipImg2.style.opacity = "1";
 					equipImg3.style.left = "0";
 					equipImg4.style.right = "0";
-				}, 300);
+					equipmentTxtWrapper.style.opacity = "1";
+				}, 950);
 				setTimeout(function () {
 					equipImg3.style.opacity = "1";
 					equipImg4.style.opacity = "1";
-					equipmentTxtWrapper.style.opacity = "1";
-				}, 800);
+				}, 1200);
 			}
 		})
+		
 	}
 	
 	render() {
