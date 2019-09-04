@@ -18,7 +18,7 @@ class Clients extends Component {
         setTimeout(() => {
             const allImgs = document.querySelectorAll('#clients img')
             this.wrapImages(allImgs)
-        }, 500)
+        }, 1000)
     }
 
     openModal = (e) => {
@@ -42,15 +42,21 @@ class Clients extends Component {
     }
 
     mouseOverHandler = (e) => {
-        //console.log(e.originalTarget.nextElementSibling)
-        e.originalTarget.nextElementSibling.lastElementChild.style.display = "block"
-        e.originalTarget.nextElementSibling.style.top = `${e.originalTarget.offsetTop + e.originalTarget.offsetHeight - 99}px`;
+        console.log(e)
+        e.target.nextElementSibling.lastElementChild.style.height = "30px"
+       // e.target.nextElementSibling.lastElementChild.style.display = "block"
+        e.target.nextElementSibling.lastElementChild.style.visibility = "visible"
+        e.target.nextElementSibling.lastElementChild.style.opacity = "1"
+        e.target.nextElementSibling.style.top = `${e.target.offsetTop + e.target.offsetHeight - 99}px`;
 
     }
 
     mouseOutHandler = (e) => {
-        e.originalTarget.nextElementSibling.lastElementChild.style.display = "none"
-        e.originalTarget.nextElementSibling.style.top = `${e.originalTarget.offsetTop + e.originalTarget.offsetHeight - 70}px`;
+        //e.target.nextElementSibling.lastElementChild.style.display = "none"
+        e.target.nextElementSibling.lastElementChild.style.height = "0px"
+        e.target.nextElementSibling.lastElementChild.style.visibility = "hidden"
+        e.target.nextElementSibling.lastElementChild.style.opacity = "0"
+        e.target.nextElementSibling.style.top = `${e.target.offsetTop + e.target.offsetHeight - 70}px`;
 
     }
 
@@ -58,6 +64,7 @@ class Clients extends Component {
         const gallery = document.querySelector('.react-photo-gallery--gallery').childNodes[0]
 
         images.forEach(pic => {
+            console.log(pic)
             const imgWrap = document.createElement('div')
             if(pic.className === "client-wide" || pic.className === "client-narrow") {
                 
@@ -77,7 +84,7 @@ class Clients extends Component {
                                     <span>${this.state.clientList[pic.id.substring(3,5) - 1].alt}</span>
                                     <span class="moveRight">...</span>
                                 </div>
-                                <div class="black-over" style="display: none;">${pic.alt}</div>`;
+                                <div class="black-over" style="height: 0px; opacity: 0;">${this.state.clientList[pic.id.substring(3,5) - 1].hoverabletxt}</div>`;
                 
                 box.childNodes[0].id = pic.id;
                 box.childNodes[0].addEventListener('click', this.openModal)
@@ -95,6 +102,9 @@ class Clients extends Component {
                 
 
             box.style.top = `${pic.offsetTop + pic.offsetHeight - 70}px`;
+
+            //box.style.top = '-70px'
+            //box.style.left = '0'
 
             box.style.left = pic.offsetLeft + "px";
             box.style.width = `${pic.clientWidth - 20}px`;

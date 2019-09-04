@@ -16,6 +16,7 @@ export const clients = [
   alt : "sax",
   caption : "sax",
   className : "client-wide",
+  hoverabletxt : "Lorem ipsum dolor sit",
   txt : "<h2 class='modalNaslov'>saksofonista</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
@@ -34,6 +35,7 @@ export const clients = [
   height: 1000,
   alt : "crno-bela",
   className : "client-wide",
+  hoverabletxt : "Lorem ipsum dolor sit",
   txt : "<h2 class='modalNaslov'>crno bela</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
@@ -52,6 +54,7 @@ export const clients = [
   height: 1011,
   alt : "tori amos",
   className : "client-wide",
+  hoverabletxt : "Lorem ipsum dolor sit",
   txt : "<h2 class='modalNaslov'>tori amos</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
@@ -70,6 +73,7 @@ export const clients = [
   height: 900,
   alt : "blondi",
   className : "client-wide",
+  hoverabletxt : "Lorem ipsum dolor sit",
   txt : "<h2 class='modalNaslov'>blondi</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
@@ -79,6 +83,7 @@ export const clients = [
   height: 1365,
   alt : "čarli",
   className : "client-wide",
+  hoverabletxt : "Lorem ipsum dolor sit",
   txt : "<h2 class='modalNaslov'>čarli menson</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
@@ -97,6 +102,7 @@ export const clients = [
   height: 1280,
   alt : "štrafta",
   className : "client-wide",
+  hoverabletxt : "Lorem ipsum dolor sit",
   txt : "<h2 class='modalNaslov'>štrafta</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
  {
@@ -115,6 +121,7 @@ export const clients = [
   height: 1066,
   alt : "mislilac",
   className : "client-wide",
+  hoverabletxt : "Lorem ipsum dolor sit",
   txt : "<h2 class='modalNaslov'>mislilac</h2><div class='modalDiv'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos iusto soluta quaerat numquam enim facilis laboriosam.</div>"
  },
 ]
