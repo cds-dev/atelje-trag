@@ -19,10 +19,15 @@
 }
 
 .black-initial {
+    height: 30px;
     display: inline-flex;
     align-content: space-between;
     justify-content: space-between;
     opacity: 1; 
+    ///////igor//////////////////////////////////////////
+    transform: scaleY(1);
+    transform-origin: bottom;
+    ///////end//////////////////////////////////////////
 }
 
 .client-wide {
@@ -55,16 +60,18 @@
     width: 85%;
     margin: 0 auto;
 }
+
 .black-over {
     display: block;
-    animation: myheight .5s ease-in;
-    transition: opacity 1s ease-in;
+    // animation: myheight .7s ease-in;
+    transition: all .45s ease-in;
+    opacity: 0;
 }
 
-@keyframes myheight {
-  50% {height: 30px; opacity: 1;}
-}
+// @keyframes myheight {
+//   50% {height: 30px; opacity: 1;}
+// }
 
-@keyframes myheight {
-  100% {height: 30px; opacity: 0;}
-}
+// @keyframes myheight {
+//   100% {height: 30px; opacity: 0;}
+// }

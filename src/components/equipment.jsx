@@ -32,6 +32,7 @@ class Equipment extends Component {
 		let equipImg2 = document.querySelector(".equipImg2");
 		let equipImg3 = document.querySelector(".equipImg3");
 		let equipImg4 = document.querySelector(".equipImg4");
+		let equipmentTxtWrapper = document.querySelector(".equipmentTxtWrapper");
 
 		window.scrollTo(0,0);
 		window.addEventListener("scroll", function() {
@@ -50,7 +51,8 @@ class Equipment extends Component {
 				setTimeout(function () {
 					equipImg3.style.opacity = "1";
 					equipImg4.style.opacity = "1";
-				}, 1200);
+					equipmentTxtWrapper.style.opacity = "1";
+				}, 800);
 			}
 		})
 	}

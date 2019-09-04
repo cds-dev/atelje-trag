@@ -46,9 +46,20 @@ class Clients extends Component {
         e.target.nextElementSibling.lastElementChild.style.height = "30px"
        // e.target.nextElementSibling.lastElementChild.style.display = "block"
         e.target.nextElementSibling.lastElementChild.style.visibility = "visible"
-        e.target.nextElementSibling.lastElementChild.style.opacity = "1"
         e.target.nextElementSibling.style.top = `${e.target.offsetTop + e.target.offsetHeight - 99}px`;
+        
+        ///////igor//////////////////////////////////////////
+        setTimeout(() => {
+            e.target.nextElementSibling.lastElementChild.style.opacity = "1"
+        }, 300);
 
+        let blackInitial = document.querySelectorAll(".black-initial");
+        console.log(blackInitial);
+        blackInitial.forEach(it => function() {
+            it.style.transform = "scaleY(2)";
+        })
+        ///////////end/////////////////////////////////////// 
+        
     }
 
     mouseOutHandler = (e) => {
