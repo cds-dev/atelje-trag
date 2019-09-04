@@ -48,6 +48,8 @@
 
 .equipImg1, .equipImg2, .equipImg3, .equipImg4 {
     position: absolute;
+    opacity: 0;
+    transition: all 1s ease-in;
 }
 
 
@@ -59,7 +61,7 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
     top: 0;
-    left: 0;
+    left: -405px;
     width: 64%;
     margin-bottom: 14px;                                       
 }
@@ -75,7 +77,7 @@
     clip-path: polygon(23.7% 0%, 100% 0%, 100% 100%, 0% 100%);
     background: url("../../src/opr2.jpg");
     top: 0;
-    right: 0;
+    right: -555px;
     width: 50.8%;
     margin-bottom: 14px;
 }
@@ -84,7 +86,7 @@
     clip-path: polygon(0 0%, 100% 0%, 75% 100%, 0% 100%);
     background: url("../../src/opr3.jpg");
     bottom: 0;
-    left: 0;
+    left: -395px;             
     width: 47.8%;
 }
 
@@ -99,6 +101,6 @@
     clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 6% 100%);
     background: url("../../src/opr4.jpg");
     bottom: 0;
-    right: 0;
+    right: -690px;
     width: 67.3%;
 }

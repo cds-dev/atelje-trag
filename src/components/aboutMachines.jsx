@@ -48,7 +48,6 @@ class AboutMachines extends Component {
 
 		window.scrollTo(0,0);
 		window.addEventListener("scroll", function() {
-			console.log(window.pageYOffset)
 			if(window.pageYOffset > 100) {
 				setTimeout(function () {
 					leftImgHolder2.style.bottom = "0";

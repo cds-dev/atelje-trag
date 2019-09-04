@@ -26,6 +26,34 @@ class Equipment extends Component {
 			Voluptatibus provident, officia fugiat, est incidunt ad labore sequi necessitatibus perspiciatis, quis delectus.`]
 		]
 	}
+
+	componentDidMount() {
+		let equipImg1 = document.querySelector(".equipImg1");
+		let equipImg2 = document.querySelector(".equipImg2");
+		let equipImg3 = document.querySelector(".equipImg3");
+		let equipImg4 = document.querySelector(".equipImg4");
+
+		window.scrollTo(0,0);
+		window.addEventListener("scroll", function() {
+		// console.log(window.pageYOffset)
+			if(window.pageYOffset > 900) {
+				// setTimeout(function () {
+					equipImg1.style.left = "0";
+					equipImg2.style.right = "0";
+				// }, 850);
+				setTimeout(function () {
+					equipImg1.style.opacity = "1";
+					equipImg2.style.opacity = "1";
+					equipImg3.style.left = "0";
+					equipImg4.style.right = "0";
+				}, 600);
+				setTimeout(function () {
+					equipImg3.style.opacity = "1";
+					equipImg4.style.opacity = "1";
+				}, 1200);
+			}
+		})
+	}
 	
 	render() {
 		const { title, text } = this.state;
