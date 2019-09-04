@@ -18,7 +18,7 @@ class Clients extends Component {
         setTimeout(() => {
             const allImgs = document.querySelectorAll('#clients img')
             this.wrapImages(allImgs)
-        }, 300)
+        }, 500)
     }
 
     openModal = (e) => {
@@ -89,12 +89,16 @@ class Clients extends Component {
                 pic.style.cursor = "default"
             }
                 
+
             box.style.top = `${pic.offsetTop + pic.offsetHeight - 70}px`;
+
             box.style.left = pic.offsetLeft + "px";
             box.style.width = `${pic.clientWidth - 20}px`;
 
             imgWrap.appendChild(box)
+
             box.addEventListener('click', this.openModal)
+
 
         })
 
