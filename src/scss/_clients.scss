@@ -4,15 +4,18 @@
 
 .black-box {
     margin: 10px;
+    margin-bottom: 30px;
     padding: 10px;
     text-transform: uppercase;
-    background: #0007;
+    background: #000b;
     display: inline-flex;
     position: relative;
     z-index: 200;
     align-content: space-between;
     justify-content: space-between;
     cursor: pointer;
+    font-size: 20px;
+    //border: 2px solid black;
 }
 
 .client-wide {
@@ -26,10 +29,9 @@
     position: relative;
     z-index: 200;
     cursor: default;
-}
-
-.react-photo-gallery--gallery div .img-wrap .client-narrow {
-    cursor: context-menu;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-shadow: -1px -1px .5px #000, 1px -1px .5px #000, -1px 1px .5px #000, 1px 1px .5px #000, ;
 }
 
 .moveRight {
@@ -39,4 +41,10 @@
 
 .modal, .modal img  {
     display: none;
+}
+
+.react-photo-gallery--gallery {
+    display: relative;
+    width: 85%;
+    margin: 0 auto;
 }
