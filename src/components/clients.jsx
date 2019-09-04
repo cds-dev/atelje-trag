@@ -43,13 +43,19 @@ class Clients extends Component {
 
     mouseOverHandler = (e) => {
         //console.log(e.originalTarget.nextElementSibling)
-        e.originalTarget.nextElementSibling.lastElementChild.style.display = "block"
+        e.originalTarget.nextElementSibling.lastElementChild.style.height = "30px"
+       // e.originalTarget.nextElementSibling.lastElementChild.style.display = "block"
+        e.originalTarget.nextElementSibling.lastElementChild.style.visibility = "visible"
+        e.originalTarget.nextElementSibling.lastElementChild.style.opacity = "1"
         e.originalTarget.nextElementSibling.style.top = `${e.originalTarget.offsetTop + e.originalTarget.offsetHeight - 99}px`;
 
     }
 
     mouseOutHandler = (e) => {
-        e.originalTarget.nextElementSibling.lastElementChild.style.display = "none"
+        //e.originalTarget.nextElementSibling.lastElementChild.style.display = "none"
+        e.originalTarget.nextElementSibling.lastElementChild.style.height = "0px"
+        e.originalTarget.nextElementSibling.lastElementChild.style.visibility = "hidden"
+        e.originalTarget.nextElementSibling.lastElementChild.style.opacity = "0"
         e.originalTarget.nextElementSibling.style.top = `${e.originalTarget.offsetTop + e.originalTarget.offsetHeight - 70}px`;
 
     }
@@ -77,7 +83,7 @@ class Clients extends Component {
                                     <span>${this.state.clientList[pic.id.substring(3,5) - 1].alt}</span>
                                     <span class="moveRight">...</span>
                                 </div>
-                                <div class="black-over" style="display: none;">${pic.alt}</div>`;
+                                <div class="black-over" style="height: 0px; opacity: 0;">${this.state.clientList[pic.id.substring(3,5) - 1].hoverableTxt}</div>`;
                 
                 box.childNodes[0].id = pic.id;
                 box.childNodes[0].addEventListener('click', this.openModal)
