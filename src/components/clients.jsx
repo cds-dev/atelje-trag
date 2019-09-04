@@ -44,11 +44,9 @@ class Clients extends Component {
     mouseOverHandler = (e) => {
         console.log(e)
         e.target.nextElementSibling.lastElementChild.style.height = "30px"
-       // e.target.nextElementSibling.lastElementChild.style.display = "block"
         e.target.nextElementSibling.lastElementChild.style.visibility = "visible"
         e.target.nextElementSibling.style.top = `${e.target.offsetTop + e.target.offsetHeight - 99}px`;
         
-        ///////igor//////////////////////////////////////////
         setTimeout(() => {
             e.target.nextElementSibling.lastElementChild.style.opacity = "1"
         }, 300);
@@ -58,12 +56,10 @@ class Clients extends Component {
         blackInitial.forEach(it => function() {
             it.style.transform = "scaleY(2)";
         })
-        ///////////end/////////////////////////////////////// 
         
     }
 
     mouseOutHandler = (e) => {
-        //e.target.nextElementSibling.lastElementChild.style.display = "none"
         e.target.nextElementSibling.lastElementChild.style.height = "0px"
         e.target.nextElementSibling.lastElementChild.style.visibility = "hidden"
         e.target.nextElementSibling.lastElementChild.style.opacity = "0"
@@ -113,9 +109,6 @@ class Clients extends Component {
                 
 
             box.style.top = `${pic.offsetTop + pic.offsetHeight - 70}px`;
-
-            //box.style.top = '-70px'
-            //box.style.left = '0'
 
             box.style.left = pic.offsetLeft + "px";
             box.style.width = `${pic.clientWidth - 20}px`;
