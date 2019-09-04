@@ -15,7 +15,6 @@
     cursor: pointer;
     font-size: 24px;
     transition: all .4s ease-in;
-    //border: 2px solid black;
 }
 
 .black-initial {
@@ -24,10 +23,8 @@
     align-content: space-between;
     justify-content: space-between;
     opacity: 1; 
-    ///////igor//////////////////////////////////////////
     transform: scaleY(1);
     transform-origin: bottom;
-    ///////end//////////////////////////////////////////
 }
 
 .client-wide {
@@ -63,15 +60,7 @@
 
 .black-over {
     display: block;
-    // animation: myheight .7s ease-in;
     transition: all .45s ease-in;
     opacity: 0;
+    font-size: 17px;
 }
-
-// @keyframes myheight {
-//   50% {height: 30px; opacity: 1;}
-// }
-
-// @keyframes myheight {
-//   100% {height: 30px; opacity: 0;}
-// }

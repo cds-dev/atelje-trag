@@ -24,7 +24,7 @@ class Clients extends Component {
     openModal = (e) => {
         this.closeModal()
 
-        if(e.target.className === "black-box" || e.target.className === "client-wide") {
+        if(e.target.className === "black-initial" || e.target.className === "client-wide") {
             
             this.state.clientList.forEach(client => {
             if (client.id === e.target.id) {
@@ -41,33 +41,29 @@ class Clients extends Component {
         document.querySelectorAll(".modal").forEach(modal => modal.style.display = "none");
     }
 
-    mouseOverHandler = (e) => {
-        console.log(e)
-        e.target.nextElementSibling.lastElementChild.style.height = "30px"
-       // e.target.nextElementSibling.lastElementChild.style.display = "block"
-        e.target.nextElementSibling.lastElementChild.style.visibility = "visible"
-        e.target.nextElementSibling.style.top = `${e.target.offsetTop + e.target.offsetHeight - 99}px`;
+    mouseEnterHandler = (e) => {
+        const element = e.target.lastElementChild.lastElementChild;
+        element.parentElement.style.top = `${e.target.firstChild.offsetTop + e.target.firstChild.offsetHeight -99}px`;
         
-        ///////igor//////////////////////////////////////////
+        element.style.height = "30px"
+        element.style.visibility = "visible"
+
         setTimeout(() => {
-            e.target.nextElementSibling.lastElementChild.style.opacity = "1"
+            element.style.opacity = "1"
         }, 300);
 
-        let blackInitial = document.querySelectorAll(".black-initial");
-        console.log(blackInitial);
+        const blackInitial = document.querySelectorAll(".black-initial");
         blackInitial.forEach(it => function() {
             it.style.transform = "scaleY(2)";
         })
-        ///////////end/////////////////////////////////////// 
-        
     }
 
-    mouseOutHandler = (e) => {
-        //e.target.nextElementSibling.lastElementChild.style.display = "none"
-        e.target.nextElementSibling.lastElementChild.style.height = "0px"
-        e.target.nextElementSibling.lastElementChild.style.visibility = "hidden"
-        e.target.nextElementSibling.lastElementChild.style.opacity = "0"
-        e.target.nextElementSibling.style.top = `${e.target.offsetTop + e.target.offsetHeight - 70}px`;
+    mouseLeaveHandler = (e) => {
+        const element = e.target.lastElementChild.lastElementChild;
+        element.style.height = "0px"
+        element.style.visibility = "hidden"
+        element.style.opacity = "0"
+        element.parentElement.style.top = `${e.target.firstChild.offsetTop + e.target.firstChild.offsetHeight - 70}px`;
 
     }
 
@@ -75,7 +71,6 @@ class Clients extends Component {
         const gallery = document.querySelector('.react-photo-gallery--gallery').childNodes[0]
 
         images.forEach(pic => {
-            console.log(pic)
             const imgWrap = document.createElement('div')
             if(pic.className === "client-wide" || pic.className === "client-narrow") {
                 
@@ -101,8 +96,8 @@ class Clients extends Component {
                 box.childNodes[0].addEventListener('click', this.openModal)
                 box.childNodes[1].addEventListener('click', this.openModal)
 
-                pic.addEventListener('mouseover', this.mouseOverHandler)
-                pic.addEventListener('mouseout', this.mouseOutHandler)
+                imgWrap.addEventListener('mouseenter', this.mouseEnterHandler)
+                imgWrap.addEventListener('mouseleave', this.mouseLeaveHandler)
 
             }
             else if(pic.className === "client-narrow") {
@@ -113,9 +108,6 @@ class Clients extends Component {
                 
 
             box.style.top = `${pic.offsetTop + pic.offsetHeight - 70}px`;
-
-            //box.style.top = '-70px'
-            //box.style.left = '0'
 
             box.style.left = pic.offsetLeft + "px";
             box.style.width = `${pic.clientWidth - 20}px`;
