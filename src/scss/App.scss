@@ -73,13 +73,23 @@ section, footer {
   z-index: 5;
 }
 
+#footer {
+  padding: 40px; 
+}
+
 section {
-  // align-items: center;
-  // justify-content: center;
-  // display: flex;
+  // margin: 200px 0;
 
   &.clients {
     display: block;
     z-index: 0;
   }
+}
+
+#clients {
+  padding-bottom: 150px;
+} 
+
+#clients, #footer, #equipment {
+  margin-top: 200px;
 }
