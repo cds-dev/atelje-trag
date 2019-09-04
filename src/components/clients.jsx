@@ -126,6 +126,7 @@ class Clients extends Component {
         
         return ( 
             <section id="clients">
+
                 <h2 className="titleClients">Klijenti</h2>
                 <Gallery photos={this.state.clientList} direction={"column"} onClick={this.openModal}  />
                 {this.state.clientList.map(cl => <div
