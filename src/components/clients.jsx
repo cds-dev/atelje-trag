@@ -44,10 +44,14 @@ class Clients extends Component {
     mouseOverHandler = (e) => {
         //console.log(e.originalTarget.nextElementSibling)
         e.originalTarget.nextElementSibling.lastElementChild.style.display = "block"
+        e.originalTarget.nextElementSibling.style.top = `${e.originalTarget.offsetTop + e.originalTarget.offsetHeight - 99}px`;
+
     }
 
     mouseOutHandler = (e) => {
         e.originalTarget.nextElementSibling.lastElementChild.style.display = "none"
+        e.originalTarget.nextElementSibling.style.top = `${e.originalTarget.offsetTop + e.originalTarget.offsetHeight - 70}px`;
+
     }
 
     wrapImages = (images) => {
@@ -69,7 +73,11 @@ class Clients extends Component {
             if(pic.className === "client-wide") {
                 box.setAttribute('class', 'black-box')
                 box.id = pic.id;
-                box.innerHTML = '<span>' + this.state.clientList[pic.id.substring(3,5) - 1].alt + `</span><span class="moveRight">...</span><div class="black-over" style="display: none;">${pic.alt}</div>`;
+                box.innerHTML = `<div class="black-initial">
+                                    <span>${this.state.clientList[pic.id.substring(3,5) - 1].alt}</span>
+                                    <span class="moveRight">...</span>
+                                </div>
+                                <div class="black-over" style="display: none;">${pic.alt}</div>`;
                 
                 box.childNodes[0].id = pic.id;
                 box.childNodes[0].addEventListener('click', this.openModal)
@@ -77,11 +85,7 @@ class Clients extends Component {
 
                 pic.addEventListener('mouseover', this.mouseOverHandler)
                 pic.addEventListener('mouseout', this.mouseOutHandler)
-                // pic.addEventListener('mouseout', () => {
-                //     box.innerHTML = '<span>' + this.state.clientList[pic.id.substring(3,5) - 1].alt + '</span><span class="moveRight">...</span>';
-                // })
 
-                //box.addEventListener('mouseover', this.mouseOverHandler)
             }
             else if(pic.className === "client-narrow") {
                 box.setAttribute('class', 'transp-box')
