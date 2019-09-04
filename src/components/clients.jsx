@@ -18,7 +18,7 @@ class Clients extends Component {
         setTimeout(() => {
             const allImgs = document.querySelectorAll('#clients img')
             this.wrapImages(allImgs)
-        }, 0)
+        }, 300)
     }
 
     openModal = (e) => {
