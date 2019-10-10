@@ -9,24 +9,24 @@
 	bottom: 185px;
 	opacity: 1;
 	transform: translate(-50%);
-	transition: all 1.3s ease-in;
+	transition: opacity 1.3s ease-in;
 	z-index: 999;
 }
 
-@-moz-document url-prefix() {
-	.mini-logo-holder {
-		// left: 50.65%;
-		// bottom: 66px;
-		opacity: 0;
-	}
-}
+// @-moz-document url-prefix() {
+// 	.mini-logo-holder {
+// 		// left: 50.65%;
+// 		// bottom: 66px;
+// 		opacity: 0;
+// 	}
+// }
 
 .logoLetters {
 	text-align: center;
 	margin: 0 auto;
 	max-height: 109px;
 	opacity: 0;
-	transition: all 1.3s ease-in;
+	transition: opacity 1.3s ease-in;
 }
 
 .aHolder {
